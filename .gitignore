@@ -1,0 +1,10 @@
+yarn.lock
+.vscode
+package-lock.json
+node_modules
+
+svelte/node_modules
+svelte/yarn.lock
+svelte/package-lock.json
+svelte/public/build/
+svelte/.DS_Store
