@@ -100,12 +100,13 @@ import {
                                 })
                                 .write()
 
+                            const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
 
                             db.get("feed").push({
-                                content: singlePage.dead ? "ded thread, F" : observedItems[observedItems.length - 1].textContent,
+                                content: singlePage.dead ? "ded thread, F" : lastPost.textContent,
                                 link: singlePage.link,
                                 postid: singlePage.id,
-                                image: singlePage.dead ? null : (observedItems[observedItems.length - 1].querySelector('img') ? observedItems[observedItems.length - 1].querySelector('img').src : null)
+                                image: singlePage.dead ? null : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : null)
                             }).write()
 
 

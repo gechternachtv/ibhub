@@ -39,7 +39,8 @@
             }
             h1{
                 background:#e04000;
-                color:#ffffee
+                color:#ffffee;
+                padding:4px;
             }
             .thumb img{
                 max-width: 150px;

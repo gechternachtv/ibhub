@@ -24,12 +24,12 @@
                 <div class="card">
 
                     <div class="thumb">
-                        <a href="{channel.link}">
+                        <a href="{channel.link}" target="_blank">
                             <img loading=lazy src="{channel.thumb}" alt="">
                         </a>
                     </div>
                     <div>{channel.name}</div>
-                    <div><a href="{channel.link}">{channel.link}</a></div><!-- content here -->
+                    <div><a href="{channel.link}" target="_blank">{channel.link}</a></div><!-- content here -->
 
                 </div>
             {/each}
