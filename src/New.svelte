@@ -1,23 +1,46 @@
 <script>
-	const data = {name:'', link:'', thumb:'', observe:'', contains:''}
+	const data = {name:'', link:'', observe:'', contains:'', newestOnTop:false}
     let result
 	
 	async function postData () {
-		const res = await fetch('https://httpbin.org/post', {
+
+		const response = await fetch('/channels/new', {
 			method: 'POST',
-			body: JSON.stringify(data)
-		})
-		
-		result = JSON.stringify(await res.json())
+			mode: 'cors',
+			cache: 'no-cache',
+			credentials: 'same-origin',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			redirect: 'follow',
+			referrerPolicy: 'no-referrer',
+			body: JSON.stringify(
+			{
+				...data,
+				"observeName": "post",
+				"updates": 1,
+				"dead": false,
+			}
+		)
+		});
+		console.log(response)
 	}
+
+
+
+
+
+
+
+
+
 </script>
 
 
-<input bind:value={data.name} />
-<input bind:value={data.link} />
-<input bind:value={data.thumb} />
-<input bind:value={data.observe} />
-<input bind:value={data.contains} />
+<input bind:value={data.name} placeholder="name*"/>
+<input bind:value={data.link} placeholder="link*"/>
+<input bind:value={data.observe} placeholder="observer*"/>
+<input bind:value={data.contains} placeholder="contains"/>
 <button type="button" on:click={postData}>
 	Post it.
 </button>
@@ -28,7 +51,6 @@
 <pre>
 {data.name}
 {data.link}
-{data.thumb}
 {data.observe}
 {data.contains}
 </pre>

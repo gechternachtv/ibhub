@@ -47,7 +47,7 @@
                 padding:4px;
             }
             .thumb img{
-                max-width: 80px;
+                max-width: 180px;
             }
     
             .card{

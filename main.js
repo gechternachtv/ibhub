@@ -11,11 +11,11 @@ import {
 // const Jsdom = jsdom.JSDOM
 
 //express app
+import captureWebsite from 'capture-website';
+
+
 
 (async () => {
-
-
-
 
     const app = express()
     app.use(cors())
@@ -82,8 +82,10 @@ import {
                     const sitecontent = await request.text();
                     const dom = new jsdom.JSDOM(sitecontent);
                     const observedItems = dom.window.document.querySelectorAll(singlePage.observe)
-                    observedItems.forEach(itemToObserve => {
 
+                    console.log(observedItems);
+
+                    observedItems.forEach(async itemToObserve => {
                         if (singlePage.updates != observedItems.length) {
 
                             singlePage.dead = (observedItems.length == 0)
@@ -106,7 +108,7 @@ import {
                                 content: singlePage.dead ? "ded thread, F" : lastPost.textContent,
                                 link: singlePage.link,
                                 postid: singlePage.id,
-                                image: singlePage.dead ? null : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : null)
+                                image: singlePage.dead ? singlePage.thumb : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : singlePage.thumb)
                             }).write()
 
 
@@ -114,7 +116,7 @@ import {
 
                         }
 
-                    });
+                    })
 
                 }
 
@@ -147,7 +149,34 @@ import {
         res.send(data)
     })
 
+    app.post('/channels/new', async (req, res) => {
+        const channel = req.body
+        console.log(channel.id)
+        if (channel.id) {
 
+            db.get('channels')
+                .find({
+                    id: channel.id
+                })
+                .assign({
+                    ...channel
+                })
+                .write()
+
+        } else {
+            const newId = nanoid()
+            await captureWebsite.file(channel.link, `public/screens/${newId}.png`);
+            channel.thumb = `screens/${newId}.png`
+            db.get("channels").push({
+                ...channel,
+                id: newId
+            }).write()
+            res.json({
+                success: true
+            })
+
+        }
+    })
 
 
 
