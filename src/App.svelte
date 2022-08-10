@@ -3,19 +3,21 @@
 	import Channels from './Channels.svelte';
 	import Feed from './Feed.svelte';
 	import New from './New.svelte';
+	import Updateall from './Updateall.svelte';
 </script>
 
 <nav>
 	<a  href="/#/">Channels</a>
 	<a href="/#/feed">Feed</a>
 	<a href="/#/new">Add</a>
-	<a  href="/#/">Archive</a>
+	<a  href="/#/updateall">GET!</a>
 </nav>
 
 <Router routes={{
 	'/': Channels,
 	'/feed': Feed,
-	'/new': New
+	'/new': New,
+	'/updateall': Updateall
 }} />
 
 <hr>

@@ -20,7 +20,7 @@
         <main>
             <h1>Active Channels</h1>
             <div class="container">
-            {#each channels.filter(channel => channel.dead === false) as channel}
+            {#each channels as channel}
                 <div class="card">
 
                     <div class="thumb">
@@ -29,8 +29,11 @@
                         </a>
                     </div>
                     <div>{channel.name}</div>
+                    {#if channel.dead }
+                        <div class="dead">[Dead]</div>
+                    {/if}
                     <div><a href="{channel.link}" target="_blank">{channel.link}</a></div><!-- content here -->
-
+                    <div><a href="/#/new?id={channel.id}&name={channel.name}&contains={channel.contains}&observeName={channel.observeName}&link={channel.link}&thumb={channel.thumb}&dead={channel.dead}">update</a></div>
                 </div>
             {/each}
             </div>
@@ -58,5 +61,9 @@
                 display: grid;
                 gap:20px;
                 grid-template-columns:1fr 1fr 1fr
+            }
+            .dead{
+                color:#800000;
+                font-weight: bold;
             }
         </style>

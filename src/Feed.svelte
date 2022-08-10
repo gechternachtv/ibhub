@@ -24,6 +24,7 @@
                 <div class="card">
                   
                     <div class="thumb"><img src="{channel.image}" alt=""></div>
+                    <h2>{channel.title}</h2>
                     <div>{channel.content}</div>
                     <div><a href="{channel.link}">{channel.link}</a></div><!-- content here -->
 

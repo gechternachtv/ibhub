@@ -1,120 +1,55 @@
 {
   "channels": [
     {
-      "id": "Rd1u7nAq4O359Q7bbIfx8",
-      "name": "uboachan halloween thread",
-      "thumb": "screens/Rd1u7nAq4O359Q7bbIfx8.png",
-      "link": "https://uboachan.net/o/res/5103.html",
-      "observe": ".post",
-      "observeName": "post",
-      "contains": null,
-      "updates": 4,
-      "dead": false,
-      "newestOnTop": false
-    },
-    {
-      "name": "fauux",
-      "thumb": "screens/lruw8NYykOLxc9kpnZ4Ba.png",
-      "link": "https://fauux.neocities.org/",
-      "observe": ".article",
-      "observeName": "post",
-      "contains": null,
-      "updates": 20,
-      "dead": false,
-      "newestOnTop": true,
-      "id": "lruw8NYykOLxc9kpnZ4Ba"
-    },
-    {
-      "name": "draw lain",
-      "thumb": "screens/C-WfqpL2Hy3lIG3p8KUx4.png",
-      "link": "https://lainchan.org/vis/res/3477.html",
-      "observe": ".post",
-      "observeName": "post",
-      "contains": null,
-      "updates": 149,
-      "dead": false,
-      "newestOnTop": false,
-      "id": "C-WfqpL2Hy3lIG3p8KUx4"
-    },
-    {
-      "name": "中の人はプロなの？",
-      "thumb": "screens/nQQ4zgiXK42JuenjR1h73.png",
-      "link": "https://may.2chan.net/25/res/6331.htm",
-      "observe": ".rtd",
-      "observeName": "post",
-      "contains": null,
-      "updates": 5,
-      "dead": false,
-      "newestOnTop": false,
-      "id": "nQQ4zgiXK42JuenjR1h73"
-    },
-    {
-      "name": "Revista Peruana de Origami",
-      "thumb": "screens/KLA6PYg2t4A9TtINxByQ2.png",
-      "link": "https://boards.4channel.org/po/thread/599692/n-5-octubre-2021",
-      "observe": ".post",
-      "observeName": "post",
-      "contains": null,
-      "updates": 12,
-      "dead": false,
-      "newestOnTop": false,
-      "id": "KLA6PYg2t4A9TtINxByQ2"
-    },
-    {
-      "name": "dokodemo",
-      "link": "https://dokodemo.neocities.org/",
-      "observe": ".updateP",
+      "id": "tEozmzFQbNv-YRNQiVEcP",
+      "name": " drew this yummy nikkey",
+      "link": "https://uboachan.net/o/res/5175.html",
+      "observeName": ".post",
       "contains": "",
       "newestOnTop": false,
-      "observeName": "post",
-      "updates": 4,
+      "thumb": "https://uboachan.net/o/thumb/1656126040328.png",
       "dead": false,
-      "thumb": "screens/c-928iIBRvHHlMImDtLt3.png",
-      "id": "c-928iIBRvHHlMImDtLt3"
+      "updates": 6
+    },
+    {
+      "id": "oP3oErh46wN6yCbBxNute",
+      "name": "Fangames screenshot",
+      "link": "https://uboachan.net/fg/res/7886.html",
+      "observeName": ".post",
+      "contains": "",
+      "newestOnTop": false,
+      "thumb": "https://uboachan.net/fg/thumb/1370142287414.png",
+      "dead": false,
+      "updates": 168
+    },
+    {
+      "id": "7SORDuXspC-z62DUas9iE",
+      "name": "PS2 era",
+      "link": "https://uboachan.net/og/res/5229.html",
+      "observeName": ".post",
+      "contains": "",
+      "newestOnTop": false,
+      "thumb": "https://uboachan.net/og/thumb/1538228359485.png",
+      "dead": false,
+      "updates": 20
     }
   ],
   "feed": [
     {
-      "content": " Anonymous11/12/21(Fri)12:48:42 No.600009 Anonymous  11/12/21(Fri)12:48:42 No.600009>>599692based",
-      "link": "https://boards.4channel.org/po/thread/599692/n-5-octubre-2021",
-      "postid": "sadggasdg66662345",
-      "image": null
+      "title": "PS2 era added!",
+      "content": "PS2 era added!",
+      "link": "https://uboachan.net/og/thumb/1538228359485.png",
+      "postid": "BLbQ6L9aiQGwAkfqgmbCC",
+      "image": "https://uboachan.net/og/thumb/1538228359485.png",
+      "date": "Wed Aug 10 2022 01:50:34 GMT-0300 (Brasilia Standard Time)"
     },
     {
-      "content": " Anonymous10/03/21(Sun)13:38:16 No.598707 Anonymous  10/03/21(Sun)13:38:16 No.598707File: Tutorials.png (3.23 MB, 732x3224)3.23 MB PNG>>598674these new colors are useless since the objective of a stencil is to paint the same shape everywhere, if it doesn't look good when everything is black then it won't look good anywhere else also you don't need to worry about spam here if you are sharing more stencil pics of course.",
-      "link": "https://boards.4channel.org/po/thread/595766",
-      "postid": "24623461235sdgasdg346",
-      "image": "//i.4cdn.org/po/1633282696937s.jpg"
-    },
-    {
-      "content": "\n  \n  2021.html pt.2\n  -fauux\n  \n  3.12.20\n  \n  \n  \n  \n  \n  \n  2021.html\n  \n  Red\n  Green\n  Blue\n  People who solved it from first to last:\n  \n \n  \n  \n",
-      "link": "https://fauux.neocities.org/",
-      "postid": "gasgasdgasdg",
-      "image": "/JJJjjjjdDDD.gif"
-    },
-    {
-      "content": "Anonymous 11/02/21 (Tue) 14:52:46 No.5106                     your style is really cool and unique!! this is adorable :3",
-      "link": "https://uboachan.net/o/res/5103.html",
-      "postid": "t134t134t134t",
-      "image": null
-    },
-    {
-      "content": "5����Name������ 21/10/27(��)17:30:14No.6358+��D���I",
-      "link": "https://may.2chan.net/25/res/6331.htm",
-      "postid": "2462346346",
-      "image": null
-    },
-    {
-      "content": "Junichi Fujiwara 2021-11-10 18:11:56 No.8748                    File: 1636567916569-0.png (305.62 KB, 1920x1080, 16:9, 19th century lain.png) ImgOps iqdb             >>347719th century lain. I don't think I'll ever finish it.",
-      "link": "https://lainchan.org/vis/res/3477.html",
-      "postid": "24623gasds46346",
-      "image": "/vis/thumb/1636567916569-0.png"
-    },
-    {
-      "content": "[Jul/2/2021] \n                            Added Weebring, a webring for weeaboos\n                        ",
-      "link": "https://dokodemo.neocities.org/",
-      "postid": "c-928iIBRvHHlMImDtLt3",
-      "image": null
+      "title": "[thread update] PS2 era",
+      "content": "Anonymous 06/10/22 (Fri) 07:53:03 No.6427                     >>6426i liked threads of fate but it was too easy, makes sense because it was developed as a children's game. the visuals were very, very nice though.",
+      "link": "https://uboachan.net/og/res/5229.html",
+      "postid": "7SORDuXspC-z62DUas9iE",
+      "image": "https://uboachan.net/og/thumb/1538228359485.png",
+      "date": "Wed Aug 10 2022 01:53:20 GMT-0300 (Brasilia Standard Time)"
     }
   ]
 }

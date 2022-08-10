@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import fetch from "node-fetch"
 import jsdom from "jsdom"
+import RSS from "rss"
 
 import lowDb from "lowdb"
 import FileSync from "lowdb/adapters/FileSync.js"
@@ -11,7 +12,12 @@ import {
 // const Jsdom = jsdom.JSDOM
 
 //express app
-import captureWebsite from 'capture-website';
+
+
+
+
+
+
 
 
 
@@ -81,7 +87,7 @@ import captureWebsite from 'capture-website';
 
                     const sitecontent = await request.text();
                     const dom = new jsdom.JSDOM(sitecontent);
-                    const observedItems = dom.window.document.querySelectorAll(singlePage.observe)
+                    const observedItems = dom.window.document.querySelectorAll(singlePage.observeName)
 
                     console.log(observedItems);
 
@@ -105,10 +111,12 @@ import captureWebsite from 'capture-website';
                             const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
 
                             db.get("feed").push({
-                                content: singlePage.dead ? "ded thread, F" : lastPost.textContent,
+                                title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `[thread update] ${singlePage.name}`,
+                                content: singlePage.dead ? `[dead thread]` : lastPost.textContent,
                                 link: singlePage.link,
                                 postid: singlePage.id,
-                                image: singlePage.dead ? singlePage.thumb : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : singlePage.thumb)
+                                image: singlePage.dead ? singlePage.thumb : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : singlePage.thumb),
+                                date: new Date().toString()
                             }).write()
 
 
@@ -134,6 +142,32 @@ import captureWebsite from 'capture-website';
     await updatePages()
     console.log("updated!")
 
+    app.get('/rss', (req, res) => {
+        res.header("Content-Type", "application/xml");
+        const rssfeed = new RSS({
+            title: 'chansub',
+            description: 'get your imageboard feeds on rss!',
+            feed_url: 'http://localhost:4000/rss',
+            site_url:'http://localhost:4000',
+            image_url:"http://pm1.narvii.com/6330/ed1b1e37cf8bc7e7d9c21556b459427b8c2e2d17_00.jpg"
+           });
+        const feed = db.get("feed").value()
+        feed.forEach(item =>{
+            rssfeed.item({
+                title:  item.title,
+                description: `
+                <h1>${item.title}</h1>
+                <p>${item.content}</p>
+                <img src="${item.image}"/>
+                <p><a href="${item.link}">${item.link}</a></p>
+                `,
+                guid:item.postid
+            });
+        })
+        
+        res.send(rssfeed.xml())
+    })
+
     app.get('/channels', (req, res) => {
         const data = db.get("channels").value()
         res.send(data)
@@ -152,7 +186,7 @@ import captureWebsite from 'capture-website';
     app.post('/channels/new', async (req, res) => {
         const channel = req.body
         console.log(channel.id)
-        if (channel.id) {
+        if (channel.id != "") {
 
             db.get('channels')
                 .find({
@@ -165,8 +199,7 @@ import captureWebsite from 'capture-website';
 
         } else {
             const newId = nanoid()
-            await captureWebsite.file(channel.link, `public/screens/${newId}.png`);
-            channel.thumb = `screens/${newId}.png`
+            channel.thumb = channel.thumb
             db.get("channels").push({
                 ...channel,
                 id: newId
@@ -174,6 +207,15 @@ import captureWebsite from 'capture-website';
             res.json({
                 success: true
             })
+            db.get("feed").push({
+                title: `${channel.name} added!`,
+                content: `${channel.name} added!`,
+                link: channel.link,
+                postid: nanoid(),
+                image: channel.thumb ? channel.thumb : null,
+                date: new Date().toString()
+            }).write()
+
 
         }
     })
