@@ -28,7 +28,7 @@ db.data ||= {channels:[],news:[],feeds:[]};
     app.use(cors());
     app.use(express.json());
     const PORT = process.env.PORT;
-    app.use('/', express.static('frontend/public'));
+    app.use('/', express.static('frontend/dist'));
 
 
 
