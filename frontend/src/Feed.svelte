@@ -1,16 +1,24 @@
 <script>
 
     import { onMount } from "svelte";
+    import { updateCount } from './stores.js';
     
     
         let channels = []
         let loading = true
+        let news = []
     
         onMount(async () => {
-            channels  = await (await (fetch(`http://localhost:4000/feed`))).json()
+            channels  = await (await (fetch(`/feed`))).json()
             loading = false
             console.log(channels)
-        
+            news = await (await (fetch(`/getnews`))).json()
+            window.channels = channels;
+            window.news = news;
+
+            updateCount.update(n => 0)
+            fetch(`/readallnews`)
+
         });
     
     
@@ -20,10 +28,13 @@
         <main>
             <h1>Feed</h1>
             <div class="container">
-            {#each channels as channel}
+            {#each [...channels].reverse() as channel, i}
                 <div class="card">
-                  
-                    <div class="thumb"><img src="{channel.image}" alt=""></div>
+
+                    {#if news.find(x => x === channel.postid)}
+                         <div class="newpost">[ NEW !]</div>
+                    {/if}
+                    <div class="thumb"><img loading="lazy" src="{channel.image}" alt=""></div>
                     <h2>{channel.title}</h2>
                     <div>{channel.content}</div>
                     <div><a href="{channel.link}">{channel.link}</a></div><!-- content here -->
@@ -39,7 +50,7 @@
                 color:#800000;
             }
             h1{
-                background:#e04000;
+                background:#e04001;
                 color:#ffffee;
                 padding:4px;
             }
@@ -52,8 +63,8 @@
                 padding:13px;
             }
             .container{
-                display: grid;
+                display: flex;
                 gap:20px;
-                grid-template-columns:1fr
+                flex-direction:column
             }
         </style>
