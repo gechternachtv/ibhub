@@ -2,12 +2,15 @@ type channel = {
 	id: string,
 	name: string,
 	link: string,
+	host:string,
 	observeName: string,
-	contains: string,
+	contains: string[],
 	newestOnTop: boolean,
 	thumb: string,
 	dead: boolean,
-	updates: number
+	updates: number,
+	laspost:string,
+	meta:string
 }
 
 type feed = {
@@ -16,12 +19,18 @@ type feed = {
 	link: string,
 	postid: string,
 	image: string,
-	date: string
+	date: string,
+	channelid:string
 }
 
+type newsfeed = {
+	postid: string,
+	channelid: string,
+  }
 
-type dbData = {
+
+  type dbData = {
 	channels: channel[],
 	feeds: feed[],
-	news: string[]
+	news: newsfeed[],
   }

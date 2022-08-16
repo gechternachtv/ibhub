@@ -1,43 +1,57 @@
-<script>
+<script lang="ts">
 
     import { onMount } from "svelte";
+    import {push} from 'svelte-spa-router'
+
     
     
-        let channels = []
+        let channels:channel[] = []
+        let news:newsfeed[] = []
         let loading = true
     
         onMount(async () => {
-            channels  = await (await (fetch(`/channels`))).json()
+            news = await (await (fetch(`/api/getnews`))).json()
+            channels  = await (await (fetch(`/api/channels`))).json()
             loading = false
             console.log(channels)
         
         });
     
-    
-    
+
     </script>
         
         <main>
             <h1>Active Channels</h1>
             <div class="container">
             {#each [...channels].reverse() as channel}
-                <div class="card">
-
-                    <div class="thumb">
-                        <a href="{channel.link}" target="_blank">
-                            <img loading=lazy src="{channel.thumb}" alt="">
-                        </a>
+                <div class:newpost={news.find(x => x.channelid === channel.id)} class="card">
+                    <div class="card-container">
+                        <div class="thumb">
+                            <a href="{channel.link}" target="_blank">
+                                <img loading=lazy src="{channel.thumb}" alt="">
+                            </a>
+                        </div>
+                        <div class="title">{channel.name}</div>
+                        <div class="hostName">{channel.host}</div>
+                        {#if news.find(x => x.channelid === channel.id)}
+                            <div class="newposttag">new!</div>
+                        {/if}
+                        {#if channel.contains.length > 0 }
+                        <div class="contains">
+                            {#each channel.contains as contain}
+                            <span>{contain}</span>
+                            {/each}
+                        </div>
+                        {/if}
+                        <div class="updates"><strong>Updates: </strong>{channel.updates}</div>
                     </div>
-                    <div>{channel.name}</div>
-                    {#if channel.dead }
-                        <div class="dead">[Dead]</div>
-                    {/if}
-                    {#if channel.contains != "" }
-                        <div>[contains:]{channel.contains}</div>
-                    {/if}
-                    <div>posts:{channel.updates}</div>
-                    <div><a href="{channel.link}" target="_blank">{channel.link}</a></div><!-- content here -->
-                    <div><a href="/#/new?id={channel.id}&name={channel.name}&contains={channel.contains}&observeName={channel.observeName}&link={channel.link}&thumb={channel.thumb}&dead={channel.dead}">update</a></div>
+                    <div class="card-container feed-btn-container">
+                        {#if channel.dead }
+                            <div class="dead">[Dead]</div>
+                        {/if}
+                        <div class="feed-btn"><a target="_blank" href="{channel.link}">open link</a></div>
+                        <div class="feed-btn"><a href="#/new?id={channel.id}">view channel</a></div>
+                    </div>
                 </div>
             {/each}
             </div>
@@ -45,12 +59,14 @@
         
         <style>
             main{
-                background:#ffffee;
-                color:#800000;
+                background:var(--container-bg);
+                color:var(--main-font-1);
+                margin:auto;
+                max-width: var(--container);
             }
             h1{
-                background:#e04001;
-                color:#ffffee;
+                background:var(--header-bg);
+                color:var(--header-color);
                 padding:4px;
             }
             .thumb img{
@@ -58,10 +74,16 @@
             }
     
             .card{
-                background-color:#f0e0d6;
+                background-color:var(--card-bg);
                 padding:13px;
                 width:calc(100% - 20px);
                 max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 20px;
+                box-sizing: border-box;
+                position:relative
             }
             .container{
                 display: flex;
@@ -73,8 +95,71 @@
                 width: calc(100% - 20px);
             }
             .dead{
-                color: #f00;
+                color: var(--alert);;
                 font-weight: bold;
                 font-size: 19px;
+            }
+
+            .feed-btn a {
+                background: var(--button-bg);
+                color: var(--button-color);
+                padding: 5px;
+                font-weight: bold;
+                font-size: 11px;
+                border-radius: 8px;
+            }
+
+            .feed-btn a:hover {
+                text-decoration: none;
+            }
+
+            .feed-btn-container{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .card.newpost{
+                border-left: 4px solid var(--news);
+            }
+
+            .newposttag{
+                position: absolute;
+                top: 6px;
+                color: var(--news);
+                opacity: 0.6;
+                font-size: 9px;
+                font-weight: bold;
+                top: 0px;
+                left: 6px;
+            }
+
+            .title{
+                font-weight: bold;
+                color:var(--main-font-2);
+            }
+            .contains {
+            font-size: 11px;
+            opacity:0.8
+            }
+
+            .contains span{
+            display: inline-block;
+            margin-right: 4px;
+            padding:0 4px;
+            border-radius:5px;
+            font-weight: bold;
+            background:var(--header-bg);
+            color:var(--header-color);
+            }
+
+            .hostName {
+				font-size:10px;
+				opacity:0.6;
+				margin-bottom:1em;
+			}
+
+            .updates{
+                font-size:11px
             }
         </style>

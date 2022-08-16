@@ -1,0 +1,3574 @@
+{
+  "channels": [
+    {
+      "id": "2fnqj7sd1l6uw0w57",
+      "name": "fan video",
+      "link": "https://uboachan.net/yn/res/9815.html",
+      "observeName": ".post .body",
+      "contains": [
+        "9816",
+        "9817"
+      ],
+      "newestOnTop": false,
+      "thumb": "https://uboachan.net/yn/thumb/1658145721943.png",
+      "dead": false,
+      "laspost": ">>9816Nice, that's exactly what I was looking for.Thanks for the help!",
+      "meta": "",
+      "updates": 1,
+      "host": "uboachan.net"
+    },
+    {
+      "id": "2fnqj7spzl6uw7cd5",
+      "name": "/yn/ general",
+      "link": "https://uboachan.net/yn/catalog.html",
+      "observeName": ".thread .replies",
+      "contains": [],
+      "newestOnTop": true,
+      "thumb": "https://uboachan.net/banners/rotate.php",
+      "dead": false,
+      "laspost": "                                                        R: 17 / I: 6                                                        2022?anyone here on 2022 rn?                                                ",
+      "meta": "",
+      "updates": 121,
+      "host": "uboachan.net"
+    },
+    {
+      "id": "2fnqj7u8il6ux6nxq",
+      "name": "reimu is sleeping",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "observeName": ".post blockquote",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "dead": true,
+      "laspost": ">>609109694I'm looking at it alright. Gonna beat my meat to it later.",
+      "meta": "",
+      "updates": 561,
+      "host": "boards.4channel.org"
+    },
+    {
+      "id": "2fnqj7vidl6uyjtsg",
+      "name": "  Langs that compile to JS",
+      "link": "https://www.lainchan.org/%CE%BB/res/32227.html",
+      "observeName": ".post .body",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "https://www.lainchan.org/%CE%BB/thumb/1659994019384-0.png",
+      "dead": false,
+      "laspost": "I'm surprised nobody has mentioned Haxe. It has a real type system because the compiler is written in OCaml. The abstractions it uses are zero cost and the Javascript it generates is human readable. It has seamless integration with Javascript. The neatest part? You can compile the Haxe code you wrote in C, Java, or hell even PHP! You have the advantage of only writing the code once for both the front and back end without ever touching NodeJS.>>>/lambda/30385",
+      "meta": "",
+      "updates": 15,
+      "host": "www.lainchan.org"
+    },
+    {
+      "id": "2fnqj7z6nl6v0xh75",
+      "name": "webcomics",
+      "link": "https://www.lainchan.org/vis/res/4442.html",
+      "observeName": ".post .body",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "https://www.lainchan.org/vis/thumb/1575467185660.png",
+      "dead": false,
+      "laspost": ">>9557https://duckduckgo.com/?q=site%3Atvtropes.org+girl+%22+(Webcomic)%22+sword&ia=webAny of these? (feel free to use a better search tool)I recommend these to all. https://www.baldwinpage.com/spacetrawler/2010/01/01/spacetrawler-4/ (adventure)https://starslip.krisstraub.com/20050523.shtml (comedy/adventure)https://lawcomic.net/guide/?p=18 (very fun educational)",
+      "meta": "comics and stuff!!!!",
+      "updates": 94,
+      "host": "www.lainchan.org"
+    },
+    {
+      "id": "2fnqj910il6w7rc5r",
+      "name": "hentai games",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "observeName": ".post blockquote",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "dead": true,
+      "laspost": ">>609234480yeah...",
+      "meta": "854653423 asdgs",
+      "updates": 418,
+      "host": "boards.4channel.org"
+    },
+    {
+      "id": "2fnqj9q0jl6wn0sd1",
+      "name": "uboa soundcloud thread",
+      "link": "https://uboachan.net/media/res/604.html",
+      "host": "uboachan.net",
+      "observeName": ".post .body",
+      "contains": [
+        "1690",
+        "1639",
+        "1931"
+      ],
+      "newestOnTop": false,
+      "thumb": "https://uboachan.net/media/thumb/1569627664434.png",
+      "dead": false,
+      "laspost": ">>1690Look who it is, nice to see you herehttps://soundcloud.com/mirrorself>new uploadssimple guitar stuff>old uploadsnoise music, dark ambient etc",
+      "meta": "",
+      "updates": 1
+    },
+    {
+      "id": "2fnqj9q0jl6wnl6wk",
+      "name": "/vg/ - Video Game Generals",
+      "link": "https://boards.4channel.org/vg/",
+      "host": "boards.4channel.org",
+      "observeName": ".post.op blockquote",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "https://i.imgur.com/NgvO0XS.gif",
+      "dead": true,
+      "laspost": "Previous: >>396283020>FGO Summer Event 2022 - Arctic Summer World:August 10 ~ 31 JSTRequirements: Clear FuyukiWelfare 4* Assassin Valkyriehttps://news.fate-go.jp/2022/2022summer/https://www.youtube.com/watch?v=1DqQOFrkVxs>Arctic Summer World: - Summoning Campaign 1:August 10 ~ 31 JST5* Pretender Lady Avalon (Proto Merlin)4* Saber Garethhttps://news.fate-go.jp/2022/2022summer_pu1/Comment too long. Click here to view the full text.",
+      "meta": "",
+      "updates": 20
+    },
+    {
+      "id": "2fnqj9q0jl6woox00",
+      "name": "初オナネタを思い出そう",
+      "link": "http://may.2chan.net/b/res/1002631919.htm",
+      "host": "may.2chan.net",
+      "observeName": ".rtd blockquote",
+      "contains": [],
+      "newestOnTop": false,
+      "thumb": "http://may.2chan.net/b/thumb/1660674285376s.jpg",
+      "dead": false,
+      "laspost": "DOA��CM",
+      "meta": "",
+      "updates": 35
+    }
+  ],
+  "news": [
+    {
+      "postid": "2fnqj9q0jl6wpkuzu",
+      "channelid": "2fnqj9q0jl6woox00"
+    }
+  ],
+  "feeds": [
+    {
+      "title": "fan video added!",
+      "content": "fan video added, current replies:3",
+      "link": "https://uboachan.net/yn/res/9815.html",
+      "postid": "2fnqj7sd1l6uw0w58",
+      "image": "https://uboachan.net/yn/thumb/1658145721943.png",
+      "date": "Mon Aug 15 2022 12:05:14 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] fan video",
+      "content": ">>9816Nice, that's exactly what I was looking for.Thanks for the help!",
+      "link": "https://uboachan.net/yn/res/9815.html",
+      "postid": "2fnqj7sd1l6uw0wvn",
+      "image": "https://uboachan.net/yn/thumb/1658145721943.png",
+      "date": "Mon Aug 15 2022 12:05:15 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "/yn/  added!",
+      "content": "/yn/  added, current replies:121",
+      "link": "https://uboachan.net/yn/catalog.html",
+      "postid": "2fnqj7spzl6uw6bvl",
+      "image": "https://uboachan.net/banners/rotate.php",
+      "date": "Mon Aug 15 2022 12:09:28 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /yn/ ",
+      "content": "                                                        R: 300 / I: 66 (sticky)                                                        General help threadhere we post \"WHY IS THIS NOT WORKING\" and then someone else posts \"THIS IS WHY AND HOW TO FIX\" yayhelping the YN/fangame community, ONE HELP THREAD AT A TIME.Previously solved problemsWHEN USING WINE:Error80004001add LC_ALL=ja_JP@utf8 before the line to execute wine on your terminal.I downloaded an old version of YN that still has everything written in japanese, save the game text, and it's never given me any errors. If anyone wants me to post this on /media/ i can but, i trust saya-chan's repack more than this half-translated thing lol. especially since i played it on an XP.                                                ",
+      "link": "https://uboachan.net/yn/catalog.html",
+      "postid": "2fnqj7spzl6uw6cp7",
+      "image": "https://uboachan.net/banners/rotate.php",
+      "date": "Mon Aug 15 2022 12:09:29 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "/yn/ general added!",
+      "content": "/yn/ general added, current replies:121",
+      "link": "https://uboachan.net/yn/catalog.html",
+      "postid": "2fnqj7spzl6uw7cd6",
+      "image": "https://uboachan.net/banners/rotate.php",
+      "date": "Mon Aug 15 2022 12:10:15 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /yn/ general",
+      "content": "                                                        R: 17 / I: 6                                                        2022?anyone here on 2022 rn?                                                ",
+      "link": "https://uboachan.net/yn/catalog.html",
+      "postid": "2fnqj7spzl6uw7dan",
+      "image": "https://uboachan.net/banners/rotate.php",
+      "date": "Mon Aug 15 2022 12:10:16 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "4chan /v/ added!",
+      "content": "4chan /v/ added, current replies:0",
+      "link": "https://boards.4channel.org/v/catalog.html",
+      "postid": "2fnqj7spzl6uwerm0",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 12:16:01 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "tech 9chan added!",
+      "content": "tech 9chan added, current replies:184",
+      "link": "https://9chan.tw/tech/catalog",
+      "postid": "2fnqj7u8il6uwwrwx",
+      "image": "https://9chan.tw/tech/file/654f064dcd5e695a0bcdc2f5257f3cd83c04a1b2b1ca6413ab34b69094f521a0/1587458067.jpg",
+      "date": "Mon Aug 15 2022 12:30:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] tech 9chan",
+      "content": "Im saving up for a used laptop that I want to use for gaming and editing what should I buy?",
+      "link": "https://9chan.tw/tech/catalog",
+      "postid": "2fnqj7u8il6uwwtsq",
+      "image": "https://9chan.tw/tech/file/654f064dcd5e695a0bcdc2f5257f3cd83c04a1b2b1ca6413ab34b69094f521a0/1587458067.jpg",
+      "date": "Mon Aug 15 2022 12:30:04 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "/tech/ lain added!",
+      "content": "/tech/ lain added, current replies:130",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7u8il6ux3p01",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 12:35:25 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 3 / I: 0                                                        I know everybody is not fond of C/C++ replacement here. But I'm curious, what does Lain think about Odin ?                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7u8il6ux3qfh",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 12:35:26 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "reimu is sleeping added!",
+      "content": "reimu is sleeping added, current replies:487",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6ux6nxr",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 12:37:43 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609106215>anon draws a gray man>N-N-NNIGGGGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERWhat did you mean by this?",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6ux6p6d",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 12:37:45 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 167 / I: 7                                                          Rust Thread>inb4 tranny language not gonna botherWhy is there no Rust thread yet? I have taught it myself after Go and to me it feels like it allows me to write concurrent code much easier and giving me more control over how I wanna implement it (threads, channels or async). The learning resources also feel like the best I've ever dealt with, there's an official learning book, there's \"Rust by example\", the standard library docs always provide examples too and there's a million more good things I can say about it. Up until now I haven't ran into any significant problems with the language unlike Go (https://fasterthanli.me/articles/i-want-off-mr-golangs-wild-ride) and I think in the future it will entirely replace C++. Has lainon tried Rust yet?                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7u8il6ux6qah",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 12:37:46 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609106386as stupid as I think that outrage was, I'm pretty sure 103 did actually say he was black at one point",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6ux8e3k",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 12:39:04 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": "girls CAN love girls",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6uxsv5r",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 12:54:59 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609108069No no no, he was talking about his soul.",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6uxyiec",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 12:59:22 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109079p-please don't roll me into the corner",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6uyct74",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:10:29 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": "It's never over!",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7u8il6uyfnrn",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:12:42 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 13 / I: 0                                                          Langs that compile to JSOn my job i have to work quite a bit with javascript. Js let's you do some functional shanenigans but sometimes it get's in the way, Also the lack of a real type system leads to a lot of time debugging. I used to like typescript till i tried ReScript (https://rescript-lang.org/try)  a bit. It's type system is far better than typescript BS and the lang itself is clear enough with a neat pack of features. It compiles to JS so i don't get in trouble. So far is a bit rough in the edges but i quite like it. Do someone has a better option or have a similar experience? Let's share                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7u8il6uyfp1e",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 13:12:44 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109105Noted, some spellcards feel weird in this game, even though it's just a 1x1 copy, there's just enough fun and useful cards and even the one that act like a \"bloat\" to the card pool aren't as bad as in other games with similar system",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7vidl6uyikgb",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:14:58 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "  Langs that compile to JS added!",
+      "content": "  Langs that compile to JS added, current replies:14",
+      "link": "https://www.lainchan.org/%CE%BB/res/32227.html",
+      "postid": "2fnqj7vidl6uyjtsh",
+      "image": "https://www.lainchan.org/%CE%BB/thumb/1659994019384-0.png",
+      "date": "Mon Aug 15 2022 13:15:57 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109639he has aids now",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7vidl6uyjvot",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:15:59 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109694I'm looking at it alright. Gonna beat my meat to it later.",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7vrxl6uylnn9",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:17:22 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update]   Langs that compile to JS",
+      "content": ">>32244Javascript is bad, but thinking pure HTML and CSS could replace most of the stuff we have is absolutely delusional.The web was made from the start to read text and images, as soon as we started to make basically applications out of it we should had rewritten how html and css works, now its basically a point of no return and js is sadly essential.",
+      "link": "https://www.lainchan.org/%CE%BB/res/32227.html",
+      "postid": "2fnqj7vrxl6uylovo",
+      "image": "https://www.lainchan.org/%CE%BB/thumb/1659994019384-0.png",
+      "date": "Mon Aug 15 2022 13:17:24 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "lain game dev added!",
+      "content": "lain game dev added, current replies:301 <br/> undefined",
+      "link": "https://www.lainchan.org/%CE%BB/res/25916.html",
+      "postid": "2fnqj7vrxl6uyn7z4",
+      "image": "https://www.lainchan.org/%CE%BB/thumb/1621635842595-0.png",
+      "date": "Mon Aug 15 2022 13:18:35 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] lain game dev",
+      "content": ">>32028yeah. I only have a few assets for this project now, I will soon go on a proper asset binge when I properly make a list of what i need. Last time it took about a month to get like 95% of all assets done. But I'm also busy learning to draw. Doing surprisingly well! I can draw cute bunny characters now, or at least enough for me to use as basic concept art.",
+      "link": "https://www.lainchan.org/%CE%BB/res/25916.html",
+      "postid": "2fnqj7vrxl6uynar0",
+      "image": "https://www.lainchan.org/%CE%BB/thumb/1621635842595-0.png",
+      "date": "Mon Aug 15 2022 13:18:39 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109694I'm looking at it alright. Gonna beat my meat to it later.",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7wtxl6uyy7fx",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:27:08 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] reimu is sleeping",
+      "content": ">>609109694I'm looking at it alright. Gonna beat my meat to it later.",
+      "link": "https://boards.4channel.org/v/thread/609070691",
+      "postid": "2fnqj7x3fl6uz3870",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1008760187273879582/unknown.png",
+      "date": "Mon Aug 15 2022 13:31:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 0 / I: 0                                                          Legacy CodeI'm starting a new programming project which involves Legacy code and I'm wondering if any Alices here are able to share there wisdom when it comes to this sort of stuff.Biggest pains in my neck:-It being difficult to find relevant documentation for old proprietary libraries-Coping with having 32 bit dependencies on a 64 bit computer-Obtaining the necessary disk software and/or obtaining keys for themI'm wondering if there's any hacks for these issues that I'm completely clueless about.                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7xl8l6uzinhc",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 13:43:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "gasdg added!",
+      "content": "gasdg added, current replies:94",
+      "link": "https://www.lainchan.org/vis/res/4442.html",
+      "postid": "2fnqj7z6nl6v0w909",
+      "image": null,
+      "date": "Mon Aug 15 2022 14:21:36 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] gasdg",
+      "content": ">>9557https://duckduckgo.com/?q=site%3Atvtropes.org+girl+%22+(Webcomic)%22+sword&ia=webAny of these? (feel free to use a better search tool)I recommend these to all. https://www.baldwinpage.com/spacetrawler/2010/01/01/spacetrawler-4/ (adventure)https://starslip.krisstraub.com/20050523.shtml (comedy/adventure)https://lawcomic.net/guide/?p=18 (very fun educational)",
+      "link": "https://www.lainchan.org/vis/res/4442.html",
+      "postid": "2fnqj7z6nl6v0wc42",
+      "image": "",
+      "date": "Mon Aug 15 2022 14:21:40 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "webcomics added!",
+      "content": "webcomics added, current replies:94",
+      "link": "https://www.lainchan.org/vis/res/4442.html",
+      "postid": "2fnqj7z6nl6v0xh76",
+      "image": "https://www.lainchan.org/vis/thumb/1575467185660.png",
+      "date": "Mon Aug 15 2022 14:22:33 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] webcomics",
+      "content": ">>9557https://duckduckgo.com/?q=site%3Atvtropes.org+girl+%22+(Webcomic)%22+sword&ia=webAny of these? (feel free to use a better search tool)I recommend these to all. https://www.baldwinpage.com/spacetrawler/2010/01/01/spacetrawler-4/ (adventure)https://starslip.krisstraub.com/20050523.shtml (comedy/adventure)https://lawcomic.net/guide/?p=18 (very fun educational)",
+      "link": "https://www.lainchan.org/vis/res/4442.html",
+      "postid": "2fnqj7z6nl6v0xkjb",
+      "image": "https://www.lainchan.org/vis/thumb/1575467185660.png",
+      "date": "Mon Aug 15 2022 14:22:37 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "/v/ added!",
+      "content": "/v/ added, current replies:20",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v135b7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:26:57 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": " Anonymous 08/15/22(Mon)06:41:01 No.609086479File: MaximilianChristiansen(1).jpg (48 KB, 675x675)48 KB JPG  Anonymous  08/15/22(Mon)06:41:01 No.609086479   [Reply]>Fighting games NEED to be free to play",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v135r4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:26:58 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 5 / I: 0                                                        I know everybody is not fond of C/C++ replacement here. But I'm curious, what does Lain think about Odin ?                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7z6nl6v138gs",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 14:27:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": " Anonymous 08/15/22(Mon)11:49:22 No.609107848File: 912685016.jpg (307 KB, 1080x1080)307 KB JPG  Anonymous  08/15/22(Mon)11:49:22 No.609107848   [Reply]you want to **** 2b, dont you?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v14vsd",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:28:18 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": " Anonymous 08/15/22(Mon)13:13:42 No.609115528File: 1605151319675.jpg (559 KB, 2048x3347)559 KB JPG  Anonymous  08/15/22(Mon)13:13:42 No.609115528   [Reply]/v/: I hate degeneracy in my games!Also /v/: OMG SO SEXYExplain yourselves",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v16dm8",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:29:28 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "you want to **** 2b, dont you?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v16rve",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:29:47 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How are you liking the game so far?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v177xu",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:30:07 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I know /v/ likes Imp Midna, but does /v/ like Twili Midna?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v17wqa",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:30:40 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "how is it controversial? i mean, if you give people the option i'm pretty sure the majority would turn this sort of crap off",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v1a3a8",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:32:21 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "XENOBLADE 3 FLOPSOUT OF UK CHARTS SECOND WEEK IN",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v1jz8t",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:40:03 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Game of the year comes out in 2 and a half weeks :)",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj7z6nl6v1qccs",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:45:00 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 1 / I: 0                                                          Legacy CodeI'm starting a new programming project which involves Legacy code and I'm wondering if any Alices here are able to share there wisdom when it comes to this sort of stuff.Biggest pains in my neck:-It being difficult to find relevant documentation for old proprietary libraries-Coping with having 32 bit dependencies on a 64 bit computer-Obtaining the necessary disk software and/or obtaining keys for themI'm wondering if there's any hacks for these issues that I'm completely clueless about.                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj7z6nl6v1qe86",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 14:45:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Notch. Underappreciated genius or a fat pathetic neckbeard chud who will die alone and unloved in a mansion full of rotten candy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj81njl6v20dqc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 14:52:48 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "received information about the upcoming FF9 remake, haven't played the original but ask away and i'll answer any questions for people who care about this game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8216l6v2aeau",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:00:35 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why did no one tell me about this game beforeIt is peak comfyAny other cute casual games like this?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8216l6v2c6a9",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:01:58 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "new AI/stable diffusion art thread continuation from >>608931419>the bot is bad at complex, specific situations, ie \"doomguy shooting master chief at close range\" will probably just result in a doomguy master chief hybrid but \"master chief in a lush forest landscape with very tall trees and purple flowers in the style of normal rockwell\" would be fine>yes it's open source and yes you will be able to make porn with it eventually but not ITT>specifying an artistic style can help immensely, see https://gainful-zone-eb1.notion.site/7ddce417501342288b5190aa969549b3?v=8e5cfee62aab40b79e066baee0b9e2d1 for artist references>keep requests vidya",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v2l50c",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:08:56 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Lead dev is a clueless retard>Game still manages to be great because of literally everyone else on the dev team",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v2oagi",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:11:24 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "new AI/stable diffusion art thread continuation from >>608931419>the bot is bad at complex, specific situations, ie \"doomguy shooting master chief at close range\" will probably just result in a doomguy master chief hybrid but \"master chief in a lush forest landscape with very tall trees and purple flowers in the style of normal rockwell\" would be fine>yes it's open source and yes you will be able to make porn with it eventually but not ITT>specifying an artistic style can help immensely, see https://gainful-zone-eb1.notion.site/7ddce417501342288b5190aa969549b3?v=8e5cfee62aab40b79e066baee0b9e2d1 for artist references>keep requests vidya",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v2w5a4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:17:30 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "She’s just so smug",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v2z75b",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:19:52 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "new AI/stable diffusion art thread continuation from >>608931419>the bot is bad at complex, specific situations, ie \"doomguy shooting master chief at close range\" will probably just result in a doomguy master chief hybrid but \"master chief in a lush forest landscape with very tall trees and purple flowers in the style of normal rockwell\" would be fine>yes it's open source and yes you will be able to make porn with it eventually but not ITT>specifying an artistic style can help immensely, see https://gainful-zone-eb1.notion.site/7ddce417501342288b5190aa969549b3?v=8e5cfee62aab40b79e066baee0b9e2d1 for artist references>keep requests vidya",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v2zow7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:20:15 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "The kicker is that you HAVE to sum it up in one sentence.>Bloodborne but it never so much as touches cosmic horror and goes full on gothic horror. Vampires, werewolves, zombies, and all kinds of monsters",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v302zu",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:20:34 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I can't believe they are still banning modding from a game that already relies on user generated content to function.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v329sb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:22:16 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What did nexus mod team mean by this /v/?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v3n4yw",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:38:29 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "RIP Giant",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v3u1n3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 15:43:52 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What was this face trying to convey?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4g626",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:01:04 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why is this game so hyped up with such good reviews? It's so aggressively mediocre, it feels like I'm back in 2010 playing Ubisoft's release of the year. Open world is extremely shallow. Gameplay amounts to collectathon with poor tier Arkham combat attached.Full movement toolbox is given immediately, ruining any chance of progression.Why is this 'Overwhelmingly positive' on Steam?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4hyqc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:02:28 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Kitana finally convinces the Shokan to bury the hatchet with the Centaurs>Kung Lao takes this golden opportunity to avenge his ancestor by striking Goro -- the leader of the Shokan>Goro survives: \"Was that your attempt at an assassination, Earthman?!\" >Kung Lao explains that the spilt blood was to honor his ancestor, and that all is settled now>Goro respects this and says that if the roles were reversed, it would've been his descendants seeking revenge>Two conflicts finally resolved for the greater good",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4i5w0",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:02:37 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Kitana finally convinces the Shokan to bury the hatchet with the Centaurs>Kung Lao takes this golden opportunity to avenge his ancestor by striking Goro -- the leader of the Shokan>Goro survives: \"Was that your attempt at an assassination, Earthman?!\" >Kung Lao explains that the spilt blood was to honor his ancestor, and that all is settled now>Goro respects this and says that if the roles were reversed, it would've been his descendants seeking revenge>Two conflicts finally resolved for the greater good",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4i7ki",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:02:39 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">No gleamium in the battlepassWhy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4ii99",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:02:53 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">No gleamium in the battlepassWhy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v4iiw2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 16:02:54 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Give AI a vague description in the line of \"portrait of undead noble\">Outputs thisIf nothing else, these art AIs will be a great tool for making original portraits for CRPGs.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v6ob3j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:03:23 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update]   Langs that compile to JS",
+      "content": "I'm surprised nobody has mentioned Haxe. It has a real type system because the compiler is written in OCaml. The abstractions it uses are zero cost and the Javascript it generates is human readable. It has seamless integration with Javascript. The neatest part? You can compile the Haxe code you wrote in C, Java, or hell even PHP! You have the advantage of only writing the code once for both the front and back end without ever touching NodeJS.>>>/lambda/30385",
+      "link": "https://www.lainchan.org/%CE%BB/res/32227.html",
+      "postid": "2fnqj82htl6v6oeym",
+      "image": "https://www.lainchan.org/%CE%BB/thumb/1659994019384-0.png",
+      "date": "Mon Aug 15 2022 17:03:28 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /tech/ lain",
+      "content": "                                                  R: 5 / I: 0                                                        I know everybody is not fond of C/C++ replacement here. But I'm curious, what does Lain think about Odin ?                                                ",
+      "link": "https://www.lainchan.org/%CE%BB/catalog.html",
+      "postid": "2fnqj82htl6v6ofpb",
+      "image": "https://www.lainchan.org/b.php",
+      "date": "Mon Aug 15 2022 17:03:29 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Proper thread now that RTA has come to an end edition.https://www.twitch.tv/esamarathon (embed)On now: Final Fantasy X HD RemasterNext up: Uncharted: Drakes FortuneLater on Havenschedule here: https://oengus.io/en-GB/marathon/bsg2022/schedule",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7k6o5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:28:10 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "PFAHAHAHAHAHAHAHHAAHAHAHA",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7qzmp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:33:28 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What VNs have you been playing?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7s0gn",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:34:15 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "she's getting banned from smash bros ultimate tournaments.Is Alex really that broken?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7so3q",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:34:46 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How did it surpass cringe and become cringe kino?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7svp4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:34:56 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Hero mode is gonna be kino, right?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v7v9n5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:36:47 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "This thread is dedicated to mods disabling newtonian content due to extreme censorship of them. Please, refrain from turning this thread into cess/pol/. Feel free to post more mods that you believe should be archived and fit the criteria. Thanks to Anons who downloaded and archived these files, (You) are truly wonderful.Spider-Man>Replaces colorful flags with american flagshttps://www.mediafire.com/file/yylshwz9ognr50s/Non-Newtonian_New_York-58-1-0-1660526891.zip/file#https://mega.nz/file/ca8AyAib#LF34yLcFt0NDB1W6X4JQxeDsnZj_Qc30DgbvvJrGTysSkyrim>No Same Sex Marriage for Interesting NPCs - ESL Version-61555-1-0-1641671812.7zhttps://files.catbox.moe/m6lwc8.7z>Straight Hrodulf - ESL Version-61387-1-0-1641492239.7zhttps://files.catbox.moe/ud95jw.7zCyberpunk 2077Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v81frg",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:41:35 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Replaying this on PC and it's still the only game ever to feel \"next gen\" to me, even today. The weight of the vehicles, the physics engine, they took time to actually learn. GTA V was a downgrade in almost every way. IV is highly underrated.III>ViceCity>IV>San Andreas>V",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v81kgx",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:41:41 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Replaying this on PC and it's still the only game ever to feel \"next gen\" to me, even today. The weight of the vehicles, the physics engine, they took time to actually learn. GTA V was a downgrade in almost every way. IV is highly underrated.III>ViceCity>IV>San Andreas>V",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v81mhs",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:41:44 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "new AI/stable diffusion art thread continuation from >>608931419>the bot is bad at complex, specific situations, ie \"doomguy shooting master chief at close range\" will probably just result in a doomguy master chief hybrid but \"master chief in a lush forest landscape with very tall trees and purple flowers in the style of normal rockwell\" would be fine>yes it's open source and yes you will be able to make porn with it eventually but not ITT>specifying an artistic style can help immensely, see https://gainful-zone-eb1.notion.site/7ddce417501342288b5190aa969549b3?v=8e5cfee62aab40b79e066baee0b9e2d1 for artist references>keep requests vidya",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v87bi3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:46:09 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "it's fun!How come this series never took off like Silent Hill did?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v87mn3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 17:46:24 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How the FUCK did this get a third season? Are they not embarrassed by how awful their show is in comparison to Arcane???",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v8ubc5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:04:02 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">No gleamium in the battlepassWhy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v94b6u",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:11:49 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Previous Thread: >>608918272>All originally made vidya art is welcome, doesn't need to be requested>When requesting, post references and names in one post>Keep it vidya origin>Have fun!http://vidyart.booru.org/ (archive)http://vidyartplus.booru.org/ (new)NSFW Deliveries: >>>/i/706274https://catbox.moe/ or alternatively https://litterbox.catbox.moe/Drawing Books and drawing programs:https://mega.nz/folder/sSYAxKqb#f2gWy-eQZJNvRfiUTu1ASA",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v94uau",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:12:13 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I'm Fragile, but not THAT fragile.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj82htl6v9603j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:13:08 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Who's going to enter the Console Wars next?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8aa1l6v9e7a3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:19:30 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">No gleamium in the battlepassWhy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8aa1l6v9i3kv",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:22:32 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I don't give a shit about video games. Vidya happens to have the most fuckable kinds of monsters within any medium of entertainment.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8atpl6v9ipzt",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:23:01 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I don't get it",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8atpl6v9j3g8",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon Aug 15 2022 18:23:18 GMT-0300 (Brasilia Standard Time)",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">DMC is arcadey because it has score",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6v9kp7r",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 21:24:33 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "luv gorilla womensimple as",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6v9l6li",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 21:24:56 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "what is the minimum FPS you consider playable?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6v9sqki",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 21:30:48 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">new FotM game is blatantly santanistHow is this shit allowed?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6va832s",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 21:42:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Previous Thread: >>609040348>All originally made vidya art is welcome, doesn't need to be requested>When requesting, post references and names in one post>Keep it vidya origin>Have fun!http://vidyart.booru.org/ (archive)http://vidyartplus.booru.org/ (new)NSFW Deliveries: >>>/i/706274 #https://catbox.moe/ or alternatively https://litterbox.catbox.moe/Drawing Books and drawing programs:https://mega.nz/folder/sSYAxKqb#f2gWy-eQZJNvRfiUTu1ASA",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6va8940",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 21:42:52 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I made a mod to fix the Spiderman game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6vawwh4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:02:02 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">No gleamium in the battlepassWhy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8b0kl6vb5omi",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:08:52 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Japanese “humor”",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8d01l6vbcavf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:14:01 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Fighting games NEED to be free to play",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8d5tl6vbd8h4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:14:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Kitana finally convinces the Shokan to bury the hatchet with the Centaurs>Kung Lao takes this golden opportunity to avenge his ancestor by striking Goro -- the leader of the Shokan>Goro survives: \"Was that your attempt at an assassination, Earthman?!\" >Kung Lao explains that the spilt blood was to honor his ancestor, and that all is settled now>Goro respects this and says that if the roles were reversed, it would've been his descendants seeking revenge>Two conflicts finally resolved for the greater good",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8d5tl6vbf66b",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:16:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Game lets you dominate women",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8d5tl6vbfcyr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:16:23 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How's your game coming along, /v/?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vbh10l",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:17:41 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Japanese “humor”",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vbif7j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:18:46 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why is genshin impact so popular. It literally does not make sense.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vbnjpp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:22:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How much of this is legit vs bullshit?Also I know about DS2 cut content. Any juicy info about the other games? ER even? Besides what's been data mined.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vbr7nn",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:25:36 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Did you reach 20 in the duelist cup yet?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vcifwj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:46:47 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Bridge",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vcmeja",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:49:52 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vcwsra",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:57:57 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Give AI a vague description in the line of \"portrait of undead noble\">Outputs thisIf nothing else, these art AIs will be a great tool for making original portraits for CRPGs.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vcwzce",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 22:58:05 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What VNs have you been playing?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vdc6xw",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:09:55 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Hat desu!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vdkjdb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:16:24 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">love game>can't discuss it on /v/ because the threads are always full of shitpostersName the game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8dfql6vdlnvr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:17:17 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Battlestation Thread",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8j17l6ve7lpx",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:34:20 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "He's so cute!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8j17l6ve7xk5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:34:36 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "It's been five years since the release of the console version of Sonic Mania. So, did Mrania Tream gro troo frar or nrot frar enrough?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8j17l6ve87pc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Mon, 15 Aug 2022 23:34:49 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">The most forgettable game in 2022...",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8krbl6vfjxq7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:11:55 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "It's Tricky to rock a rhyme, to rock a rhyme that's right on timeIt's Tricky... it's Tricky (Tricky) Tricky (Tricky)It's Tricky to rock a rhyme, to rock a rhyme that's right on timeIt's Tricky... Tr-tr-tr-tricky (Tricky) Trrrrrrrrrrricky",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfmhfy",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:13:54 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">be a retard>think its a good idea to try to play a fighting game>lose because a million other retards put in more 10000000x more hours than you and you will literally never ever catch up>gaslight people around you into playing \"bro its so good the movement is TIGHT\" \"haha you can still have fun winning because its a learning experience!\" \"WOW look at that cool combo that definitely took me 5 years to learn instead of doing literally anything else better with my time!\">feed into the endless pyramid scheme so you actually have people you can beat>realize beating people isn't fun either>refund fighting game on steam>play literally any other game instead>stop being a retard and laugh at every fighting game nigger on /v/",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfmwzu",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:14:14 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Post your critiques of this game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfnk33",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:14:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What's their problem?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfnpv5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:14:52 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "we have to go back",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfnvjr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:14:59 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I made a mod to fix the Spiderman game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfqb3c",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:16:53 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "He's so cute!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vfynaf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:23:22 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">no new characters>no rankedWhat the FUCK?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vg3m81",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:27:14 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Pointing!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vg432d",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:27:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Previous Thread: >>609040348>All originally made vidya art is welcome, doesn't need to be requested>When requesting, post references and names in one post>Keep it vidya origin>Have fun!http://vidyart.booru.org/ (archive)http://vidyartplus.booru.org/ (new)NSFW Deliveries: >>>/i/706274 #https://catbox.moe/ or alternatively https://litterbox.catbox.moe/Drawing Books and drawing programs:https://mega.nz/folder/sSYAxKqb#f2gWy-eQZJNvRfiUTu1ASA",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vgamza",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:32:41 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Most open world games are antithetical to adventure, actual adventures and the stories they inspire tend to have a sense of \"whoops you're fucked now guess you'll have to deal with it for a while now\" to them. For example here are things you would see on an adventure:>getting captured and forced into servitude as a gladiator for days with no obvious means of escape>working off a debt to pirates on a dock and risking having a bounty if you escape without paying in full>being blocked from entering a city due to a quarantine camp being set up outside for infected refugees>getting jailed on suspicions of being a spy crossing borders due to an ongoing war in the region>being invited to perform with a troupe touring towns and drinking and sleeping with them in inns or camps>being stuck in a town/port and having to secure a carriage/boat to your next destination You see none of that in open world games because it would \"take away freedom from the players\" and instead of trying to think of creative designed ways to add freedom like how New Vegas gives you various ways of entering Vegas which was great, they just don't bother with scenarios like these at all. They're good even when they're completely railroaded like having to close the Oblivion gate to enter Kvatch, as long as you're stuck in a certain place with a problem that makes you think \"whew glad that's over\" when it's finished.Most of the time in open world games problems like these would have jarring solutions like letting the player simply kill everyone, or hop over a wall, or pay off everything with their gigantic treasure hoards they carry around everywhere in their pockets and that they gained by selling goblin armor. Open world games are too limited by having to cater to normalfags who hate being restricted or forced to be creative and who want to be demigods who are never inconvenienced, and for that reason they'll never be a true adventure or a world and will feel like a trivial child's playbox.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vgaqld",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:32:46 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">no new characters>no rankedWhat the FUCK?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vgkshk",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:40:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Bunny Girls Thread",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vgtys7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:47:43 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "That day, if our meals were switched... would our palates be different? Would I have your cholesterol, and you mine?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vh1zkf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:53:57 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Juri's face is so fuckable.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vh25pw",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:54:05 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Post your vidya wife.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vh2bro",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:54:13 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Do you like Kingdom Hearts as a series or do you just care about 1 and 2?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vh2k4c",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 00:54:24 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "It's too hard",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhdawp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:02:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">oh your father and only family in the world is dead?>get over it loser, you have to help me become Emperorwhat was her fucking problem?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhdxi2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:03:14 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">common consumable is poisonous and killing you slowly",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhfktw",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:04:31 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Did you reach 20 in the duelist cup yet?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhn6z9",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:10:27 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Post your vidya wife.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhnm7r",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:10:46 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why is video game magic so underwhelming?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8l52l6vhxsxg",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:18:42 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">waste time, money and space by adding crap no one wants or asked for why do developers do this?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8p74l6viabj6",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:28:26 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Stevebros... They're making moves against us...",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vilymd",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:37:29 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Resident Evil General. Are you looking forward to the \"Shadows of Rose\" RE8 Village DLC and/or the RE4 Remake?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vimayd",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:37:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I love gacha girls how do I stop?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vimxvg",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:38:14 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">This made boomers piss and shit themselves >\"IT'S SOOOOO REALISTIC BRUDDA\"",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6viro2h",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:41:55 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">waste time, money and space by adding crap no one wants or asked for why do developers do this?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vis27u",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:42:13 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "You now remember Puppies to the Rescue.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6visbdi",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:42:25 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Cringe has changed.>It's no longer about puns, nationality, or ethnicity. It's an endless series of self referential battles, fought by shitposts and repetition.>Cringe--and it's consumption of humour--has become a well-oiled machine.>Cringe has changed.>r/funny soldiers carry r/dank memes weapons, use r/RAAAAAGE. Ebin maymays inside their bodies enhance and regulate their abilities.>PC control, politics control, emotion control, humor control…everything is monitored and kept under control.>Cringe…has changed.>The age of Fads has become the age of cringe, all in the name of averting catastrophe from weapons of mass cringe, and he who controls the right can't meme, controls history.Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vj98jb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 01:55:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Bridge",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vjpjb1",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:08:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Will you resub for 6.2?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vjr7yg",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:09:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Any advice for new players? i'm getting filtered",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vkfmsq",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:28:33 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why did long time Souls fans find it disappointing while first time Souls players absolutely loved it?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vkp906",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:36:01 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Fighting games NEED to be free to play",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vksfl7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:38:30 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I love gacha girls how do I stop?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vksqvd",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:38:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "So is this game any good?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vkte3w",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:39:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What's their problem?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vktnl4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:39:27 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why did long time Souls fans find it disappointing while first time Souls players absolutely loved it?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vkue0r",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:40:01 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I made a mod to fix the Spiderman game",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl11vl",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:45:12 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "My Switch is currently gathering dust. I played BOTW, it was okay. I played Mario Odyssey, it was meh. Everything else I tried like 12switch and animal crossing was just obvious shovelware. Why did /v/ lie to me?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl3fdf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:47:03 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "You Nostalgia You Lose",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl40iq",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:47:30 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "name the silliest vidyagaem controversy you rememberfor me nothing will top fallout: frontier",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl4vo6",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:48:11 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Yeah, it happened. Epic does what Nintendont",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl5nw0",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:48:47 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "You Nostalgia You Lose",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vl8rk0",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:51:12 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Excited for Stripe.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlccrp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 02:53:59 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Freakin' sweet a Stardew Valley thread!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlkppg",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:00:29 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "https://files.catbox.moe/2b68os.mp4Excuse me?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vll3an",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:00:47 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlql1p",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:05:03 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why did long time Souls fans find it disappointing while first time Souls players absolutely loved it?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlqu77",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:05:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "18.5 1ccs?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlvzyf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:09:16 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Playing shooters with a gamepad feels like utter shit, how do consolefags endure it?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vlwm2m",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:09:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I'm Fragile, but not THAT fragile.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vmdi3w",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:22:53 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "UUUUUUMMMMMMMMMMMMMMMMM ARE YOU GOING TO TURN ON ZODIARK STANCE?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vmvbeb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:36:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "My Switch is currently gathering dust. I played BOTW, it was okay. I played Mario Odyssey, it was meh. Everything else I tried like 12switch and animal crossing was just obvious shovelware. Why did /v/ lie to me?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vmz7aj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:39:45 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Yuzu day 1 PC bros we can't stop winning",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vmzu4l",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:40:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Is F2P fighting games the future?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8puwl6vnnc96",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 03:58:31 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Did you watch G4?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnr0p3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:01:23 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why do some people believe WoW to be a difficult video game or to feature difficult/complex mechanics to perform?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnujer",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:04:07 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Play Apex Legend",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnuodr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:04:13 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Juri",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnvfjf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:04:49 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "18.5 1ccs?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnwiww",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:05:40 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Hero mode is gonna be kino, right?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnyois",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:07:20 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">GORDON PLEASE FUCK MY DAUGHTER I BEG YOU. I NEED YOU TO CONTINUE THE VANCE LEGACY",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vnzhye",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:07:58 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Hero mode is gonna be kino, right?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6vo0dli",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:08:39 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Ultrakill update tomorrow>No threadLet's fix that",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8yf3l6volqp4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:25:16 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "You WILL join the /v/cord and be HAPPYhttps://discord.gg/XjTBDDfK",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8zsxl6vonfaa",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:26:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">walk into bedroom>see thiswat do /v/ros?personally, I'd get on my knees and start licking her shaft, balls, and asshole.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8zsxl6voo9rn",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:27:14 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Nintendo just didn't give a shit with this handheld huh?3ds babs would eat any shit up",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj8zsxl6vp2fxe",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 04:38:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Did /v/ play any H games lately?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w67g2b",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:38:02 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I made Germany bigger!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w67ya7",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:38:26 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Did /v/ play any H games lately?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w68q5b",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:39:02 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I made Germany bigger!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w68vtk",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:39:09 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "THIS WORLD IS MADE OF SICKNESS THE THICKNESS IS ROARING, UNFOLDING THE BEASTS IN USDRIVING US FURIOUS, INJURIOUS, AND RUINING US TO THE COREHOW FAR WILL THIS PRAYER GO?HOW FAR? WILL WE EVER KNOW?DO YOU WANT OUT?WELL SO DO IWELL SO DO IIIIIIIIIIIIIII",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w6ag6j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:40:22 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "The consequences of concentrating PC game modding into the hands of a defacto monopoly have been a disaster for the human race.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w6rto2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 12:53:53 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w7bzsq",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:09:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "hgames added!",
+      "content": "hgames added, current replies:265",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w7rc5s",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:21:30 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">Super Monsters 'n Girls updated which includes Daji from SHRIFTI know what I'm playing later",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w7rcuy",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:21:31 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">create ways to play video games without playing video gamesThis is literally what mobile gacha shit is.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w7rd3x",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:21:31 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Thoughts?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w7sjbf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:22:26 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609203218like 7in",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w7sjzt",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:22:27 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "snoot game thread",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w7x40v",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:25:59 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609195881this artist should stop using the ugly kids and stick to adults",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w7x4q5",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:26:00 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "120 hour game for 60 fucking bucks.2 hours of entertainment per dollar if you go for 100% achievements.I spent 300+ hours on it though.Why do people complain about getting too much value for their money?In comparison most games are 8-15 hours of content. Maybe some good games like nier automata are 40 hours if you go for completion.You're getting something good for your money here. Months of enjoyment.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w8c00g",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:37:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": "SEQUEL series is awful cringe, grindy, with repetitive single-per-scene jpgs and unbelievable censorshipJust google the porn rip, you are not missing much",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w8c0op",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:37:35 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "The Great Debate",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w8f7uc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:40:04 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609206075And you would be wrong.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w8f8va",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:40:05 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "In this thread we give our warmest welcome to our new non-binary queen",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w8ssp4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:50:38 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609206308Are the OPs still powertripping and hiding the caches behind some cryptoshit? I understand gatekeeping but might as well not put the links on op if you dont even want to hint how to open/solve it",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w8std5",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:50:39 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What VNs have you been playing?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w8xdqc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:54:12 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w8xehs",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:54:13 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">That game is a masterpiece because it has good reviews>did I play it?>of course not, I just saw my favorite youtuber talk about it lol",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w927y5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 13:57:57 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609149691I played Subverse today, does that count.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w928mb",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 13:57:58 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">god I can't wait to play the games stored in my hard dri-",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9c8f9",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:05:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">oh heehee haha hoohaa I'm going to post game screenshots and even hype up how much I enjoyed it but not post the name of the game or even leave it in the filename. That way someone will REPLY to MY post and since I'm such a fucking quadronigger who's so desperate for attention I'll be fucking giddy waiting for them to need me!Fuck you and I don't fucking want to know >What game? Because a stupid git like you probably has awful taste anyway so if you liked it is probably shite.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9c94o",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:05:45 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "https://www.youtube.com/watch?v=XDLHu7upVTUA CUTE!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9f27q",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:07:56 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609207829because spoonfeeding results in complacency, you can find the game's name insanely easilyI've been browsing this website for 12 or so years and the number one thing I have to show for it is my fantastic ability to find things online with minimal information, since for the longest time spoonfeeding was genuinely frowned upon here and we didn't have google reverse searches",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9f2yy",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:07:57 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[new reply] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9ifwu",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:10:34 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "https://www.youtube.com/watch?v=bQlBr4ihA60&t=7sMMOS IS SAVED !!!!!!!!!!!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9igce",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:10:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Shulk had personality and wasn't just a blank slate all the time. And while Rex was a faggot, he at least acted like a fucking humanwhat the fuck happened to noah?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9ilma",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:10:42 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[new reply] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9jlqp",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:11:28 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Name a better Digimon",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9jm4a",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:11:29 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[new reply] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9s9wh",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:18:13 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What do you do in this situation?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9saaq",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:18:13 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[new reply] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9tz2c",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:19:32 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Cult of the Lamb?More like Cult of the  Lambussy ",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9tzsr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:19:33 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[new reply] hgames",
+      "content": ">>609190631Game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9u1iu",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:19:35 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Any games that let me be a merchant?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9ukkj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:20:00 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Elden Ring destroyed Zelda Anyone with more than 10iq knows Nintendo delayed BOTW2 because they were gonna get bam a ham yum'd at the awards but for what? It's still gonna run at sub 30fps and have minimal changes. What can BOTW 2 learn from Elden Chad?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9vxwt",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:21:04 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609149691Not really, M2F transformation market is already pretty scarce if you count out HTML games",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6w9w6et",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:21:15 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "ohhh man! they've really gone and done it now!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6w9w6oc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:21:15 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": "Played through Monster Black Market. Easy but fun, good animations.Also started a new Free Cities run.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6wa0qeb",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:24:48 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What are some good games with similar mechanics to the first two fallout games?And don't say underrail, I want actually decent games.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6wa0qts",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:24:48 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What do you do in this situation?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6wa1y5s",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:25:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Who else is excited? Will P-2 be in with this update you think?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6wa8d3j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:30:44 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609208710It's a scene collector with pixel animations that are really good. The main character is a dumb slut though.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6wa8e1i",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:30:45 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "So, why did it flop?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6wadzdj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:35:06 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609207174according to my search engine-fu, Snow-Swept Quest",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6wae0ab",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:35:07 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Gosh, I wish bunnygirls were real",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6walnzx",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:41:04 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609208782Have you tried our lord and saviour tales of androgyny",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6walp6m",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:41:06 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609210952I did many times but got filtered by the combat system each time. I am subbed to the rss feed and check the updates every now and then, and wait until the game has more substance.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6was7gf",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 14:46:09 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Do gamer girls exist for real or it's all a front to get male attention?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6was81g",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 14:46:10 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">game mechanic is hard to understand",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj910il6wbowac",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:11:35 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609153745Sorry if this is a retarded question, but is there anything that can be done about most text not displaying on the line in games like these, or are you just shit out of luck?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj910il6wboxiv",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:11:36 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj99uyl6wbycaz",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:18:55 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609213676>I feel like surrendering will just make you fall behind on the content leaving you without xp, health and money, so your only option from there will be surrendering as you will be too weak to even put up a fight.XP is easy to get",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj99uyl6wbyd8g",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:18:56 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Yes, I think the dust is finally settled, Tifa is Asian, mainly Chinese.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9a8jl6wc0vh5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:20:53 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609153745fucking same man, i didn't expect to like it so much despite being such a simple game",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9a8jl6wc0wop",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:20:55 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "https://www.youtube.com/watch?v=bQlBr4ihA60&t=7sMMOS IS SAVED !!!!!!!!!!!",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wclz4y",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:37:18 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609215280Go back to the /dgg/ thread Auradev, you're not welcome here",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wcm02n",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:37:19 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Left or right?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wcs3um",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:42:04 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609160157>gatekeeping among the community makes no sense to meProbably because it's a fucking porn game? So it's naturally gatekept.Who would go around, advertise and talk with normalfaggots of a fucking porn game?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wcs52x",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:42:06 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609168194Sauce?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wctwfe",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 15:43:28 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "https://twitter.com/Rubberduckcooly/status/1559319321850941440?s=20&t=y3kIVWCpWYoDtlpPASsmiQnow if someone could share the already made game for linux, that'd be greatly appreciated",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wctws6",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 15:43:28 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609188649Maybe more....",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wdg0yv",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:00:40 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Legend of Total War here",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wdg1ks",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:00:41 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Can we please have a cute VG elf thread please?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wdvbqi",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:12:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": "How do I find decent bondage porn games if my tastes are so softcore? Not being into loli or futa really narrows down my choices.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wdvcpm",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:12:35 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Gokubros…",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9bbal6wdxqu2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:14:27 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609218927Jesus christ spoiler that pic what the hell",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9bbal6wdxsma",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:14:29 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Cult of the Lamb?More like Cult of the  Lambussy ",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9cqjl6we0932",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:16:24 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "are video game wikias the shittiest wikis? do you use them?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9cqjl6we0g3u",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:16:33 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "After Cyberpunk 2077, is this the biggest let down in history of gaming?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9cwkl6we17am",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:17:08 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609206308Is that working again? I thought they abandoned it after the autistic ragehog ReBF went nuclear flaggot on them",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9cwkl6we18e4",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:17:09 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">white guy is evilholy fuck the queens did it",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9dc5l6weg76r",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:28:48 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609219362Pas de bol, essaie sur ehentai c'est pareil.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9dc5l6weg88s",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:28:49 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Nintendo, please pay your other developers money so they can make more games, thanks. Xenoblade 3 flopping should show you how bad investing in those games are.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9dhnl6wehvhk",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:30:06 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609195535Is this one of those that have only bad ends?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9dhnl6wekbg8",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:32:00 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "do japanese people gamers like western vidya?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9dhnl6wekbre",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:32:00 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Literally 1984.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9dzjl6weni99",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:34:29 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609219929This game was actually pretty cool.>tfw no minotaur waifu",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9dzjl6wenk01",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:34:31 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609149691Playing pic related.Btw can I fuck the other little sluts or is it just my sister? If it is just my sister, will the game ever be updated for me to fuck the other little sluts?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9ef8l6wetepv",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:39:04 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">That game is a masterpiece because it has good reviews>did I play it?>of course not, I just saw my favorite youtuber talk about it lol",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9ef8l6wetfkb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:39:05 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Crusader Kings 3 Prices retroactively raised>Be Paradox a company already shat on for it's dlc practices>release base game that is mostly bug free and stable but shallow>take 2 years to do the 2 flavor packs and 1 expansion in your deluxe edition>none of the flavor packs and expansion were worth the price>modders shit out higher quality stuff faster and for free>decide to come back from your swedish summer break and immediately double the price of shit.Name a more retarded company.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9ef8l6wev4xd",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:40:25 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609220813Sure was, especialy since I first played it untranslated years ago, it was cool to finaly understand in detail the story.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9ef8l6wev5sp",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:40:26 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Now that it has been out for a bit is Xenoblade 3 worth playing?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9ef8l6weyl3p",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:43:05 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609213034Holy shit why was this picture made?Why is Fumika memed so much? It looks like a very average game.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9f34l6wf8b1h",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:50:39 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Literally 1984.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9f34l6wf8csx",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:50:41 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "http://may.2chan.net/b/res/1002612051.htm added!",
+      "content": "http://may.2chan.net/b/res/1002612051.htm added, current replies:39",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9f34l6wf8qya",
+      "image": null,
+      "date": "Tue, 16 Aug 2022 16:51:00 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">two more weeks for DLC>one more month for Enhanced editionWhat will you play?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9f34l6wf8rlp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:51:00 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609221040Just your sister",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9f34l6wf8sa7",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 16:51:01 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] http://may.2chan.net/b/res/1002612051.htm",
+      "content": ">�`���R�~���g���߁`���̃A�C�X�̎��̋@�̃`���R�~���g�͖{���ɔ��������C�ɐl�C��ʂ��Ă����̂�������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9f34l6wf8sgf",
+      "image": "",
+      "date": "Tue, 16 Aug 2022 16:51:02 GMT",
+      "channelid": "2fnqj9f34l6wf8qy9"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Literally 1984.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9fdql6wf9rcw",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:51:47 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9fdql6wfaays",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:52:12 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": ">よし17個全部チョコ added!",
+      "content": ">よし17個全部チョコ added, current replies:39",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9fdql6wfb699",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "Tue, 16 Aug 2022 16:52:53 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "will you be returning to Genshin?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9fdql6wfb6yb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 16:52:54 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": ">�`���R�~���g���߁`���̃A�C�X�̎��̋@�̃`���R�~���g�͖{���ɔ��������C�ɐl�C��ʂ��Ă����̂�������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9fdql6wfb80m",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "Tue, 16 Aug 2022 16:52:55 GMT",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "HOW YOU GONNA EXPLAIN PLAYING AS A GIRL",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9fzrl6wfurhl",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:08:07 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609223486Fuck you, start with Red's game",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9fzrl6wfuskx",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:08:08 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "���܂��񂾂��Ǎ���",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9fzrl6wfuui6",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "Tue, 16 Aug 2022 17:08:11 GMT",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">main antagonist is talked about as a huge threat but is never seen>revealed to be an overblown boogeyman to blame everything on",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9g59l6wfvcuj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:08:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What killed rhythm games?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9gaul6wfw9yj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:09:17 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": "Monster Girl Dreams has been the best one I've played in a long time. Honestly I wasn't very into it at first since it starts slow and requires a lot of grinding, but once I met this vixen my dick immediately became the only substance harder than diamonds and rocketed to the moon, and the girls only get better from that point onwards.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9gaul6wfwe27",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:09:23 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Following record low viewership and an end-of-life announcement from Activision-Blizzard, Overwatch League teams are now selling most of their players and removing all paid benefits as they seek to let their contracts expire",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9gp3l6wfzqsa",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:11:59 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609224070Bad advice, her games suck",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9gp3l6wfzrrz",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:12:00 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I think it's time to discuss the greatest survival game ever madeIt's called Project Zomboid and it's, dare I say it, fun",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9gp3l6wg1rzu",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:13:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609220629All the bad ends are not canon",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9gp3l6wg1tiw",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:13:36 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hmkl6wgsj05",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:34:22 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609153745I really like the other 3 from this series tooThe medieval settings ones, queen dowager etc",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9hmkl6wgsk5k",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:34:24 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�`���R�~���g���Ȃ�Ď������������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9hmkl6wgskiv",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "Tue, 16 Aug 2022 17:34:24 GMT",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "You can only pick one /v/, choose wiselyA: BOOM BOOM *click clack click* BOOM BOOM *click clack click* BOOM BOOMB: BOOM *click clack* BOOM *click clack* BOOM *click clack* BOOM *click clack*C: BOOM BOOM BOOM BOOM BOOM BOOM BOOM BOOM *click clack click*",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6wgtt5x",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:35:22 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "talk about best or shittiest metal gear solid games. im a zoomerfag whos first one was mgsv and i loved it. later i played snake eater on 3ds and thought it was like the best game of all time and just hated mgsv after. recently i played mgs1 and it made me think maybe mgs3 isnt the best one and i just beat mgs2 half an hour ago and its a fucking masterpiece",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6wh1rlr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:41:33 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hgames",
+      "content": ">>609215280I honestly thought I'd never see a game that could rival CoC2 for deliberate, fascinatingly bad design choices down to the minutia so thanks for that at least.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9hsql6wh1sm1",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:41:34 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": ">�܂������ǂ��납�L�E�҂ɂ��Ȃ�Ȃ����������Ďq�������Ȃ��񂾂��ǂˁc�����Ȃ莩�s���Ȃ��Ă������̂�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9hsql6wh1sxx",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "Tue, 16 Aug 2022 17:41:35 GMT",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Love poem to Western Civilization the game.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6wh50en",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:44:04 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">creates Jazz Jackrabbit>creates Unreal/Unreal Tournament>creates Gears of War>helps put Epic Games on the map>leaves game development>all his franchises become shelved>Epic turns into a Fortnite factory jokeDid we judge him too harshly?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6whou5v",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 17:59:29 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609210952I started that again after seeing the new ass eater stat",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9hsql6whovbv",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 17:59:31 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[new reply] fan video",
+      "content": ">>9816Nice, that's exactly what I was looking for.Thanks for the help!",
+      "link": "https://uboachan.net/yn/res/9815.html",
+      "postid": "2fnqj9hsql6whovf7",
+      "image": "https://uboachan.net/yn/thumb/1658145721943.png",
+      "date": "Tue, 16 Aug 2022 17:59:31 GMT",
+      "channelid": "2fnqj7sd1l6uw0w57"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">https://nichegamer.com/marvels-spider-man-remastered-lgbt-mod-banned/So a guy made a mod that removed all of the LGBTQABCDEFG+-!# flags in Spider-Man and got banned from Nexus Mods for doing it.Obviously some people would find these flags offensive, so it's great someone thought to create a mod that would remove them so people could enjoy the game in peace. But clearly you can't enjoy things anymore without this shit plastered all over your games.Will it ever end?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6whr5bf",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 18:01:17 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": "I played SHRIFT lately, and honestly found it didn't have good H, but the world and story hooked me in like no other. I just can't stop playing it.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9hsql6wi4eij",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 18:11:36 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ".",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6wi4fil",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 18:11:37 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Gokubros…",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9hsql6wi88bc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 18:14:34 GMT",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609221512God I love how the creampies are done in these games. Really makes you believe the dude is pumping and churning all of his balls into those sluts.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9hsql6wi8arj",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "Tue, 16 Aug 2022 18:14:37 GMT",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">game encourages wrong playstyles",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wiex6o",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:19:46 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609206707any sites to dl this from? f95 reminding me why its such a shit site",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wiuvbh",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:32:11 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">no Marvel vs Capcom >no KH4What's the point?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wiuvrl",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:32:11 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": ">���������ɂȂ�����S�w��17�A�C�X���̋@�i��ʌn�}�l�[�Ή��@�j�ݒu������������o�[�R�[�h�^�L���b�V�����X���ϑΉ��@�ɂ��Ă�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9k4ql6wiuw60",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 3:32:12 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Is Oneshot just another quirky Earthbound inspired indie RPG?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wj3sw3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:39:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609201107I do this too.>>609203880Ruina is the only good RPGM game worth playing. Sister Travel (RJ179801) plays similarly but is made in Wolf RPG.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wj3tzp",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:39:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Do you still plan on buying TES6?What are your expectations/hopes?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wj54oh",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:40:09 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How did Shu lose when they fucking had one of the brightest minds that ever graced the earth. It makes no sense.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wj6dm1",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:41:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Monster hunter thread?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wj7oqp",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:42:09 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I think it's time to discuss the greatest survival game ever madeIt's called Project Zomboid and it's, dare I say it, fun",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wj8yt6",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:43:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How rich is slippy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wja9cc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:44:09 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "So, why did it flop?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjbgh5",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:45:04 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Return to Castle Wolfenstein has to be one of the most overrated garbage fps ever>Bad movement>Weak gunplay>Poor hit feedback>Supernatural enemies are boring>Grenades are useless>Retarded mag dump spread The Medal of Honor games are superior in every way, even the first one",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjbml3",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:45:12 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Stevesisters... How are we supposed to get our easy wins now when people are conspiring against us..",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wje34u",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:47:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Following record low viewership and an end-of-life announcement from Activision-Blizzard, Overwatch League teams are now selling most of their players and removing all paid benefits as they seek to let their contracts expire",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjfdeb",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:48:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": "For me, it's Ricca's game.",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wjfeqh",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:48:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Are there any games that play like a wrpg but has an anime or jrpg aesthetic?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjgny8",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:49:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "After Cyberpunk 2077, is this the biggest let down in history of gaming?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjhy1k",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:50:07 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How did Shu lose when they fucking had one of the brightest minds that ever graced the earth. It makes no sense.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjj913",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:51:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�q���̍��X�C�~���O�̂��Ƃɔ����ĐH�ׂĂ����̍��͂���Ȃɍ����Ȃ�����",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9k4ql6wjjal5",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 3:51:10 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "A few years ago I'd be excited about this. Now I don't give a fuck.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjkj9d",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:52:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "I think it's time to discuss the greatest survival game ever madeIt's called Project Zomboid and it's, dare I say it, fun",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjlt9s",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:53:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": "Bros I can't stop thinking about sex send help",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wjlu7r",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:53:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Calling it, the next race will be bird girls or bird people",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjn3pk",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:54:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�G��Ȃ��悤�Ɋ撣���Ă��Ȃ񂩎肪�ׂƂׂƂɂȂ�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9k4ql6wjn5lw",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 3:54:10 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609234030need some help with that?",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wjpoy2",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:56:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why don't game devs make their black women look more like this?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjppbc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:56:09 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Jesus what the fuck happened to ygo?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjqyyl",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:57:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�������j�����̂��Ƃɔ����Ă�����Ă�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9k4ql6wjr16r",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 3:57:11 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609234256But anon that would be gay",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wjtkao",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 3:59:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Shulk had personality and wasn't just a blank slate all the time. And while Rex was a faggot, he at least acted like a fucking humanwhat the fuck happened to noah?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjtkvj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 3:59:10 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">Nice Switch, loser. Hand it over.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjutb4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:00:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] hentai games",
+      "content": ">>609234480yeah...",
+      "link": "https://boards.4channel.org/v/thread/609149691/did-v-play-any-h-games-lately",
+      "postid": "2fnqj9k4ql6wjuu9y",
+      "image": "https://media.discordapp.net/attachments/630964804592599093/1009088012912705566/unknown.png",
+      "date": "16/08/2022, 4:00:09 pm",
+      "channelid": "2fnqj910il6w7rc5r"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "will you be returning to Genshin?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjw3st",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:01:08 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "CAPCOM",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjxfoq",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:02:10 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�ߏ��ɂ��������ǃ��[�X�M���M����5�N���炢�ł�߂�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9k4ql6wjxg5b",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:02:10 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">https://nichegamer.com/marvels-spider-man-remastered-lgbt-mod-banned/So a guy made a mod that removed all of the LGBTQABCDEFG+-!# flags in Spider-Man and got banned from Nexus Mods for doing it.Obviously some people would find these flags offensive, so it's great someone thought to create a mod that would remove them so people could enjoy the game in peace. But clearly you can't enjoy things anymore without this shit plastered all over your games.Will it ever end?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9k4ql6wjypia",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:03:09 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "How did Shu lose when they fucking had one of the brightest minds that ever graced the earth. It makes no sense.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9o66l6wjzasj",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:03:37 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Why don't game devs make their black women look more like this?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9oj1l6wk0xgr",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:04:53 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Too KINO for nu/v/",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wkiyes",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:18:54 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�v�[���̋A��ɐH�����������H������̖_�Ń`�����o��",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wkiyz6",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:18:55 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What are your favorite indie releases of the past 10 years or so, /v/?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wkj5s8",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:19:03 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Do you have a \"squad\" that you game with or is it just you these days?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wkneg2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:22:21 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "���ۂǂꂾ���̌�����������ݒu�x���o����񂾂낤�����S���قƂ��Ȃ�s����̂�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wknf4n",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:22:22 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "What would happen if link canonically sexed Zelda&the female champions in BotW 2?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wknz2z",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:22:48 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": ">https://nichegamer.com/marvels-spider-man-remastered-lgbt-mod-banned/So a guy made a mod that removed all of the LGBTQABCDEFG+-!# flags in Spider-Man and got banned from Nexus Mods for doing it.I get why they would remove it but why ban the guy?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wl31s4",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:34:31 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "���i�J���D�������ǈ����ĂȂ����̋@�ƈ����Ă鎩�̋@�����X���炢�Ȃ񂾂�Ȃ�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wl329k",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:34:32 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wl4w3i",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:35:57 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Play Dragon Ball FighterZ",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wlhwj2",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:46:04 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�`���R�~���g�⋋���u�R���r�j�̔��̂���ƃT�b�ƐH�ׂ��Ȃ�",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wlhx5d",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:46:05 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Previous Thread: >>609040348>All originally made vidya art is welcome, doesn't need to be requested>When requesting, post references and names in one post>Keep it vidya origin>Have fun!http://vidyart.booru.org/ (archive)http://vidyartplus.booru.org/ (new)NSFW Deliveries: >>>/i/706274 #https://catbox.moe/ or alternatively https://litterbox.catbox.moe/Drawing Books and drawing programs:https://mega.nz/folder/sSYAxKqb#f2gWy-eQZJNvRfiUTu1ASA",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wlmeia",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 4:49:34 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "���������ɂ��т�t�����A�C�X�������ł��������Ƃ��������ǐl�ڂ����邩��ł��Ȃ��W�����}",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wlmf17",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 4:49:35 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�J���t���`���R�D�����܂Ɍ�����������������Ⴄ",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wmbwb6",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 5:09:24 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Play Dragon Ball FighterZ",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wmbx64",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:09:25 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Following record low viewership and an end-of-life announcement from Activision-Blizzard, Overwatch League teams are now selling most of their players and removing all paid benefits as they seek to let their contracts expire",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wml53j",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:16:35 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "���y���Ă邩�炱���Ή�������ƂȂ�Ɩc��ȗ\\�Z���K�v�ɂȂ肻������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wml5sq",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 5:16:36 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Have you ever been legit good at a video game?Good enough to wipe the floor with other people?What game? And how good were you?",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wmn8m9",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:18:13 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "[thread update] /v/",
+      "content": "Oh...that's...not good.",
+      "link": "https://boards.4channel.org/v/",
+      "postid": "2fnqj9q0jl6wmpn65",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:20:05 pm",
+      "channelid": "2fnqj7z6nl6v135b6"
+    },
+    {
+      "title": "uboa soundcloud thread added!",
+      "content": "uboa soundcloud thread added, current replies:1",
+      "link": "https://uboachan.net/media/res/604.html",
+      "postid": "2fnqj9q0jl6wn0sd2",
+      "image": "https://uboachan.net/media/thumb/1569627664434.png",
+      "date": "Tue, 16 Aug 2022 20:28:45 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[new reply] uboa soundcloud thread",
+      "content": ">>1690Look who it is, nice to see you herehttps://soundcloud.com/mirrorself>new uploadssimple guitar stuff>old uploadsnoise music, dark ambient etc",
+      "link": "https://uboachan.net/media/res/604.html",
+      "postid": "2fnqj9q0jl6wn0u1r",
+      "image": "https://uboachan.net/media/thumb/1569627664434.png",
+      "date": "16/08/2022, 5:28:47 pm",
+      "channelid": "2fnqj9q0jl6wn0sd1"
+    },
+    {
+      "title": "/vg/ - Video Game Generals added!",
+      "content": "/vg/ - Video Game Generals added, current replies:20",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wnl6wl",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "Tue, 16 Aug 2022 20:44:37 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "hell cat editionPrevious thread: >>396104659>LMS Game Modes: Pures & Zerkshttps://secure.runescape.com/m=news/a=13/lms-game-modes-pures--zerks?oldschool=1>Updated Proposed Mobile UI Changeshttps://secure.runescape.com/m=news/a=13/updated-proposed-mobile-ui-changes?oldschool=1>Tombs of Amascut: Everything You Need To Know (updated)https://secure.runescape.com/m=news/a=13/tombs-of-amascut-everything-you-need-to-know?oldschool=1>more newshttps://secure.runescape.com/m=news/archive?oldschool=1>Communication & InfoHome World: 327Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wnl7em",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:44:38 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�`���R�~���g�̕��ۂŃC�L���₪���āc",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wnl8qm",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 5:44:39 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "Previous thread: >>396194558= NEWS =>TWT Schedulehttps://tekkenworldtour.com/>Season 4 & Patch 4.00https://en.bandainamcoent.eu/tekken/news/season-4-of-tekken-7-has-now-started>Patch 4.10https://en.bandainamcoent.eu/tekken/news/tekken-7-patch-notes-410>Patch 4.20https://en.bandainamcoent.eu/tekken/news/tekken-7-patch-notes-420>Tekken: Bloodline Trailerhttps://www.youtube.com/watch?v=WTc2xXcJFwU= BASIC INFORMATION =Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wnocvx",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:47:05 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "Previous: >>396083212>Falcom Gameshttps://pastebin.com/8esKs8Pf>Pastebin (aka music)http://pastebin.com/G2mswYCt>Extra Stuff (guides, downloads, undub patches)https://pastebin.com/n2G4xL5s>Mods, saves, pre-patched translationshttps://nyaa.si/user/Ganba>Kuro and Reverie artbookshttps://mega.nz/folder/zhVBHC7D#cBD39Pw_2Ov_F2uBal_V_g>Kuro translation patch (under work)https://mega.nz/folder/AYthzT6C#CzegMJ8nUEDi3HhsqYd2Aw>Hajimari spreadsheet translation insertionComment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wnoop9",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:47:20 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "https://pastebin.com/ZRTZV0XM",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wnsuvv",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 5:50:35 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "Previous: >>396283020>FGO Summer Event 2022 - Arctic Summer World:August 10 ~ 31 JSTRequirements: Clear FuyukiWelfare 4* Assassin Valkyriehttps://news.fate-go.jp/2022/2022summer/https://www.youtube.com/watch?v=1DqQOFrkVxs>Arctic Summer World: - Summoning Campaign 1:August 10 ~ 31 JST5* Pretender Lady Avalon (Proto Merlin)4* Saber Garethhttps://news.fate-go.jp/2022/2022summer_pu1/Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wo9nui",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 6:03:39 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": ">�J���t���`���R�D��>���܂Ɍ�����������������Ⴄ�����ڂ���������������̂�菭��������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wo9osd",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 6:03:40 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "This thread is for the discussion of Honkai Impact 3rd only>READ THIS BEFORE ASKING ANY QUESTIONS BECAUSE IT'S MOST LIKELY HEREhttps://rentry.org/vffr2https://rentry.org/hi3newbieguidehttps://rentry.org/hi3newbieresourceshttps://rentry.org/hi3resources/>News:5.9 Beta V3:https://youtu.be/BWAmKqqv4qY>Latest CN supply, event, abyss, and MA cycles:V5.8:https://rentry.org/58cnComment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6woa45n",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 6:04:00 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "hell cat editionPrevious thread: >>396104659>LMS Game Modes: Pures & Zerkshttps://secure.runescape.com/m=news/a=13/lms-game-modes-pures--zerks?oldschool=1>Updated Proposed Mobile UI Changeshttps://secure.runescape.com/m=news/a=13/updated-proposed-mobile-ui-changes?oldschool=1>Tombs of Amascut: Everything You Need To Know (updated)https://secure.runescape.com/m=news/a=13/tombs-of-amascut-everything-you-need-to-know?oldschool=1>more newshttps://secure.runescape.com/m=news/archive?oldschool=1>Communication & InfoHome World: 327Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6woadrc",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 6:04:12 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] /vg/ - Video Game Generals",
+      "content": "Previous: >>396283020>FGO Summer Event 2022 - Arctic Summer World:August 10 ~ 31 JSTRequirements: Clear FuyukiWelfare 4* Assassin Valkyriehttps://news.fate-go.jp/2022/2022summer/https://www.youtube.com/watch?v=1DqQOFrkVxs>Arctic Summer World: - Summoning Campaign 1:August 10 ~ 31 JST5* Pretender Lady Avalon (Proto Merlin)4* Saber Garethhttps://news.fate-go.jp/2022/2022summer_pu1/Comment too long. Click here to view the full text.",
+      "link": "https://boards.4channel.org/vg/",
+      "postid": "2fnqj9q0jl6wol6ev",
+      "image": "https://i.imgur.com/NgvO0XS.gif",
+      "date": "16/08/2022, 6:12:36 pm",
+      "channelid": "2fnqj9q0jl6wnl6wk"
+    },
+    {
+      "title": "[thread update] >よし17個全部チョコ",
+      "content": "�Ȃ񂩂��̌ł������ɔ�����������",
+      "link": "http://may.2chan.net/b/res/1002612051.htm",
+      "postid": "2fnqj9q0jl6wol6w6",
+      "image": "http://may.2chan.net/b/thumb/1660666941968s.jpg",
+      "date": "16/08/2022, 6:12:37 pm",
+      "channelid": "2fnqj9fdql6wfb698"
+    },
+    {
+      "title": "初オナネタを思い出そう added!",
+      "content": "初オナネタを思い出そう added, current replies:34",
+      "link": "http://may.2chan.net/b/res/1002631919.htm",
+      "postid": "2fnqj9q0jl6woox01",
+      "image": "http://may.2chan.net/b/thumb/1660674285376s.jpg",
+      "date": "Tue, 16 Aug 2022 21:15:30 GMT",
+      "channelid": ""
+    },
+    {
+      "title": "[thread update] 初オナネタを思い出そう",
+      "content": "�X�g2�̃`�������[������",
+      "link": "http://may.2chan.net/b/res/1002631919.htm",
+      "postid": "2fnqj9q0jl6wooxs4",
+      "image": "http://may.2chan.net/b/thumb/1660674285376s.jpg",
+      "date": "16/08/2022, 6:15:31 pm",
+      "channelid": "2fnqj9q0jl6woox00"
+    },
+    {
+      "title": "[thread update] 初オナネタを思い出そう",
+      "content": "DOA��CM",
+      "link": "http://may.2chan.net/b/res/1002631919.htm",
+      "postid": "2fnqj9q0jl6wpkuzu",
+      "image": "http://may.2chan.net/b/thumb/1660674285376s.jpg",
+      "date": "16/08/2022, 6:40:21 pm",
+      "channelid": "2fnqj9q0jl6woox00"
+    }
+  ]
+}

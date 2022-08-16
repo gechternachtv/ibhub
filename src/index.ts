@@ -24,11 +24,13 @@ await db.read();
 db.data ||= {channels:[],news:[],feeds:[]};
 
 
+await db.write();
+
     const app = express();
     app.use(cors());
     app.use(express.json());
     const PORT = process.env.PORT;
-    app.use('/', express.static('frontend/public'));
+    app.use('/', express.static('frontend/dist'));
 
 
 
@@ -36,13 +38,15 @@ db.data ||= {channels:[],news:[],feeds:[]};
 	
     //methods
     
-    const returnDomList = (sitecontent:string,observeName:string,contains:string) => {
+    const returnDomList = (sitecontent:string,observeName:string,contains:string[]) => {
 
         const dom = new jsdom.JSDOM(sitecontent);
         const rawobservedItems = Array.from(dom.window.document.querySelectorAll(observeName))
-        return (contains != "") ? rawobservedItems.filter((item:HTMLBodyElement) => item.innerText.includes(contains)) : rawobservedItems
+        return (contains.length > 0) ? rawobservedItems.filter((item:HTMLDivElement) => contains.some(x => item.innerHTML.includes(x)) ) : rawobservedItems
+        
 
     }
+
 
     const updatePages = async () => {
 
@@ -68,31 +72,39 @@ db.data ||= {channels:[],news:[],feeds:[]};
                     const sitecontent = await request.text();
                     const observedItems = returnDomList(sitecontent,singlePage.observeName,singlePage.contains)
 
-                    observedItems.forEach(async itemToObserve => {
-                        if (singlePage.updates != observedItems.length) {
+                    observedItems.forEach(async (itemToObserve:HTMLBodyElement) => {
 
-                            singlePage.dead = (observedItems.length === 0)
-                            console.log(singlePage.dead)
+                        const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
+
+                        if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
+
                             console.log("item updated!")
+                            singlePage.dead = (observedItems.length === 0)
                             singlePage.updates = observedItems.length
+                            singlePage.laspost = lastPost.textContent
 
                             const query = db.data.channels.findIndex(o => o.id === singlePage.id)
                             db.data.channels[query] = {...db.data.channels[query], ...singlePage}
 
-                            const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
+                            
                             const postId = uniqid()
                             
                             
+                            const date = new Date()
                             db.data.feeds.push({
-                                title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `[thread update] ${singlePage.name}`,
+                                title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `${singlePage.contains.length > 0 ? `[new reply]` : `[thread update]`} ${singlePage.name}`,
                                 content: singlePage.dead ? `[dead thread]` : lastPost.textContent,
                                 link: singlePage.link,
                                 postid: postId,
-                                image: singlePage.dead ? singlePage.thumb : (lastPost.querySelector('img') ? lastPost.querySelector('img').src : singlePage.thumb),
-                                date: new Date().toString(),
+                                image: singlePage.thumb,
+                                date: date.toLocaleString(),
+                                channelid:singlePage.id
                             })
 
-                            db.data.news.push(postId)
+                            db.data.news.push({
+                                "postid":postId,
+                                "channelid":singlePage.id
+                            })
                             await db.write()
 
 
@@ -111,6 +123,7 @@ db.data ||= {channels:[],news:[],feeds:[]};
 
     }
 
+
     await updatePages()
     console.log("updated!")
 
@@ -123,11 +136,11 @@ db.data ||= {channels:[],news:[],feeds:[]};
         await updatePages()
 
         const rssfeed = new RSS({
-            title: 'chansub',
-            description: 'get your imageboard feeds on rss!',
+            title: 'ibhub',
+            description: 'get your imageboard updates on rss!',
             feed_url: `http://localhost:${PORT}/rss`,
             site_url:`http://localhost:${PORT}`,
-            image_url:"http://pm1.narvii.com/6330/ed1b1e37cf8bc7e7d9c21556b459427b8c2e2d17_00.jpg"
+            image_url:""
            });
            
         
@@ -151,31 +164,32 @@ db.data ||= {channels:[],news:[],feeds:[]};
         res.send(rssfeed.xml())
     })
 
-    app.get('/channels',async (req, res) => {
+    app.get('/api/channels/:id?',async (req, res) => {
         await db.read()
-        res.send(db.data.channels)
+        const data = req.params.id ? db.data.channels.find((ch:channel) => ch.id === req.params.id) : db.data.channels
+        res.status(data ? 200 : 404).send(data)
     })
 
-    app.get('/feed', async (req, res) => {
+    app.get('/api/feed', async (req, res) => {
         await db.read()
         console.log(db.data.feeds)
         res.send(db.data.feeds)
     })
 
-    app.get('/update', async (req, res) => {
+    app.get('/api/updateall', async (req, res) => {
         const data = await updatePages()
         res.send(data)
     })
 
-    app.post('/channels/delete', async (req, res) => {
+    app.post('/api/delete', async (req, res) => {
         await db.read()
-        db.data.channels = db.data.channels.filter(o => o.id === req.body.id)
+        db.data.channels = db.data.channels.filter(o => o.id != req.body.id)
         await db.write()
        res.send({success:true})
     })
 
 
-    app.post('/channels/update', async (req, res) => {
+    app.post('/api/update', async (req, res) => {
         await db.read()
 
         const query = db.data.channels.findIndex(o => o.id === req.body.id)
@@ -188,49 +202,67 @@ db.data ||= {channels:[],news:[],feeds:[]};
     })
 
 
-    app.post('/channels/new', async (req, res) => {
-        await db.read()
-        const sitecontent =  await ( (await fetch(req.body.link)).text());
-        const observedItems = returnDomList(sitecontent,req.body.observeName,req.body.contains)
-        const channel = {...req.body, updates:observedItems.length}
+    app.post('/api/new', async (req, res) => {
 
-            const newId = uniqid()
-            channel.thumb = channel.thumb
+        try {
+            await db.read()
+            const sitecontent =  await ( (await fetch(req.body.link)).text());
+            const observedItems = returnDomList(sitecontent,req.body.observeName,req.body.contains)
+            const channel = {...req.body, updates:observedItems.length}
+    
+                const newId = uniqid()
+                channel.thumb = channel.thumb
+    
+                db.data.channels.push({
+                    ...channel,
+                    id: newId
+                })
+    
+    
+                const postId = uniqid()
 
-            db.data.channels.push({
-                ...channel,
-                id: newId
-            })
-
-
-            const postId = uniqid()
-            db.data.feeds.push({
-                title: `${channel.name} added!`,
-                content: `${channel.name} added, current replies:${channel.updates}`,
-                link: channel.link,
-                postid: postId,
-                image: channel.thumb ? channel.thumb : null,
-                date: new Date().toString(),
-            })
-
-            db.data.news.push(postId)
-
-            await db.write()
+                const date = new Date()
+                db.data.feeds.push({
+                    title: `${channel.name} added!`,
+                    content: `${channel.name} added, current replies:${channel.updates}`,
+                    link: channel.link,
+                    postid: postId,
+                    image: channel.thumb ? channel.thumb : null,
+                    date: date.toUTCString(),
+                    channelid:channel.id
+                })
+    
+                db.data.news.push({
+                    "postid":postId,
+                    "channelid":channel.id
+                })
+    
+                await db.write()
+                res.send({
+                    ...channel,
+                    id: newId
+                })
+        } catch (error) {
             res.send({
-                ...channel,
-                id: newId
+                error:true,
+                message:error
             })
-        
+        }
     })
 
+    app.get('/api/channelhosts', async (req, res) => {
+        await db.read()
+        const set = new Set(db.data.channels.map(e => e.host))
+        res.send(Array.from(set))
+    })
 
-    app.get('/getnews', async (req, res) => {
+    app.get('/api/getnews', async (req, res) => {
         await db.read()
         res.send(db.data.news)
         
     })
 
-    app.get('/readallnews',async (req, res) => {
+    app.get('/api/readallnews',async (req, res) => {
         await db.read()
         db.data.news = []
         await db.write()
@@ -238,12 +270,8 @@ db.data ||= {channels:[],news:[],feeds:[]};
     })
 
 
-
-
-
-
     app.listen(PORT, () => {
-        console.log(`Backend is running on http://localhost:${PORT}`)
+        console.log(`Running on http://localhost:${PORT}`)
     })
 
 
