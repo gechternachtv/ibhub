@@ -28,11 +28,27 @@ type newsfeed = {
 	channelid: string,
   }
 
+type pageupdateResponse = {
+	channels:channel[],
+	news:newsfeed[]
+}
+
 type hosts = string[]
+type ids = string[]
+
+type meta = {
+	thumb:string,
+	name:string
+}
 
 
   type dbData = {
 	channels: channel[],
 	feeds: feed[],
 	news: newsfeed[],
+  }
+
+  type genericapires = {
+	  error:boolean,
+	  message?:string 
   }

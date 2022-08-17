@@ -254,7 +254,7 @@ const validateURL = (str:string)=> {
 </script>
 
 <main>
-	<section class:btnActive>
+	<section class="new-section" class:btnActive>
 
 			<div class="id">				
 				{#if data.id != ""}

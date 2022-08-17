@@ -8,6 +8,7 @@ import dotenv from "dotenv"
 import { join, dirname } from 'path';
 import { Low, JSONFile } from 'lowdb';
 import { fileURLToPath } from 'url';
+import { Channel, channel } from "diagnostics_channel";
 
 dotenv.config();
 //initialize
@@ -30,25 +31,18 @@ await db.write();
     app.use(cors());
     app.use(express.json());
     const PORT = process.env.PORT;
-    app.use('/', express.static('frontend/dist'));
-
-
-
-
-	
-    //methods
+   
     
-    const returnDomList = (sitecontent:string,observeName:string,contains:string[]) => {
+    const returnDomList:(sitecontent:string,observeName:string,contains:string[]) => Element[] = (sitecontent,observeName,contains) =>  {
 
         const dom = new jsdom.JSDOM(sitecontent);
         const rawobservedItems = Array.from(dom.window.document.querySelectorAll(observeName))
-        return (contains.length > 0) ? rawobservedItems.filter((item:HTMLDivElement) => contains.some(x => item.innerHTML.includes(x)) ) : rawobservedItems
-        
+        return (contains.length > 0) ? rawobservedItems.filter((item:Element) => contains.some(x => item.innerHTML?.includes(x)) ) : rawobservedItems
 
     }
 
 
-    const updatePages = async (filterIds:string[] = []) => {
+    const updatePages:(filterIds?:string[]) => Promise<pageupdateResponse> = async (filterIds = []) => {
 
         await db.read()
 
@@ -56,68 +50,69 @@ await db.write();
 
         await Promise.all(channels.map(async (singlePage) => {
 
-            if(!singlePage.dead){
 
-                const request = await (fetch(singlePage.link))
+                if(!singlePage.dead){
 
-                if (!request.ok) {
-                    singlePage.dead = true
-
-
-                    const query = db.data.channels.findIndex(o => o.id === singlePage.id)
-                    db.data.channels[query] = {...db.data.channels[query], ...singlePage}
-
-                    await db.write()
-
-                } else {
-
-                    const sitecontent = await request.text();
-                    const observedItems = returnDomList(sitecontent,singlePage.observeName,singlePage.contains)
-
-                    observedItems.forEach(async (itemToObserve:HTMLBodyElement) => {
-
-                        const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
-
-                        if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
-
-                            console.log("item updated!")
-                            singlePage.dead = (observedItems.length === 0)
-                            singlePage.updates = observedItems.length
-                            singlePage.laspost = lastPost.textContent
-
-                            const query = db.data.channels.findIndex(o => o.id === singlePage.id)
-                            db.data.channels[query] = {...db.data.channels[query], ...singlePage}
-
-                            
-                            const postId = uniqid()
-                            
-                            
-                            const date = new Date()
-                            db.data.feeds.push({
-                                title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `${singlePage.contains.length > 0 ? `[new reply]` : `[thread update]`} ${singlePage.name}`,
-                                content: singlePage.dead ? `[dead thread]` : lastPost.textContent,
-                                link: singlePage.link,
-                                postid: postId,
-                                image: singlePage.thumb,
-                                date: date.toLocaleString(),
-                                channelid:singlePage.id
-                            })
-
-                            db.data.news.push({
-                                "postid":postId,
-                                "channelid":singlePage.id
-                            })
-                            await db.write()
-
-
-                        }
-
-                    })
-
+                    const request = await (fetch(singlePage.link))
+    
+                    if (!request.ok) {
+                        singlePage.dead = true
+    
+    
+                        const query = db.data.channels.findIndex(o => o.id === singlePage.id)
+                        db.data.channels[query] = {...db.data.channels[query], ...singlePage}
+    
+                        await db.write()
+    
+                    } else {
+    
+                        const sitecontent = await request.text();
+                        const observedItems:Element[] = returnDomList(sitecontent,singlePage.observeName,singlePage.contains)
+    
+                        observedItems.forEach(async (itemToObserve:Element) => {
+    
+                            const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
+    
+                            if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
+    
+                                console.log("item updated!")
+                                singlePage.dead = (observedItems.length === 0)
+                                singlePage.updates = observedItems.length
+                                singlePage.laspost = lastPost.textContent
+    
+                                const query = db.data.channels.findIndex(o => o.id === singlePage.id)
+                                db.data.channels[query] = {...db.data.channels[query], ...singlePage}
+    
+                                
+                                const postId = uniqid()
+                                
+                                
+                                const date = new Date()
+                                db.data.feeds.push({
+                                    title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `${singlePage.contains.length > 0 ? `[new reply]` : `[thread update]`} ${singlePage.name}`,
+                                    content: singlePage.dead ? `[dead thread]` : lastPost.textContent,
+                                    link: singlePage.link,
+                                    postid: postId,
+                                    image: singlePage.thumb,
+                                    date: date.toLocaleString(),
+                                    channelid:singlePage.id
+                                })
+    
+                                db.data.news.push({
+                                    "postid":postId,
+                                    "channelid":singlePage.id
+                                })
+                                await db.write()
+    
+    
+                            }
+    
+                        })
+    
+                    }
+    
                 }
-
-            }
-
+                
         }));
 
         return {channels:channels,news: db.data.news}
@@ -131,6 +126,7 @@ await db.write();
 
 
     //endpoints:
+    app.use('/', express.static('frontend/dist'));
 
     app.get('/rss',async (req, res) => {
         res.header("Content-Type", "application/xml");
@@ -168,8 +164,8 @@ await db.write();
 
     app.get('/api/channels/:id?',async (req, res) => {
         await db.read()
-        const data = req.params.id ? db.data.channels.find((ch:channel) => ch.id === req.params.id) : db.data.channels
-        res.status(data ? 200 : 404).send(data)
+        const data:channel[] = req.params.id ? [db.data.channels.find((ch:channel) => ch.id === req.params.id)] : db.data.channels
+        res.status(data[0] ? 200 : 404).send(data)
     })
 
     app.get('/api/feed', async (req, res) => {
@@ -178,32 +174,88 @@ await db.write();
         res.send(db.data.feeds)
     })
 
+    app.get('/api/channelhosts', async (req, res) => {
+        await db.read()
+        const set = new Set(db.data.channels.map(e => e.host))
+        res.send(Array.from(set))
+    })
+
+    app.get('/api/getnews', async (req, res) => {
+        await db.read()
+        res.send(db.data.news)     
+    })
+
+    app.get('/api/readallnews',async (req, res) => {
+        await db.read()
+        db.data.news = []
+        await db.write()
+       res.send({error:false,message:"success!"})
+    })
+
     app.post('/api/getnewupsates', async (req, res) => {
-        console.log(req.body)
-        const data = await updatePages(req.body.length ? req.body : [])
-        res.send(data)
+        try {
+            console.log(req.body)
+            const data = await updatePages(req.body.length ? req.body : [])
+            res.send(data)   
+        } catch (error) {
+            res.status(400).send({error:true,message:error}) 
+        }
     })
 
     app.post('/api/delete', async (req, res) => {
         await db.read()
-        db.data.channels = db.data.channels.filter(o => o.id != req.body.id)
-        await db.write()
-       res.send({success:true})
-    })
 
+        const query = db.data.channels.findIndex(o => o.id === req.body.id)
+        if(query === -1){
+            res.status(404).send({error:true,message:"id not found"})
+        }else{
+            db.data.channels = db.data.channels.filter(o => o.id != req.body.id)
+            await db.write()
+           res.send({error:false,message:"success!"})
+        }
+    })
 
     app.post('/api/update', async (req, res) => {
         await db.read()
 
         const query = db.data.channels.findIndex(o => o.id === req.body.id)
-        db.data.channels[query] = {...db.data.channels[query], ...req.body}
-
-        await db.write()
-       res.send({success:true})
+        if(query === -1){
+            res.status(404).send({error:true,message:"id not found"})
+        }else{
+            db.data.channels[query] = {...db.data.channels[query], ...req.body}
+            await db.write()
+           res.send({error:false,message:"success!"})
+        }
        
 
     })
 
+    app.post('/api/trymeta', async (req, res) => {
+
+        try {
+            const sitecontent = await fetch(req.body.link)
+            console.log(req.body.link,sitecontent.status)
+            if(sitecontent.ok){
+    
+                    const text = await sitecontent.text()
+                    const dom = new jsdom.JSDOM(text);
+                    const thumb = dom.window.document.querySelector(`meta[property="og:image"]`)
+                    const name = dom.window.document.querySelector(`meta[property="og:title"]`)
+                    const meta:meta = {
+                        thumb:thumb ? thumb.getAttribute("content") : "",
+                        name:name ? name.getAttribute("content") : ""}
+                    res.send(meta)
+                    
+    
+            }else{
+                res.status(404).send({error:true})
+            }
+    
+        } catch (error) {
+            res.status(404).send({error:true})
+        }        
+
+    })
 
     app.post('/api/new', async (req, res) => {
 
@@ -246,57 +298,11 @@ await db.write();
                     id: newId
                 })
         } catch (error) {
-            res.send({
+            res.status(400).send({
                 error:true,
                 message:error
             })
         }
-    })
-
-    app.get('/api/channelhosts', async (req, res) => {
-        await db.read()
-        const set = new Set(db.data.channels.map(e => e.host))
-        res.send(Array.from(set))
-    })
-
-    app.get('/api/getnews', async (req, res) => {
-        await db.read()
-        res.send(db.data.news)
-        
-    })
-
-    app.get('/api/readallnews',async (req, res) => {
-        await db.read()
-        db.data.news = []
-        await db.write()
-       res.send({success:true})
-    })
-
-    app.post('/api/trymeta', async (req, res) => {
-
-        try {
-            const sitecontent = await fetch(req.body.link)
-            console.log(req.body.link,sitecontent.status)
-            if(sitecontent.ok){
-    
-                    const text = await sitecontent.text()
-                    const dom = new jsdom.JSDOM(text);
-                    const thumb = dom.window.document.querySelector(`meta[property="og:image"]`)
-                    const name = dom.window.document.querySelector(`meta[property="og:title"]`)
-                    res.send(
-                        {thumb:thumb ? thumb.getAttribute("content") : "",
-                        name:name ? name.getAttribute("content") : ""}
-                        )
-     
-    
-            }else{
-                res.status(404).send({error:true})
-            }
-    
-        } catch (error) {
-            res.status(404).send({error:true})
-        }        
-
     })
 
     app.listen(PORT, () => {

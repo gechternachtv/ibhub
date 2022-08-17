@@ -328,7 +328,7 @@ $:{
             }
 
             .thumb:hover .tooltip{
-                opacity:0.9;
+                opacity:1;
             }
 
             @media only screen and (max-width: 991px){
