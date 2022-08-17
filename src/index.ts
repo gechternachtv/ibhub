@@ -48,11 +48,13 @@ await db.write();
     }
 
 
-    const updatePages = async () => {
+    const updatePages = async (filterIds:string[] = []) => {
 
         await db.read()
 
-        await Promise.all(db.data.channels.map(async (singlePage) => {
+        const channels:channel[] = filterIds.length ? db.data.channels.filter((e:channel) => filterIds.includes(e.id)) : db.data.channels
+
+        await Promise.all(channels.map(async (singlePage) => {
 
             if(!singlePage.dead){
 
@@ -118,7 +120,7 @@ await db.write();
 
         }));
 
-        return {channels:db.data.channels,news: db.data.news}
+        return {channels:channels,news: db.data.news}
 
 
     }
@@ -176,8 +178,9 @@ await db.write();
         res.send(db.data.feeds)
     })
 
-    app.get('/api/updateall', async (req, res) => {
-        const data = await updatePages()
+    app.post('/api/getnewupsates', async (req, res) => {
+        console.log(req.body)
+        const data = await updatePages(req.body.length ? req.body : [])
         res.send(data)
     })
 
@@ -269,6 +272,32 @@ await db.write();
        res.send({success:true})
     })
 
+    app.post('/api/trymeta', async (req, res) => {
+
+        try {
+            const sitecontent = await fetch(req.body.link)
+            console.log(req.body.link,sitecontent.status)
+            if(sitecontent.ok){
+    
+                    const text = await sitecontent.text()
+                    const dom = new jsdom.JSDOM(text);
+                    const thumb = dom.window.document.querySelector(`meta[property="og:image"]`)
+                    const name = dom.window.document.querySelector(`meta[property="og:title"]`)
+                    res.send(
+                        {thumb:thumb ? thumb.getAttribute("content") : "",
+                        name:name ? name.getAttribute("content") : ""}
+                        )
+     
+    
+            }else{
+                res.status(404).send({error:true})
+            }
+    
+        } catch (error) {
+            res.status(404).send({error:true})
+        }        
+
+    })
 
     app.listen(PORT, () => {
         console.log(`Running on http://localhost:${PORT}`)

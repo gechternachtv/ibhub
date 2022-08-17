@@ -2,7 +2,9 @@
 	import { onMount } from "svelte";
 	import {querystring} from 'svelte-spa-router'
 	import { updateCount } from './stores';
-
+	
+	import externalLink from './assets/external.svg'
+	import archiveph from './assets/archiveph.png'
 
 
 let btnActive = false
@@ -28,45 +30,17 @@ const data:channel = {
 	updates:1,
 }
 
-$:{
-	data.contains = (containsstr === "") ? [] : containsstr.split(",")
-	linkvalid = validateURL(data.link)
-}
-
-	onMount(async () => {
-			for (const key in data) {
-				if (params.get(key)){
-					if (typeof data[key] === "string") {
-						data[key] = params.get(key)
-					}else if (typeof data[key] === "boolean"){
-						data[key] = params.get(key) === "true" ? true : false
-					}else if (typeof data[key] === "object"){
-						data[key] = params.get(key).split(",")
-					}
-				}
-			}					
-			if(params.get("id")){
-				result = "fetching data..."
-				const channelRes = await (fetch(`/api/channels/${params.get("id")}`))
-
-				if(channelRes.ok){
-					const channel:channel = await (channelRes).json()
-					for (const key in data) {
-						data[key]=channel[key];
-					}
-					result = `Updating ${data.id}`
-					containsstr = data.contains.toString()
-					news = await (await (fetch(`/api/getnews`))).json()
-					console.log(channel)
-				}else{
-					clearData()
-					result = "Url id not found"
-				}
-			}
-			
-			btnActive = true
-        });
-
+const responseOptions:RequestInit = {
+			method: 'POST',
+			mode: 'cors',
+			cache: 'no-cache',
+			credentials: 'same-origin',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			redirect: 'follow',
+			referrerPolicy: 'no-referrer',
+		}
 
 const validateSelector = (str:string)=> {
     try {
@@ -90,19 +64,6 @@ const validateURL = (str:string)=> {
     }
     return false;
 }
-
-
-	const responseOptions:RequestInit = {
-			method: 'POST',
-			mode: 'cors',
-			cache: 'no-cache',
-			credentials: 'same-origin',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			redirect: 'follow',
-			referrerPolicy: 'no-referrer',
-		}
 
 	function clearData(){
 		data.id= "",
@@ -178,7 +139,13 @@ const validateURL = (str:string)=> {
 			data.id = ress.id
 
 			result = "updating...";
-			const updateAll = await (await fetch('/api/updateall')).json()
+			const getnewupdatesResponse = await fetch('/api/getnewupsates', {
+			...responseOptions,
+			body: JSON.stringify([data.id])
+			});
+
+			const getnewupdatesData = await getnewupdatesResponse.json();
+			console.log(getnewupdatesData)
 
 			const news  = await (await (fetch(`/api/getnews`))).json();
 			updateCount.update(n => news.length)
@@ -214,6 +181,68 @@ const validateURL = (str:string)=> {
 		btnActive = true
 	}
 
+	async function tryinfo(url:string){
+		console.log(url)
+		if(linkvalid){
+			result = "checking url..."
+			const metares = await fetch('/api/trymeta', {
+			...responseOptions,
+			body: JSON.stringify({link:data.link})
+			})
+
+			if(metares.ok){
+					const metainfo = await (metares).json()
+					console.log(metainfo)
+
+					data.name = metainfo.name === "" ? data.name : metainfo.name
+					data.thumb = metainfo.thumb === "" ? data.thumb : metainfo.thumb
+
+					result = (metainfo.name != "" || metainfo.thumb != "") ? "fetched metadata from url" : "metadata not available" 
+
+				}else{
+					result = "page is not available right now"
+				}
+		}
+	} 
+
+	onMount(async () => {
+			for (const key in data) {
+				if (params.get(key)){
+					if (typeof data[key] === "string") {
+						data[key] = params.get(key)
+					}else if (typeof data[key] === "boolean"){
+						data[key] = params.get(key) === "true" ? true : false
+					}else if (typeof data[key] === "object"){
+						data[key] = params.get(key).split(",")
+					}
+				}
+			}					
+			if(params.get("id")){
+				result = "fetching data..."
+				const channelRes = await (fetch(`/api/channels/${params.get("id")}`))
+
+				if(channelRes.ok){
+					const channel:channel = await (channelRes).json()
+					for (const key in data) {
+						data[key]=channel[key];
+					}
+					result = `Updating ${data.id}`
+					containsstr = data.contains.toString()
+					news = await (await (fetch(`/api/getnews`))).json()
+					console.log(channel)
+				}else{
+					clearData()
+					result = "Url id not found"
+				}
+			}
+			
+			btnActive = true
+        });
+
+	$:{
+		data.contains = (containsstr === "") ? [] : containsstr.split(",")
+		linkvalid = validateURL(data.link)
+	}
 
 
 </script>
@@ -234,13 +263,14 @@ const validateURL = (str:string)=> {
 		<form>
 
 			<div>
-			<label for="name">name</label>
-			<input id="name" bind:value={data.name} placeholder="name*"/>
+				<label for="link">url:</label>
+				<input id="link" bind:value={data.link} placeholder="link*" on:input={() => tryinfo(data.link)} on:change={() => tryinfo(data.link)} />
 			</div>
 
+
 			<div>
-			<label for="link">link</label>
-			<input id="link" bind:value={data.link} placeholder="link*"/>
+			<label for="name">name</label>
+			<input id="name" bind:value={data.name} placeholder="name*"/>
 			</div>
 
 			<div>
@@ -309,8 +339,8 @@ const validateURL = (str:string)=> {
 
 					{#if linkvalid}
 					<div class="btn-links-holder">
-						<a class="btn-link" target="_blank" href="{data.link}">visit</a>
-						<a class="btn-link" target="_blank" href="https://archive.today/?run=1&url={data.link}"> <img alt="" src="https://archive.ph/apple-touch-icon-144x144.png"> archive.ph</a>
+						<a class="btn-link" target="_blank" href="{data.link}">visit <img src={externalLink} alt=""></a>
+						<a class="btn-link" target="_blank" href="https://archive.today/?run=1&url={data.link}"> <img alt="" src={archiveph}> archive.ph <img src={externalLink} alt=""> </a>
 					</div>
 					{/if}
 				</div>
@@ -462,6 +492,7 @@ const validateURL = (str:string)=> {
 
 			.status-text{
 				margin:10px;
+				word-break: break-word;
 			}
 
 			.hostName {
@@ -505,6 +536,10 @@ const validateURL = (str:string)=> {
 			}
 			.select-holder input{
 				margin: 0;
+			}
+
+			.thumb img {
+				max-width:100%;
 			}
 
 </style>

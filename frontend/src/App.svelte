@@ -3,7 +3,6 @@
 	import Channels from './Channels.svelte';
 	import Feed from './Feed.svelte';
 	import New from './New.svelte';
-	import Updateall from './Updateall.svelte';
 	import About from './About.svelte';
 	import { updateCount } from './stores';
 	import {location} from 'svelte-spa-router'
@@ -79,25 +78,28 @@ $:{
 			<strong>{count}</strong>
 	</a>
 	<a  class:active={$location === "/new"} href="/#/new">Add</a>
-	<a   class:active={$location === "/updateall"} href="/#/updateall">GET!</a>
 	<!-- <a   class:active={$location === "/about"} href="/#/about">GET!</a> -->
 </nav>
+
+<div class="app">
 
 <Router routes={{
 	'/': Channels,
 	'/feed': Feed,
 	'/new': New,
-	'/updateall': Updateall,
 	'/about': About
 }} />
-
+</div>
 
 
 </main>
 
 <style>
 
-
+.app {
+margin-bottom: 50px;
+padding-bottom: 30px;
+}
 
 	nav{
 		background:var(--header-bg);

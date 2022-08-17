@@ -28,6 +28,8 @@ type newsfeed = {
 	channelid: string,
   }
 
+type hosts = string[]
+
 
   type dbData = {
 	channels: channel[],

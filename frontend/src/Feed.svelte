@@ -2,6 +2,7 @@
 
     import { onMount } from "svelte";
     import { updateCount } from './stores';
+    import externalLink from './assets/external.svg'
 
 
     
@@ -9,6 +10,7 @@
         let feeds:feed[] = []
         let news:newsfeed[] = []
         let hasNews = true
+        let loading = true
 
         const readAll = async ()=>{
             const readalldata = await (await (fetch(`/api/readallnews`))).json()
@@ -21,6 +23,7 @@
             feeds  = await (await (fetch(`/api/feed`))).json()
             news = await (await (fetch(`/api/getnews`))).json()
             console.log(feeds,news)
+            loading = false
         });
     
     
@@ -28,7 +31,7 @@
     </script>
         
         <main>
-
+            {#if !loading}
 
             <h1>Feed</h1>
             <div class="feedoptions">
@@ -50,8 +53,8 @@
                     </div>
                     <div class="feed-btn-holder">
                         <div class="card-container feed-btn-container">
-                            <div class="feed-btn"><a target="_blank" href="{feed.link}">open link</a></div>
-                            <div class="feed-btn"><a href="#/new?id={feed.channelid}">view channel</a></div>
+                            <div class="feed-btn"><a target="_blank" href="{feed.link}">visit <img src={externalLink} alt=""> </a></div>
+                            <div class="feed-btn"><a href="#/new?id={feed.channelid}">more</a></div>
                         </div>
                     </div>
                     
@@ -59,6 +62,7 @@
                 </div>
             {/each}
             </div>
+            {/if}
         </main>
         
         <style>
@@ -118,6 +122,7 @@
                 font-size: 12px;
                 margin: 20px 0;
                 margin-left:20px;
+                word-break: break-word;;
             }
 
             .date {
@@ -142,6 +147,10 @@
                 font-weight: bold;
                 font-size: 11px;
                 border-radius: 8px;
+                display: flex;
+                gap: 4px;
+                height: 13px;
+                padding: 4px 12px;
             }
 
             .feed-btn a:hover {

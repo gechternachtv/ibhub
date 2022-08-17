@@ -28,9 +28,10 @@ const returnDomList = (sitecontent, observeName, contains) => {
     const rawobservedItems = Array.from(dom.window.document.querySelectorAll(observeName));
     return (contains.length > 0) ? rawobservedItems.filter((item) => contains.some(x => item.innerHTML.includes(x))) : rawobservedItems;
 };
-const updatePages = async () => {
+const updatePages = async (filterIds = []) => {
     await db.read();
-    await Promise.all(db.data.channels.map(async (singlePage) => {
+    const channels = filterIds.length ? db.data.channels.filter((e) => filterIds.includes(e.id)) : db.data.channels;
+    await Promise.all(channels.map(async (singlePage) => {
         if (!singlePage.dead) {
             const request = await (fetch(singlePage.link));
             if (!request.ok) {
@@ -72,7 +73,7 @@ const updatePages = async () => {
             }
         }
     }));
-    return { channels: db.data.channels, news: db.data.news };
+    return { channels: channels, news: db.data.news };
 };
 await updatePages();
 console.log("updated!");
@@ -113,8 +114,9 @@ app.get('/api/feed', async (req, res) => {
     console.log(db.data.feeds);
     res.send(db.data.feeds);
 });
-app.get('/api/updateall', async (req, res) => {
-    const data = await updatePages();
+app.post('/api/getnewupsates', async (req, res) => {
+    console.log(req.body);
+    const data = await updatePages(req.body.length ? req.body : []);
     res.send(data);
 });
 app.post('/api/delete', async (req, res) => {
@@ -184,6 +186,26 @@ app.get('/api/readallnews', async (req, res) => {
     db.data.news = [];
     await db.write();
     res.send({ success: true });
+});
+app.post('/api/trymeta', async (req, res) => {
+    try {
+        const sitecontent = await fetch(req.body.link);
+        console.log(req.body.link, sitecontent.status);
+        if (sitecontent.ok) {
+            const text = await sitecontent.text();
+            const dom = new jsdom.JSDOM(text);
+            const thumb = dom.window.document.querySelector(`meta[property="og:image"]`);
+            const name = dom.window.document.querySelector(`meta[property="og:title"]`);
+            res.send({ thumb: thumb ? thumb.getAttribute("content") : "",
+                name: name ? name.getAttribute("content") : "" });
+        }
+        else {
+            res.status(404).send({ error: true });
+        }
+    }
+    catch (error) {
+        res.status(404).send({ error: true });
+    }
 });
 app.listen(PORT, () => {
     console.log(`Running on http://localhost:${PORT}`);
