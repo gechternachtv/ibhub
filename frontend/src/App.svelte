@@ -45,29 +45,6 @@ $:{
 </script>
 <svelte:head>
 	<title>{count} ibhub</title>
-	<style>
-		:root {
-			--alert:#fb0000;
-			--news:#fb0000;
-			--header-bg: #e04001;
-			--main-font-1: #800000;
-			--main-font-2: #800000;
-			--button-bg:#800000;
-			--button-color:#ffffee;
-			--header-color:#ffffee;
-			--card-bg: #f0e0d6;
-			--container-bg:#ffffee;
-			--gradient-col-1:#fed6af;
-			--gradient-col-2:#ffffee;
-			--container:1300px;
-		}
-		body {
-			background: var(--gradient-col-1);
-			background: linear-gradient(0deg, var(--gradient-col-2) 0%, var(--gradient-col-1) 80%);
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-		}
-	</style>
 </svelte:head>
 
 <main>
@@ -95,6 +72,30 @@ $:{
 </main>
 
 <style>
+
+:global(body) {
+			--alert:#fb0000;
+			--news:#fb0000;
+			--header-bg: #e04001;
+			--main-font-1: #800000;
+			--main-font-2: #800000;
+			--button-bg:#800000;
+			--button-color:#ffffee;
+			--header-color:#ffffee;
+			--card-bg: #f0e0d6;
+			--container-bg:#ffffee;
+			--gradient-col-1:#fed6af;
+			--gradient-col-2:#ffffee;
+			--body-background:linear-gradient(0deg, var(--gradient-col-2) 0%, var(--gradient-col-1) 80%);;
+			--container:1300px;
+		}
+	:global(body) {
+			background: var(--gradient-col-1);
+			background: var(--body-background);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
 
 .app {
 margin-bottom: 50px;

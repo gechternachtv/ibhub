@@ -99,9 +99,11 @@ const validateURL = (str:string)=> {
 			body: JSON.stringify(data)
 		});
 
-		console.log(response)
-		result = `${data.id} updated!`
-		btnActive = true
+		if(response.ok){
+			result =  `${data.id} updated!`
+			btnActive = true
+		}
+
 
 	} catch (error) {
 			console.warn(error)
@@ -137,11 +139,13 @@ const validateURL = (str:string)=> {
 		}else{
 			console.log(ress)
 			data.id = ress.id
+			const ids:ids = []
+			ids.push(data.id)
 
 			result = "updating...";
 			const getnewupdatesResponse = await fetch('/api/getnewupsates', {
 			...responseOptions,
-			body: JSON.stringify([data.id])
+			body: JSON.stringify(ids)
 			});
 
 			const getnewupdatesData = await getnewupdatesResponse.json();
@@ -191,7 +195,7 @@ const validateURL = (str:string)=> {
 			})
 
 			if(metares.ok){
-					const metainfo = await (metares).json()
+					const metainfo:meta = await (metares).json()
 					console.log(metainfo)
 
 					data.name = metainfo.name === "" ? data.name : metainfo.name
@@ -222,14 +226,16 @@ const validateURL = (str:string)=> {
 				const channelRes = await (fetch(`/api/channels/${params.get("id")}`))
 
 				if(channelRes.ok){
-					const channel:channel = await (channelRes).json()
+					const channel:channel[] = await (channelRes).json()
+					console.log(channel)
+
 					for (const key in data) {
-						data[key]=channel[key];
+						data[key]=channel[0][key];
 					}
 					result = `Updating ${data.id}`
 					containsstr = data.contains.toString()
 					news = await (await (fetch(`/api/getnews`))).json()
-					console.log(channel)
+					console.log(channel[0])
 				}else{
 					clearData()
 					result = "Url id not found"
@@ -542,4 +548,22 @@ const validateURL = (str:string)=> {
 				max-width:100%;
 			}
 
+			
+			@media only screen and (max-width: 991px){
+				.id{
+					grid-column:1;
+				}
+				section{
+					grid-template-columns: 1fr;
+				}
+
+				.thumb-holder {
+					grid-row: 2;
+					padding: 18px;
+				}
+				.select-holder {
+				margin:26px 0;
+				}
+
+			}
 </style>

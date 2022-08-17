@@ -41,9 +41,12 @@
             try {
             buttonLoading = true
             result = `updating${showall ? "" : ` ${currentfilter}`}...`
+
+            const ids:ids = filteredChannel.map(e => e.id)
+
             const response = await fetch('/api/getnewupsates', {
             ...responseOptions,
-            body: JSON.stringify(filteredChannel.map(e => e.id))
+            body: JSON.stringify(ids)
             });
 
             const data = await response.json()
@@ -64,6 +67,7 @@
         }
 
 let filteredChannel = channels
+
 
 $:{
     filteredChannel = [...channels].reverse().filter(e => (showall ? true : e.host === currentfilter)).filter(e => showdead ? true : (e.dead === false))
@@ -98,7 +102,10 @@ $:{
             <div class:newpost={news.find(x => x.channelid === channel.id)} class="card">
                 <div class="card-container">
                     <div class="thumb">
-                        <a href="{channel.link}" target="_blank">
+                        <div class="tooltip">
+                            {channel.laspost}
+                        </div>
+                        <a href="#/new?id={channel.id}">
                             <img loading=lazy src="{channel.thumb}" alt="">
                         </a>
                     </div>
@@ -144,7 +151,8 @@ $:{
                 margin-bottom: 9px;
             }
             .thumb img{
-                max-width: 180px;
+                width: auto;
+                max-width: min(100%, 180px);
             }
     
             .card{
@@ -195,6 +203,7 @@ $:{
                 display: flex;
                 gap: 10px;
                 align-items: center;
+                flex-wrap: wrap;
             }
 
             .card.newpost{
@@ -299,4 +308,37 @@ $:{
                 display: inline-block;
                 margin-left: 20px;
             }
+
+            .tooltip {
+            font-size: 10px;
+            background: var(--button-color);
+            color: var(--button-bg);
+            padding: 14px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 1px solid;
+            opacity:0;
+            transition:all .3s;
+            max-width: 100%;
+            word-break: break-word;
+            pointer-events: none;
+            max-height: 180px;
+            overflow: hidden;
+            }
+
+            .thumb:hover .tooltip{
+                opacity:0.9;
+            }
+
+            @media only screen and (max-width: 991px){
+                .filter button{
+                    min-height: 40px;
+                }
+
+                .thumb a {
+                    pointer-events: none;
+                }
+            }
+
         </style>
