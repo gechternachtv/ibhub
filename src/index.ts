@@ -73,8 +73,13 @@ await db.write();
     
                             const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1]
     
+                            lastPost.innerHTML = lastPost?.innerHTML?.replaceAll("<li>","• ").replaceAll("</li>","\n").replaceAll("<br>","\n") //basic list formating
+
                             if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
-    
+
+                                
+                                console.log(lastPost.textContent)
+
                                 console.log("item updated!")
                                 singlePage.dead = (observedItems.length === 0)
                                 singlePage.updates = observedItems.length
@@ -92,6 +97,7 @@ await db.write();
                                     title: singlePage.dead ? `[dead thread] ${singlePage.name}` : `${singlePage.contains.length > 0 ? `[new reply]` : `[thread update]`} ${singlePage.name}`,
                                     content: singlePage.dead ? `[dead thread]` : lastPost.textContent,
                                     link: singlePage.link,
+                                    host:(new URL(singlePage.link)).hostname,
                                     postid: postId,
                                     image: singlePage.thumb,
                                     date: date.toLocaleString(),
@@ -174,7 +180,7 @@ await db.write();
         res.send(db.data.feeds)
     })
 
-    app.get('/api/channelhosts', async (req, res) => {
+    app.get('/api/activehosts', async (req, res) => {
         await db.read()
         const set = new Set(db.data.channels.map(e => e.host))
         res.send(Array.from(set))
@@ -265,12 +271,12 @@ await db.write();
             const observedItems = returnDomList(sitecontent,req.body.observeName,req.body.contains)
             const channel = {...req.body, updates:observedItems.length}
     
-                const newId = uniqid()
+                const newchannelId = uniqid()
                 channel.thumb = channel.thumb
     
                 db.data.channels.push({
                     ...channel,
-                    id: newId
+                    id: newchannelId
                 })
     
     
@@ -281,21 +287,22 @@ await db.write();
                     title: `${channel.name} added!`,
                     content: `${channel.name} added, current replies:${channel.updates}`,
                     link: channel.link,
+                    host:(new URL(channel.link)).hostname,
                     postid: postId,
                     image: channel.thumb ? channel.thumb : null,
                     date: date.toUTCString(),
-                    channelid:channel.id
+                    channelid:newchannelId
                 })
     
                 db.data.news.push({
                     "postid":postId,
-                    "channelid":channel.id
+                    "channelid":newchannelId
                 })
     
                 await db.write()
                 res.send({
                     ...channel,
-                    id: newId
+                    id: newchannelId
                 })
         } catch (error) {
             res.status(400).send({

@@ -17,6 +17,7 @@ type feed = {
 	title: string,
 	content: string,
 	link: string,
+	host:string,
 	postid: string,
 	image: string,
 	date: string,

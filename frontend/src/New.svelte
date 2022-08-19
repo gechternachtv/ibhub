@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import {querystring} from 'svelte-spa-router'
+	import {push, querystring} from 'svelte-spa-router'
 	import { updateCount } from './stores';
-	
-	import externalLink from './assets/external.svg'
 	import archiveph from './assets/archiveph.png'
+
 
 
 let btnActive = false
@@ -12,6 +11,7 @@ let linkvalid = false
 let containsstr = ""
 let result = "Creating new"
 let news:newsfeed[] = []
+let statusActive = false
 
 const params = new URLSearchParams($querystring)
 
@@ -79,6 +79,7 @@ const validateURL = (str:string)=> {
 		data.host = ""
 
 		result = "Creating new"
+		statusActive = false
 	}
 
 
@@ -86,6 +87,7 @@ const validateURL = (str:string)=> {
 	try {
 	
 		console.log(data)
+		statusActive = true
 		result = "posting...";
 		btnActive = false
 
@@ -100,6 +102,7 @@ const validateURL = (str:string)=> {
 		});
 
 		if(response.ok){
+			statusActive = true
 			result =  `${data.id} updated!`
 			btnActive = true
 		}
@@ -107,6 +110,7 @@ const validateURL = (str:string)=> {
 
 	} catch (error) {
 			console.warn(error)
+			statusActive = true
 			result = `error updating, ${error}`;
 			btnActive = true
 			return false;
@@ -121,7 +125,7 @@ const validateURL = (str:string)=> {
 			if (!validateSelector(data.observeName)) throw "invalid selector";
 
 			data.host = (new URL(data.link)).hostname
-
+			statusActive = true
 			result = "creating...";
 		btnActive = false
 
@@ -141,7 +145,7 @@ const validateURL = (str:string)=> {
 			data.id = ress.id
 			const ids:ids = []
 			ids.push(data.id)
-
+			statusActive = true
 			result = "updating...";
 			const getnewupdatesResponse = await fetch('/api/getnewupsates', {
 			...responseOptions,
@@ -153,6 +157,7 @@ const validateURL = (str:string)=> {
 
 			const news  = await (await (fetch(`/api/getnews`))).json();
 			updateCount.update(n => news.length)
+			statusActive = true
 			result = "New target created!"
 			btnActive = true
 		}
@@ -188,6 +193,7 @@ const validateURL = (str:string)=> {
 	async function tryinfo(url:string){
 		console.log(url)
 		if(linkvalid){
+			statusActive = true
 			result = "checking url..."
 			const metares = await fetch('/api/trymeta', {
 			...responseOptions,
@@ -204,6 +210,7 @@ const validateURL = (str:string)=> {
 					result = (metainfo.name != "" || metainfo.thumb != "") ? "fetched metadata from url" : "metadata not available" 
 
 				}else{
+					statusActive = true
 					result = "page is not available right now"
 				}
 		}
@@ -222,6 +229,8 @@ const validateURL = (str:string)=> {
 				}
 			}					
 			if(params.get("id")){
+				try {
+				statusActive = true
 				result = "fetching data..."
 				const channelRes = await (fetch(`/api/channels/${params.get("id")}`))
 
@@ -232,6 +241,7 @@ const validateURL = (str:string)=> {
 					for (const key in data) {
 						data[key]=channel[0][key];
 					}
+					statusActive = false
 					result = `Updating ${data.id}`
 					containsstr = data.contains.toString()
 					news = await (await (fetch(`/api/getnews`))).json()
@@ -239,6 +249,11 @@ const validateURL = (str:string)=> {
 				}else{
 					clearData()
 					result = "Url id not found"
+					statusActive = true 
+				}
+				} catch (error) {
+					console.warn(error)
+					push("/error")
 				}
 			}
 			
@@ -254,20 +269,22 @@ const validateURL = (str:string)=> {
 </script>
 
 <main>
-	<section class="new-section" class:btnActive>
+	<div class="container-header">				
+		{#if data.id != ""}
+			<h1>Updating!</h1>
+		{:else}
+			<h1>New!</h1>
+		{/if}
+	</div>
 
-			<div class="id">				
-				{#if data.id != ""}
-					Updating {data.id}
-					<button on:click={clearData}>Clear</button>
-				{:else}
-					New!
-				{/if}
-			</div>
-		
+
+
+	<section class="new-section" class:btnActive>
 		
 		<form>
-
+			{#if data.id != ""}
+			<div class="id"> <strong>Id: {data.id} </strong></div> 
+			{/if}
 			<div>
 				<label for="link">url:</label>
 				<input id="link" bind:value={data.link} placeholder="link*" on:input={() => tryinfo(data.link)} on:change={() => tryinfo(data.link)} />
@@ -345,8 +362,12 @@ const validateURL = (str:string)=> {
 
 					{#if linkvalid}
 					<div class="btn-links-holder">
-						<a class="btn-link" target="_blank" href="{data.link}">visit <img src={externalLink} alt=""></a>
-						<a class="btn-link" target="_blank" href="https://archive.today/?run=1&url={data.link}"> <img alt="" src={archiveph}> archive.ph <img src={externalLink} alt=""> </a>
+						<a class="btn-link" target="_blank" href="{data.link}">visit 
+							<svg fill="var(--button-color)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="15px" height="15px"><path d="M 41.470703 4.9863281 A 1.50015 1.50015 0 0 0 41.308594 5 L 27.5 5 A 1.50015 1.50015 0 1 0 27.5 8 L 37.878906 8 L 22.439453 23.439453 A 1.50015 1.50015 0 1 0 24.560547 25.560547 L 40 10.121094 L 40 20.5 A 1.50015 1.50015 0 1 0 43 20.5 L 43 6.6894531 A 1.50015 1.50015 0 0 0 41.470703 4.9863281 z M 12.5 8 C 8.3754991 8 5 11.375499 5 15.5 L 5 35.5 C 5 39.624501 8.3754991 43 12.5 43 L 32.5 43 C 36.624501 43 40 39.624501 40 35.5 L 40 25.5 A 1.50015 1.50015 0 1 0 37 25.5 L 37 35.5 C 37 38.003499 35.003499 40 32.5 40 L 12.5 40 C 9.9965009 40 8 38.003499 8 35.5 L 8 15.5 C 8 12.996501 9.9965009 11 12.5 11 L 22.5 11 A 1.50015 1.50015 0 1 0 22.5 8 L 12.5 8 z"/></svg>
+						</a>
+						<a class="btn-link" target="_blank" href="https://archive.today/?run=1&url={data.link}"> <img alt="" src={archiveph}> archive.ph
+							<svg fill="var(--button-color)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="15px" height="15px"><path d="M 41.470703 4.9863281 A 1.50015 1.50015 0 0 0 41.308594 5 L 27.5 5 A 1.50015 1.50015 0 1 0 27.5 8 L 37.878906 8 L 22.439453 23.439453 A 1.50015 1.50015 0 1 0 24.560547 25.560547 L 40 10.121094 L 40 20.5 A 1.50015 1.50015 0 1 0 43 20.5 L 43 6.6894531 A 1.50015 1.50015 0 0 0 41.470703 4.9863281 z M 12.5 8 C 8.3754991 8 5 11.375499 5 15.5 L 5 35.5 C 5 39.624501 8.3754991 43 12.5 43 L 32.5 43 C 36.624501 43 40 39.624501 40 35.5 L 40 25.5 A 1.50015 1.50015 0 1 0 37 25.5 L 37 35.5 C 37 38.003499 35.003499 40 32.5 40 L 12.5 40 C 9.9965009 40 8 38.003499 8 35.5 L 8 15.5 C 8 12.996501 9.9965009 11 12.5 11 L 22.5 11 A 1.50015 1.50015 0 1 0 22.5 8 L 12.5 8 z"/></svg>
+						</a>
 					</div>
 					{/if}
 				</div>
@@ -359,14 +380,16 @@ const validateURL = (str:string)=> {
 				<div class="status-content">
 					<h4 class="data-content">Last update:</h4>
 					<div class="status-text">
-						{data.laspost}
+						{#each data.laspost.split("\n") as content}
+							<div>{content}</div>
+						{/each}
 					</div>
 				</div>
 			</div>
 
 			{/if}
 
-			<div>
+			<div class:statusActive={statusActive} class="status-box">
 				<h4>STATUS:</h4>
 					<div class="status-content">
 						<div class="status-text">
@@ -389,18 +412,7 @@ const validateURL = (str:string)=> {
 		background:var(--container-bg);
 		margin:auto;
         max-width: var(--container);
-	}
-	.id{
-		background: var(--header-bg);
-		color: var(--header-color);
-		padding: 4px;
-		margin: 10px 0;
-		grid-column: span 2;
-		display: flex;
-		gap: 20px;
-		align-items: center;
-		margin-top:0px;
-		padding: 8px;
+		width:100%;
 	}
 	section{
 		margin-top:10px;
@@ -418,8 +430,9 @@ const validateURL = (str:string)=> {
 		pointer-events: initial;
 	} 
 	form{
-		padding: 40px;
+		padding: 50px;
 		padding-top: 0px;
+		padding-left:8px;
 	}
 	form > div {
 		display: flex;
@@ -550,15 +563,12 @@ const validateURL = (str:string)=> {
 
 			
 			@media only screen and (max-width: 991px){
-				.id{
-					grid-column:1;
-				}
 				section{
 					grid-template-columns: 1fr;
 				}
 
 				.thumb-holder {
-					grid-row: 2;
+					grid-row: 1;
 					padding: 18px;
 				}
 				.select-holder {
@@ -566,4 +576,68 @@ const validateURL = (str:string)=> {
 				}
 
 			}
+
+			.container-header{
+                background:var(--header-bg);
+                color:var(--header-color);
+                padding:4px;
+                margin:15px 0;
+                display: grid;
+                grid-template-columns: 1fr auto;
+            }
+            .container-header h1{
+                margin: 0;
+            }
+
+			.id{
+				margin-bottom: 29px;
+				font-size: 17px;
+			}
+
+
+
+			@media only screen and (max-width: 991px){
+
+			.status-box{
+				opacity:0
+			}
+			.status-box.statusActive{
+				opacity:1;
+			}
+
+			
+				button, .btn-link {
+				min-height: 40px;
+				width: 100%;
+				}
+
+				.form-btns-holder {
+				flex-direction: row;
+				}
+
+				.form-btns-holder {
+				max-width: 100%;
+				}
+
+
+			.status > .status-box {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: var(--button-color);
+			color: var(--button-bg);
+			border-top:1px solid var(--button-bg);
+			}
+
+			/* index.da370f4e.css | http://localhost:4001/assets/index.da370f4e.css */
+
+			.status-box h4 {
+			display:none;
+			}
+
+			}
+
+
+
 </style>

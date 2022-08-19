@@ -15,7 +15,11 @@ npm run start
 ```
 ---
 ## todo:
-
+- smarter way to put linebreaks on content 
+- fix "added" no id bug (done)
+- feed filter (done)
+- make more components (done)
+- delete confirmation on update page
 - get a way to put the frontend source availible in a more organized way (probably git submodules)
 - text explanations on inputs
 - newsontop illustrations on inputs
@@ -29,5 +33,4 @@ npm run start
 - about page with github link
 
 - more error handling cases
-    - front end no server connection
-    - multiple failures on serverside
+    - front end no server connection (done)
