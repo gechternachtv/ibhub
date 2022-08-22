@@ -19,12 +19,12 @@ npm run start
 - fix "added" no id bug (done)
 - feed filter (done)
 - make more components (done)
-- delete confirmation on update page
+- delete confirmation on update page (done)
 - get a way to put the frontend source availible in a more organized way (probably git submodules)
-- text explanations on inputs
-- newsontop illustrations on inputs
+- text explanations on inputs (done)
+- newsontop illustrations on inputs (nah)
 
-- default values on "observe"
+- default values on "observe" (done???)
 - add a way to save selectors for domains on the db so you dont have to keep retyping them
 
 - add support for custom server location, and not always same origin

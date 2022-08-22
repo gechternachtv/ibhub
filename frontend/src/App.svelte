@@ -3,7 +3,7 @@
 	import Channels from './channels/Channels.svelte';
 	import Themeswitch from './themeswitch.svelte';
 	import Feed from './feed/Feed.svelte';
-	import New from './New.svelte';
+	import New from './New/New.svelte';
 	import Config from './Config.svelte';
 	import Error from './Error.svelte';
 	import { updateCount } from './stores';

@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import {push, querystring} from 'svelte-spa-router'
-	import { updateCount } from './stores';
-	import archiveph from './assets/archiveph.png'
+	import { updateCount } from '../stores';
+	import archiveph from '../assets/archiveph.png'
+	import Tooltip from './tooltip.svelte';
 
 
 
@@ -12,6 +13,7 @@ let containsstr = ""
 let result = "Creating new"
 let news:newsfeed[] = []
 let statusActive = false
+let deleteconfirm = false;
 
 const params = new URLSearchParams($querystring)
 
@@ -78,7 +80,6 @@ const validateURL = (str:string)=> {
 		data.laspost = "",
 		data.host = ""
 
-		result = "Creating new"
 		statusActive = false
 	}
 
@@ -160,6 +161,8 @@ const validateURL = (str:string)=> {
 			statusActive = true
 			result = "New target created!"
 			btnActive = true
+			push(`/new?id=${ress.id}`)
+
 		}
 
 
@@ -175,6 +178,7 @@ const validateURL = (str:string)=> {
 
 
 	async function deleteData () {
+		statusActive = true
 		result = "deleting..."
 		btnActive = false
 		const response = await fetch('/api/delete', {
@@ -185,9 +189,13 @@ const validateURL = (str:string)=> {
 			}
 		)
 		});
-		clearData();
-		result = `${data.id} deleted!`;
-		btnActive = true
+		clearData()
+		result = `${data.id} deleted`;
+		btnActive = true;
+		deleteconfirm = false;
+		setTimeout(()=>{
+			push("/")
+		},1000)
 	}
 
 	async function tryinfo(url:string){
@@ -195,22 +203,37 @@ const validateURL = (str:string)=> {
 		if(linkvalid){
 			statusActive = true
 			result = "checking url..."
+			let referenceChannelthumb = null
+
+			const tryObserveName = await fetch(`/api/channels?host=${(new URL(url)).hostname}`)
+			if(tryObserveName.ok){
+				const tryObserveNameRes:channel[] = await (tryObserveName).json()
+					console.log(tryObserveNameRes)
+					if(tryObserveNameRes.length > 0){
+						const lastElFromHost = tryObserveNameRes[tryObserveNameRes.length -1]
+						data.observeName = lastElFromHost?.observeName === "" ? data.observeName : lastElFromHost?.observeName
+						data.newestOnTop = lastElFromHost?.newestOnTop
+						referenceChannelthumb = lastElFromHost?.thumb
+					}
+				}
+
+			result = "trying metadata..."
 			const metares = await fetch('/api/trymeta', {
 			...responseOptions,
 			body: JSON.stringify({link:data.link})
 			})
-
 			if(metares.ok){
 					const metainfo:meta = await (metares).json()
 					console.log(metainfo)
 
 					data.name = metainfo.name === "" ? data.name : metainfo.name
-					data.thumb = metainfo.thumb === "" ? data.thumb : metainfo.thumb
+					data.thumb = metainfo.thumb === "" ? (referenceChannelthumb ? referenceChannelthumb : data.thumb) : metainfo.thumb
+
 
 					result = (metainfo.name != "" || metainfo.thumb != "") ? "fetched metadata from url" : "metadata not available" 
 
+
 				}else{
-					statusActive = true
 					result = "page is not available right now"
 				}
 		}
@@ -232,7 +255,7 @@ const validateURL = (str:string)=> {
 				try {
 				statusActive = true
 				result = "fetching data..."
-				const channelRes = await (fetch(`/api/channels/${params.get("id")}`))
+				const channelRes = await (fetch(`/api/channels/?id=${params.get("id")}`))
 
 				if(channelRes.ok){
 					const channel:channel[] = await (channelRes).json()
@@ -242,14 +265,13 @@ const validateURL = (str:string)=> {
 						data[key]=channel[0][key];
 					}
 					statusActive = false
-					result = `Updating ${data.id}`
 					containsstr = data.contains.toString()
 					news = await (await (fetch(`/api/getnews`))).json()
 					console.log(channel[0])
 				}else{
-					clearData()
 					result = "Url id not found"
-					statusActive = true 
+					clearData()
+					push("/new")
 				}
 				} catch (error) {
 					console.warn(error)
@@ -286,56 +308,76 @@ const validateURL = (str:string)=> {
 			<div class="id"> <strong>Id: {data.id} </strong></div> 
 			{/if}
 			<div>
-				<label for="link">url:</label>
-				<input id="link" bind:value={data.link} placeholder="link*" on:input={() => tryinfo(data.link)} on:change={() => tryinfo(data.link)} />
-			</div>
-
-
-			<div>
-			<label for="name">name</label>
-			<input id="name" bind:value={data.name} placeholder="name*"/>
+				<label for="link">url*</label>
+				<input id="link" bind:value={data.link} placeholder="https://en.wikipedia.org/wiki/Main_Page*" on:input={() => tryinfo(data.link)} on:change={() => tryinfo(data.link)} />
 			</div>
 
 			<div>
-			<label for="observeName">observeName</label>
-			<input id="observeName" bind:value={data.observeName} placeholder="observer*"/>
+			<label  for="observeName"><Tooltip><span slot="name">target selector*</span> <span slot="content">
+				A valid CSS selector string to be the target of observation, the updates are based on changes of this element, so anytime the text on it changes, you get a new update.<br>
+				Example ".post"<br><br>
+				You can learn more about CSS selectors <a class="tooltiplink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank"> here</a>
+			</span></Tooltip></label>
+			<input id="observeName" bind:value={data.observeName} placeholder=".post*"/>
 			</div>
 
 			<div>
-			<label for="containsstr">contains</label>
-			<input id="containsstr" bind:value={containsstr} placeholder="contains"/>
+			<label for="name">title*</label>
+			<input id="name" bind:value={data.name} placeholder="Title"/>
 			</div>
 
 			<div>
-			<label for="thumb">thumb</label>
-			<input id="thumb" bind:value={data.thumb} placeholder="thumb"/>
+			<label  for="containsstr"><Tooltip><span slot="name">keywords</span> <span slot="content">
+				Filter the updates with only the ones that contains words listed here, you can have more than one word separated by "," without spaces<br>
+				Example: "41234,foo,hello world"<br>
+				If left blank, it will update on any change regradless.
+			</span></Tooltip></label>
+			<input id="containsstr" bind:value={containsstr} placeholder="foo,123,hello world,41234"/>
 			</div>
 
 			<div>
-			<label for="meta">meta</label>
-			<textarea id="meta" bind:value={data.meta} placeholder="meta"/>
+			<label  for="thumb"><Tooltip><span slot="name">cover</span> <span slot="content">A url of an image</span></Tooltip></label>
+			<input id="thumb" bind:value={data.thumb} placeholder="https://validwebsite.com/image.png"/>
 			</div>
 
-				<div class="select-holder">
-				<label for="newestOnTop">news on top</label>				
+			<div>
+			<label  for="meta">Extra information</label>
+			<textarea id="meta" bind:value={data.meta} placeholder="Any extra info goes here"/>
+			</div>
+
+				<div class="select-holder">			
 				<input id="newestOnTop" type="checkbox" bind:checked={data.newestOnTop}/>
+				<Tooltip><span slot="name">newest post on top</span> <span slot="content">When marked, the updates will check the newest content from the top of the page (like a blog or twitter), instead of bottom of the page</span></Tooltip>
 				</div>
 
 
 			{#if data.id != ""}
-				<div class="select-holder"><label for="dead">dead</label>
-					 <input id="dead" type="checkbox" bind:checked={data.dead}/></div>
-			{/if}
+				<div class="select-holder">
+					 <input id="dead" type="checkbox" bind:checked={data.dead}/>
+					 <Tooltip><span slot="name">dead</span> <span slot="content">When marked, the updates will not check any changes on this page anymore</span></Tooltip>	
+				</div>
 
+			{/if}
+			
+			{#if deleteconfirm}
+					<div class="deleteconfirm">Are you sure?</div>
+			{/if}
 			<div class="form-btns-holder">
-				{#if data.id != ""}
-				<button type="button" on:click={updateData}>Update!</button>
+				{#if deleteconfirm}
+
+					<button type="button" on:click={()=>deleteconfirm = false}>No</button>
+					<button type="button" on:click={deleteData}>Yes</button>
+					<!-- deleteData -->
 				{:else}
-				<button type="button" on:click={addData}>New!</button>
+					{#if data.id != ""}
+						<button type="button" on:click={updateData}>Update!</button>
+						<button type="button" on:click={()=>deleteconfirm = true}>Delete!</button>
+					{:else}
+						<button type="button" on:click={addData}>New!</button>
+						<button type="button" on:click={clearData}>Clear!</button>
+					{/if}
 				{/if}
-				{#if data.id != ""}
-				<button type="button" on:click={deleteData}>Delete!</button>
-				{/if}
+
 			</div>
 		</form>
 		<div class="thumb-holder">
@@ -390,7 +432,6 @@ const validateURL = (str:string)=> {
 			{/if}
 
 			<div class:statusActive={statusActive} class="status-box">
-				<h4>STATUS:</h4>
 					<div class="status-content">
 						<div class="status-text">
 						{result}
@@ -439,6 +480,10 @@ const validateURL = (str:string)=> {
 		flex-direction: column;
 		gap: 10px;
 		margin: 10px 0;
+	}
+
+	.form-btns-holder {
+		flex-direction: row;
 	}
 
 	h4{
@@ -559,6 +604,9 @@ const validateURL = (str:string)=> {
 
 			.thumb img {
 				max-width:100%;
+				max-height: 300px;
+				width: auto;
+				height: auto;
 			}
 
 			
@@ -598,13 +646,6 @@ const validateURL = (str:string)=> {
 
 			@media only screen and (max-width: 991px){
 
-			.status-box{
-				opacity:0
-			}
-			.status-box.statusActive{
-				opacity:1;
-			}
-
 			
 				button, .btn-link {
 				min-height: 40px;
@@ -620,6 +661,9 @@ const validateURL = (str:string)=> {
 				}
 
 
+			}
+
+
 			.status > .status-box {
 			position: fixed;
 			bottom: 0;
@@ -630,14 +674,38 @@ const validateURL = (str:string)=> {
 			border-top:1px solid var(--button-bg);
 			}
 
-			/* index.da370f4e.css | http://localhost:4001/assets/index.da370f4e.css */
-
-			.status-box h4 {
-			display:none;
+			.status-box{
+				opacity:0
+			}
+			.status-box.statusActive{
+				opacity:1;
 			}
 
+
+
+			.deleteconfirm {
+				background: var(--alert);
+				padding: 4px;
+				color: var(--button-color);
+				padding: 15px;
+
 			}
 
+			.select-holder {
+				align-items: baseline;
+			}
 
+			.tooltiplink{
+				color:var(--header-color);
+				text-decoration: underline;
+			}
+
+			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: #0000005c;
+				}
+
+				::-ms-input-placeholder { /* Microsoft Edge */
+				color: #0000005c;
+				}
 
 </style>

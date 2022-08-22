@@ -8,7 +8,7 @@ import dotenv from "dotenv"
 import { join, dirname } from 'path';
 import { Low, JSONFile } from 'lowdb';
 import { fileURLToPath } from 'url';
-import { Channel, channel } from "diagnostics_channel";
+
 
 dotenv.config();
 //initialize
@@ -168,9 +168,17 @@ await db.write();
         res.send(rssfeed.xml())
     })
 
-    app.get('/api/channels/:id?',async (req, res) => {
+    app.get('/api/channels/?',async (req, res) => {
         await db.read()
-        const data:channel[] = req.params.id ? [db.data.channels.find((ch:channel) => ch.id === req.params.id)] : db.data.channels
+        console.log(req.query.value)
+        
+        let data:channel[] = db.data.channels
+
+        for (const property in req.query) {
+            console.log(`${property}: ${req.query[property]}`);
+            data = data.filter((ch:channel) => ch[property] === req.query[property])
+          }
+          
         res.status(data[0] ? 200 : 404).send(data)
     })
 
