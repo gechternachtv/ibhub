@@ -2,7 +2,7 @@
     let active= false;
     </script>
     <div class="box">
-        <slot name="name"></slot> <button class:active={active} class="hastooltip" on:click={()=>{active=!active}}>?</button>
+        <slot name="name"></slot> <button class:active={active} class="hastooltip" on:click={(e)=>{e.preventDefault();active=!active}}>?</button>
         <div class:active={active} class="container">
             <div class="content">
                 <slot name="content"></slot>
@@ -57,7 +57,7 @@
                 border-radius: 20px;
                 margin-left: 6px;
                 font-weight: bold;
-                cursor: help;
+                
                 min-width: auto;
                 padding: 0;
                 }

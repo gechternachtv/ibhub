@@ -308,40 +308,40 @@ const validateURL = (str:string)=> {
 			<div class="id"> <strong>Id: {data.id} </strong></div> 
 			{/if}
 			<div>
-				<label for="link">url*</label>
+				<div class="labelholder" for="link">url*</div>
 				<input id="link" bind:value={data.link} placeholder="https://en.wikipedia.org/wiki/Main_Page*" on:input={() => tryinfo(data.link)} on:change={() => tryinfo(data.link)} />
 			</div>
 
 			<div>
-			<label  for="observeName"><Tooltip><span slot="name">target selector*</span> <span slot="content">
+			<div class="labelholder"  for="observeName"><Tooltip><span slot="name">target selector*</span> <span slot="content">
 				A valid CSS selector string to be the target of observation, the updates are based on changes of this element, so anytime the text on it changes, you get a new update.<br>
 				Example ".post"<br><br>
 				You can learn more about CSS selectors <a class="tooltiplink" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank"> here</a>
-			</span></Tooltip></label>
+			</span></Tooltip></div>
 			<input id="observeName" bind:value={data.observeName} placeholder=".post*"/>
 			</div>
 
 			<div>
-			<label for="name">title*</label>
+			<div class="labelholder" for="name">title*</div>
 			<input id="name" bind:value={data.name} placeholder="Title"/>
 			</div>
 
 			<div>
-			<label  for="containsstr"><Tooltip><span slot="name">keywords</span> <span slot="content">
+			<div class="labelholder"  for="containsstr"><Tooltip><span slot="name">keywords</span> <span slot="content">
 				Filter the updates with only the ones that contains words listed here, you can have more than one word separated by "," without spaces<br>
 				Example: "41234,foo,hello world"<br>
 				If left blank, it will update on any change regradless.
-			</span></Tooltip></label>
+			</span></Tooltip></div>
 			<input id="containsstr" bind:value={containsstr} placeholder="foo,123,hello world,41234"/>
 			</div>
 
 			<div>
-			<label  for="thumb"><Tooltip><span slot="name">cover</span> <span slot="content">A url of an image</span></Tooltip></label>
+			<div class="labelholder"  for="thumb"><Tooltip><span slot="name">cover</span> <span slot="content">A url of an image</span></Tooltip></div>
 			<input id="thumb" bind:value={data.thumb} placeholder="https://validwebsite.com/image.png"/>
 			</div>
 
 			<div>
-			<label  for="meta">Extra information</label>
+			<div class="labelholder"  for="meta">Extra information</div>
 			<textarea id="meta" bind:value={data.meta} placeholder="Any extra info goes here"/>
 			</div>
 
