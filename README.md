@@ -25,7 +25,7 @@ npm run start
 - newsontop illustrations on inputs (nah)
 
 - default values on "observe" (done???)
-- add a way to save selectors for domains on the db so you dont have to keep retyping them
+- add a way to save selectors for domains on the db so you dont have to keep retyping them (done)
 
 - add support for custom server location, and not always same origin
 - add more complex theme support, like theme from js object or external css AND custom css
