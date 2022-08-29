@@ -1,6 +1,9 @@
 # ibhub
 
-Static-site observer with a frontend with a feed and rss server
+Static-site observer server, with optional frontend interface and rss,
+The server is a webscrapper that watch a list of pages saved and check if there are any updates on it.
+you can add, remove or update the entries on the frontend or directly from the api.
+It presents your updates on a feed like thing, and rss.
 
 run:
 
@@ -14,6 +17,24 @@ npm run build
 npm run start
 ```
 ---
+
+To add a page go to `New!` and fill the form
+Put the url first, it will try to get metadata from the site if available.
+Target selector is the valid CSS selector string, you can learn more here: [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+
+if you want to watch the entire page, just put "body" on it.
+
+If you already have entries on the same website, it will fill the selector automatically.
+
+It works around text, so if an image changes, it will not update, not like its hard to add it, but i see no reason to watch elements attributes.
+
+Very useful for:
+
+- Follow your replies on anonymous forums
+- Cool pages on neocities
+- Watch price changes on online stores
+
+
 ## todo:
 - smarter way to put linebreaks on content 
 - fix "added" no id bug (done)
