@@ -50,7 +50,7 @@
 
             const response = await fetch('/api/getnewupsates', {
             ...responseOptions,
-            body: JSON.stringify(ids)
+            body: JSON.stringify({ids:ids})
             });
 
             const data = await response.json()

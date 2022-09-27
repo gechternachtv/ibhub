@@ -53,5 +53,5 @@ Very useful for:
 - add settings page to change themes (?) and custom server location (?)
 - about page with github link
 
-- more error handling cases
-    - front end no server connection (done)
+-  more error handling cases
+    -  front end no server connection (done)
