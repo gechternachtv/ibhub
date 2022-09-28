@@ -54,8 +54,11 @@ await db.write();
 
     }
 
-    const updatePages:(filterIds?:string[]) => Promise<pageupdateResponse> = async (filterIds = []) => {
-
+    const updatePages:(filterIds?:string[], ignoredead?:boolean, dead?:boolean) => Promise<pageupdateResponse> = async (filterIds = [],ignoredead = false, dead = null) => {
+        console.log("filterIds:")
+        console.log(filterIds)
+        console.log("ignoredead")
+        console.log(ignoredead)
         await db.read()
 
         const channels:channel[] = filterIds.length ? db.data.channels.filter((e:channel) => filterIds.includes(e.id)) : db.data.channels
@@ -63,7 +66,7 @@ await db.write();
         await Promise.all(channels.map(async (singlePage) => {
 
 
-                if(!singlePage.dead){
+                if(!singlePage.dead || ignoredead){
 
                     const request = await (fetch(singlePage.link))
     
@@ -74,7 +77,7 @@ await db.write();
                         const query = db.data.channels.findIndex(o => o.id === singlePage.id)
                         db.data.channels[query] = {...db.data.channels[query], ...singlePage}
     
-  
+
                         pushNews(singlePage,{
                             title: `[page is down] ${singlePage.name}`,
                             content: `[page is down]`,
@@ -85,7 +88,7 @@ await db.write();
                             postid: "",
                             date: ""
                         })
-
+                        
 
 
                         await db.write()
@@ -104,26 +107,25 @@ await db.write();
                             if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
 
                                 console.log(`${singlePage.name} updated!`)
-                                singlePage.dead = (observedItems.length === 0)
+                                singlePage.dead = (dead != null) ? dead : (observedItems.length === 0)  
                                 singlePage.updates = observedItems.length
                                 singlePage.laspost = lastPost.textContent
     
                                 const query = db.data.channels.findIndex(o => o.id === singlePage.id)
                                 db.data.channels[query] = {...db.data.channels[query], ...singlePage}
     
-                                
-                                pushNews(singlePage,{
-                                    title: `${singlePage.dead ? `[target selector count is 0]` : `[page update]`} ${singlePage.name}`,
-                                    content: singlePage.dead ? `Check if the target selector is right or if the page is still up` : lastPost.textContent,
-                                    link: singlePage.link,
-                                    host:(new URL(singlePage.link)).hostname,
-                                    image: singlePage.thumb,
-                                    channelid:singlePage.id,
-                                    postid: "",
-                                    date: "",
-                                })
-        
-                                
+                                if(!ignoredead){
+                                    pushNews(singlePage,{
+                                        title: `${singlePage.dead ? `[target selector count is 0]` : `[page update]`} ${singlePage.name}`,
+                                        content: singlePage.dead ? `Check if the target selector is right or if the page is still up` : lastPost.textContent,
+                                        link: singlePage.link,
+                                        host:(new URL(singlePage.link)).hostname,
+                                        image: singlePage.thumb,
+                                        channelid:singlePage.id,
+                                        postid: "",
+                                        date: "",
+                                    })
+                                }
                                 await db.write()
     
     
@@ -222,7 +224,8 @@ await db.write();
 
     app.post('/api/getnewupsates', async (req, res) => {
         try {
-            const data = await updatePages(req.body.length ? req.body : [])
+            const dead = (req.body.dead != undefined ) ? req.body.dead : null
+            const data = await updatePages(req.body.ids?.length ? req.body.ids : [], !!req.body.ignoredead, dead )
             res.send(data)   
         } catch (error) {
             res.status(400).send({error:true,message:error}) 

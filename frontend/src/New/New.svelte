@@ -14,10 +14,10 @@ let result = "Creating new"
 let news:newsfeed[] = []
 let statusActive = false
 let deleteconfirm = false;
-
+let newpost = false
 const params = new URLSearchParams($querystring)
 
-const data:channel = {
+let data:channel = {
     id: "",
     name:"",
     link:"",
@@ -43,6 +43,30 @@ const responseOptions:RequestInit = {
 			redirect: 'follow',
 			referrerPolicy: 'no-referrer',
 		}
+
+
+let updatingsingle = false
+const updatesingle = (id:string)=>{
+	updatingsingle = true;
+	(async ()=>{
+		console.log(data.dead)
+	const response = await fetch('/api/getnewupsates', {
+				...responseOptions,
+				body: JSON.stringify({ids:[id],ignoredead:true, dead:data.dead})
+				});
+	
+	const localdata = await response.json()
+				console.log(localdata)
+				updatingsingle = false
+
+				if(localdata.channels[0].laspost != data.laspost){
+					data = localdata.channels[0]
+					newpost = true
+				}
+	
+	})()           
+
+}
 
 const validateSelector = (str:string)=> {
     try {
@@ -150,7 +174,7 @@ const validateURL = (str:string)=> {
 			result = "updating...";
 			const getnewupdatesResponse = await fetch('/api/getnewupsates', {
 			...responseOptions,
-			body: JSON.stringify(ids)
+			body: JSON.stringify({ids:ids})
 			});
 
 			const getnewupdatesData = await getnewupdatesResponse.json();
@@ -370,7 +394,7 @@ const validateURL = (str:string)=> {
 					<!-- deleteData -->
 				{:else}
 					{#if data.id != ""}
-						<button type="button" on:click={updateData}>Update!</button>
+						<button type="button" on:click={updateData}>Save!</button>
 						<button type="button" on:click={()=>deleteconfirm = true}>Delete!</button>
 					{:else}
 						<button type="button" on:click={addData}>New!</button>
@@ -404,6 +428,15 @@ const validateURL = (str:string)=> {
 
 					{#if linkvalid}
 					<div class="btn-links-holder">
+						{#if data.id != ""}
+						<button class:updatingsingle class="btn-link" on:click="{()=>{updatesingle(data.id)}}">
+							{#if updatingsingle}
+							checking...
+							{:else}
+							check for updates
+							{/if} 
+						</button>
+						{/if}
 						<a class="btn-link" target="_blank" href="{data.link}">visit 
 							<svg fill="var(--button-color)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="15px" height="15px"><path d="M 41.470703 4.9863281 A 1.50015 1.50015 0 0 0 41.308594 5 L 27.5 5 A 1.50015 1.50015 0 1 0 27.5 8 L 37.878906 8 L 22.439453 23.439453 A 1.50015 1.50015 0 1 0 24.560547 25.560547 L 40 10.121094 L 40 20.5 A 1.50015 1.50015 0 1 0 43 20.5 L 43 6.6894531 A 1.50015 1.50015 0 0 0 41.470703 4.9863281 z M 12.5 8 C 8.3754991 8 5 11.375499 5 15.5 L 5 35.5 C 5 39.624501 8.3754991 43 12.5 43 L 32.5 43 C 36.624501 43 40 39.624501 40 35.5 L 40 25.5 A 1.50015 1.50015 0 1 0 37 25.5 L 37 35.5 C 37 38.003499 35.003499 40 32.5 40 L 12.5 40 C 9.9965009 40 8 38.003499 8 35.5 L 8 15.5 C 8 12.996501 9.9965009 11 12.5 11 L 22.5 11 A 1.50015 1.50015 0 1 0 22.5 8 L 12.5 8 z"/></svg>
 						</a>
@@ -418,7 +451,7 @@ const validateURL = (str:string)=> {
 
 			<div class="status">
 			{#if data.laspost != ""}
-			<div class:newpost={news.find(x => x.channelid === data.id)}>
+			<div class:newpost={news.find(x => x.channelid === data.id) || newpost}>
 				<div class="status-content">
 					<h4 class="data-content">Last update:</h4>
 					<div class="status-text">
@@ -707,5 +740,10 @@ const validateURL = (str:string)=> {
 				::-ms-input-placeholder { /* Microsoft Edge */
 				color: #0000005c;
 				}
+
+			.updatingsingle{
+				pointer-events:none !important;
+				opacity:0.5 !important;
+			}
 
 </style>

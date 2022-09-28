@@ -9,9 +9,25 @@
 	import { updateCount } from './stores';
 	import {location} from 'svelte-spa-router'
 
+
+	// const askPermision = ()=>{
+	// 		Notification.requestPermission().then((result) => {
+  	// 		console.log(`%c ${result}`,"font-size:20px;color:tomato");
+	// 	});
+	// }
+
+
 	(async ()=>{
 		const news:string[]  = await (await (fetch(`/api/getnews`))).json();
 		updateCount.update(n => news.length)
+
+		// if(Notification.permission === "granted" && news.length > 0 ){
+		// 	new Notification(`you have ${news.length} updates `, {
+		// 		tag: 'notification-count'
+		// 	}
+		// 	)
+		// }
+		
 	})()
 
 
@@ -45,6 +61,7 @@ $:{
 	</a>
 	<!-- <a  class:active={$location === "/config"} href="/#/settings">Settings</a> -->
 	<!-- <input id="name" bind:value={theme} placeholder="default"/> -->
+	<!-- <button on:click="{askPermision}">notifications</button> -->
 	<div class="settings">
 		<Themeswitch/>
 	</div>
