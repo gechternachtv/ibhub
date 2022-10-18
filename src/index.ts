@@ -6,10 +6,13 @@ import uniqid from "uniqid";
 import dotenv from "dotenv"
 import PocketBase from 'pocketbase';
 
+
+dotenv.config();
+
+console.log(process.env.POCKETBASE)
 const client = new PocketBase(process.env.POCKETBASE);
 const authData = await client.admins.authViaEmail(process.env.EMAIL, process.env.PASSWORD);
 
-dotenv.config();
 //initialize
 
 
