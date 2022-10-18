@@ -5,7 +5,16 @@ The server is a webscrapper that watch a list of pages saved and check if there 
 you can add, remove or update the entries on the frontend or directly from the api.
 It presents your updates on a feed like thing, and rss.
 
-run:
+to setup pocketbase:
+
+- execute the pocketbase binary
+- import the data collection from db.collections.json
+- make an admin
+- set an smtp email server
+- create a .env file with your admin credentials, EMAIL PASSWORD and PORT 
+---
+
+now to run the server (important that pocketbase still up):
 
 ```
 npm install
@@ -17,7 +26,6 @@ npm run build
 npm run start
 ```
 ---
-
 To add a page go to `New!` and fill the form
 Put the url first, it will try to get metadata from the site if available.
 Target selector is the valid CSS selector string, you can learn more here: [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
@@ -55,3 +63,7 @@ Very useful for:
 
 -  more error handling cases
     -  front end no server connection (done)
+
+- use pocketbase instead of lowdb (done)
+- make it deployable friendly
+- make a tutorial on how to self host it
