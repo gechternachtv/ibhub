@@ -11,7 +11,7 @@ to setup pocketbase:
 - import the data collection from db.collections.json
 - make an admin
 - set an smtp email server
-- create a .env file with your admin credentials, EMAIL PASSWORD and PORT 
+- create a .env file with your admin credentials, EMAIL PASSWORD and PORT and the pocketbase server as POCKETBASE, usually "http://127.0.0.1:8090"
 ---
 
 now to run the server (important that pocketbase still up):
