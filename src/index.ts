@@ -1,6 +1,5 @@
 import express from "express";
-import cors from "cors";
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 import jsdom from "jsdom";
 import RSS from "rss";
 import uniqid from "uniqid";
