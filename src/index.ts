@@ -7,7 +7,8 @@ import uniqid from "uniqid";
 import dotenv from "dotenv"
 import PocketBase from 'pocketbase';
 
-const client = new PocketBase('http://127.0.0.1:8090');
+const client = new PocketBase(process.env.POCKETBASE);
+const authData = await client.admins.authViaEmail(process.env.EMAIL, process.env.PASSWORD);
 
 dotenv.config();
 //initialize
