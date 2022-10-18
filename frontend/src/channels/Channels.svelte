@@ -2,24 +2,30 @@
 
     import { onMount } from "svelte";
     import {push} from 'svelte-spa-router'
-    import { updateCount, isnew, currentDomain, showall, showdead } from '../stores';
+    import { updateCount, currentDomain, showall, showdead, client,hosts } from '../stores';
 
     import Channelcard from './channelcard.svelte';
     import Filter from '../filter.svelte';
 
-    
-    
-        let channels:channel[] = []
-        let news:newsfeed[] = []
+
+    const isnew:(news:any[],channelid:string)=>boolean = (news,channelid)=>{
+    const arr = news.find(x => x.channel === channelid)
+    return arr != undefined
+    }
+
+        let channels:any[] = []
+        let news:any[] = []
         let loading = true
         
 
         onMount(async () => {
             try {
-                news = await (await (fetch(`/api/getnews`))).json()
-                channels  = await (await (fetch(`/api/channels`))).json()
+                console.log("%c ====","color:yellow")
+                channels  = await client.records.getFullList('channel')
+                news = await client.records.getFullList('news')
+                console.log(news)
                 loading = false
-                console.log(channels)   
+                $hosts = Array.from(new Set(channels.map(e => e.host)))
             } catch (error) {
                 console.warn("connection error!",error)
                 push("/error")
@@ -47,19 +53,26 @@
             result = `updating${$showall ? "" : ` ${$currentDomain}`}...`
 
             const ids:ids = filteredChannel.map(e => e.id)
-
-            const response = await fetch('/api/getnewupsates', {
-            ...responseOptions,
-            body: JSON.stringify({ids:ids})
-            });
-
-            const data = await response.json()
+                console.log("ids",ids)
+            const localUser = JSON.parse(window.localStorage.getItem("pocketbase_auth"))?.model?.id
+                console.log("localuser:",localUser)
+            const response =await fetch("/api/getnewupsates",{
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({user:localUser})
+        })
+            const data = await response.text()
             console.log(data)
 
-            news  = await (await (fetch(`/api/getnews`))).json();
+            channels  = await client.records.getFullList('channel')
+            news  = await client.records.getFullList('news');
             updateCount.update(n => news.length)
             buttonLoading = false
             result = `updated! ${$updateCount > 0 ? `${$updateCount} new update${$updateCount === 1 ? "" : "s"}` : `nothing new right now`}`
+            
             setTimeout(()=>{result = ""},2200)
 
             } catch (error) {

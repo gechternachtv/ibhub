@@ -1,17 +1,18 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import {push, querystring} from 'svelte-spa-router'
-	import { updateCount } from '../stores';
+	import { updateCount, client  } from '../stores';
 	import archiveph from '../assets/archiveph.png'
 	import Tooltip from './tooltip.svelte';
 
-
+const localStorageItem = window.localStorage.getItem('pocketbase_auth')
+let localToken = localStorageItem ? JSON.parse(localStorageItem) : false
 
 let btnActive = false
 let linkvalid = false
 let containsstr = ""
 let result = "Creating new"
-let news:newsfeed[] = []
+let news:any[] = []
 let statusActive = false
 let deleteconfirm = false;
 let newpost = false
@@ -121,12 +122,10 @@ const validateURL = (str:string)=> {
 		if (!validateSelector(data.observeName)) throw "invalid selector";
 		data.host = (new URL(data.link)).hostname
 
-		const response = await fetch('/api/update', {
-			...responseOptions,
-			body: JSON.stringify(data)
-		});
+		const response = await client.records.update('channel', data.id, data)
 
-		if(response.ok){
+		if(response){
+			console.log(response)
 			statusActive = true
 			result =  `${data.id} updated!`
 			btnActive = true
@@ -154,20 +153,14 @@ const validateURL = (str:string)=> {
 			result = "creating...";
 		btnActive = false
 
-		console.log("sneding...",data)
-		const response = await fetch('/api/new', {
-			...responseOptions,
-			body: JSON.stringify(data)
-		});
+		delete data.id
+		console.log("sending...",data)
+		const response = await client.records.create('channel', {...data,user:localToken.model.id});
 
 
-		const ress = await response.json()
-
-		if(ress.error){
-			throw ress
-		}else{
-			console.log(ress)
-			data.id = ress.id
+		if(response){
+			console.log(response)
+			data.id = response.id
 			const ids:ids = []
 			ids.push(data.id)
 			statusActive = true
@@ -176,16 +169,14 @@ const validateURL = (str:string)=> {
 			...responseOptions,
 			body: JSON.stringify({ids:ids})
 			});
-
-			const getnewupdatesData = await getnewupdatesResponse.json();
-			console.log(getnewupdatesData)
-
-			const news  = await (await (fetch(`/api/getnews`))).json();
+			console.log(getnewupdatesResponse)
+			
+			const news  = await client.records.getFullList('news');
 			updateCount.update(n => news.length)
 			statusActive = true
 			result = "New target created!"
 			btnActive = true
-			push(`/new?id=${ress.id}`)
+			push(`/new?id=${response.id}`)
 
 		}
 
@@ -205,14 +196,8 @@ const validateURL = (str:string)=> {
 		statusActive = true
 		result = "deleting..."
 		btnActive = false
-		const response = await fetch('/api/delete', {
-			...responseOptions,
-			body: JSON.stringify(
-			{
-				id:data.id
-			}
-		)
-		});
+		const response = await client.records.delete('channel', data.id);
+		console.log(response);
 		clearData()
 		result = `${data.id} deleted`;
 		btnActive = true;
@@ -229,12 +214,14 @@ const validateURL = (str:string)=> {
 			result = "checking url..."
 			let referenceChannelthumb = null
 
-			const tryObserveName = await fetch(`/api/channels?host=${(new URL(url)).hostname}`)
-			if(tryObserveName.ok){
-				const tryObserveNameRes:channel[] = await (tryObserveName).json()
-					console.log(tryObserveNameRes)
-					if(tryObserveNameRes.length > 0){
-						const lastElFromHost = tryObserveNameRes[tryObserveNameRes.length -1]
+			const tryObserveName = await client.records.getList('channel', 1, 1, {
+				filter: `host = "${(new URL(url)).hostname}"`,
+				sort: "-created"
+			});
+			if(tryObserveName){
+	
+					if(tryObserveName.items.length > 0){
+						const lastElFromHost = tryObserveName.items[0]
 						data.observeName = lastElFromHost?.observeName === "" ? data.observeName : lastElFromHost?.observeName
 						data.newestOnTop = lastElFromHost?.newestOnTop
 						referenceChannelthumb = lastElFromHost?.thumb
@@ -279,19 +266,20 @@ const validateURL = (str:string)=> {
 				try {
 				statusActive = true
 				result = "fetching data..."
-				const channelRes = await (fetch(`/api/channels/?id=${params.get("id")}`))
+				const channel = await client.records.getOne('channel', params.get("id"))
+				console.log(params.get("id"))
 
-				if(channelRes.ok){
-					const channel:channel[] = await (channelRes).json()
+
+				if(channel){
 					console.log(channel)
 
 					for (const key in data) {
-						data[key]=channel[0][key];
+						data[key]=channel[key];
 					}
 					statusActive = false
 					containsstr = data.contains.toString()
-					news = await (await (fetch(`/api/getnews`))).json()
-					console.log(channel[0])
+					news = await client.records.getFullList('news');
+					console.log(channel)
 				}else{
 					result = "Url id not found"
 					clearData()

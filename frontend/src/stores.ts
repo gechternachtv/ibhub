@@ -1,12 +1,11 @@
 import { writable } from 'svelte/store';
+import PocketBase from 'pocketbase';
+
+export const client = new PocketBase('http://127.0.0.1:8090');
 
 
 export const updateCount = writable(0);
-
-export const isnew:(news:newsfeed[],channelid:string)=>boolean = (news,channelid)=>{
-    const arr = news.find(x => x.channelid === channelid)
-    return arr != undefined
-}
+export const hosts = writable([]);
 
 
 export const currentDomain = writable("");

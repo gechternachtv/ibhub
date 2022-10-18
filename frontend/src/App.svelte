@@ -1,13 +1,15 @@
 <script lang="ts">
 	import Router from 'svelte-spa-router';
+	import {push} from 'svelte-spa-router'
 	import Channels from './channels/Channels.svelte';
 	import Themeswitch from './themeswitch.svelte';
 	import Feed from './feed/Feed.svelte';
 	import New from './New/New.svelte';
-	import Config from './Config.svelte';
 	import Error from './Error.svelte';
-	import { updateCount } from './stores';
+	import Login from './Login.svelte';
+	import { updateCount, client } from './stores';
 	import {location} from 'svelte-spa-router'
+	import PocketBase from 'pocketbase';
 
 
 	// const askPermision = ()=>{
@@ -15,10 +17,13 @@
   	// 		console.log(`%c ${result}`,"font-size:20px;color:tomato");
 	// 	});
 	// }
-
+	if(!window.localStorage.getItem('pocketbase_auth')){
+		push("/login");
+	}
 
 	(async ()=>{
-		const news:string[]  = await (await (fetch(`/api/getnews`))).json();
+		
+		const news  = await client.records.getFullList('news');
 		updateCount.update(n => news.length)
 
 		// if(Notification.permission === "granted" && news.length > 0 ){
@@ -74,8 +79,8 @@ $:{
 	'/': Channels,
 	'/feed': Feed,
 	'/new': New,
-	'/settings': Config,
-	'/error':Error
+	'/error':Error,
+	'/login':Login,
 }} />
 </div>
 
