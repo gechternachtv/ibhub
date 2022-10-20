@@ -13,3 +13,4 @@
 **/node/frontend/yarn.lock
 dbbackup.json
 .env
+**/frontend/.vscode

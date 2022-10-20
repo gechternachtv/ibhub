@@ -168,7 +168,7 @@ $:{
 				--container-bg: #ffffff08;
 				--gradient-col-1: #fff3e6;
 				--gradient-col-2: #fff3e6;
-				--body-background: repeat center url('https://zonaplankton.net/backgrounds/pattern2.png');
+				--body-background: url('https://zonaplankton.net/backgrounds/page-pattern-default.png');
 							}
 			:global(.uboa .new-section, .uboa .container-header-buttons) {
 				color: var(--button-color);
@@ -177,7 +177,6 @@ $:{
 			--container: 1300px;
 			background: var(--gradient-col-1);
 			background: var(--body-background);
-			background-repeat: no-repeat;
 			background-attachment: fixed;
 		}
 </style>

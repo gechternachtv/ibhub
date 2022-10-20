@@ -1,1 +1,1 @@
-Error, check if the server still up
+<h1>Error, check if the server still up or if your internet connection is fine</h1>

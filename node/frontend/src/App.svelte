@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Router from 'svelte-spa-router';
-	import Channels from './channels/Channels.svelte';
+	import Dashboard from './channels/Channels.svelte';
 	import Themeswitch from './themeswitch.svelte';
 	import Feed from './feed/Feed.svelte';
 	import New from './New/New.svelte';
@@ -56,14 +56,12 @@ $:{
 <main>
 
 <nav >
-	
-	<a  class:active={$location === "/"} href="/#/">Channels</a>
+	<a  class:active={$location === "/"} href="/#/">Home</a>
+	<a  class:active={$location === "/dashboard"} href="/#/dashboard">Dashboard</a>
 	<a  class:active={$location === "/feed"} href="/#/feed">Feed 
 			<strong>{count}</strong>
 	</a>
-	<!-- <a  class:active={$location === "/config"} href="/#/settings">Settings</a> -->
-	<!-- <input id="name" bind:value={theme} placeholder="default"/> -->
-	<!-- <button on:click="{askPermision}">notifications</button> -->
+
 	<div class="settings">
 		<Themeswitch/>
 	</div>
@@ -73,11 +71,11 @@ $:{
 <div class="app">
 
 <Router routes={{
-	'/': Channels,
+	'/dashboard': Dashboard,
 	'/feed': Feed,
 	'/new': New,
 	'/error':Error,
-	'/login':Login,
+	'/':Login,
 }} />
 </div>
 
@@ -96,7 +94,7 @@ padding-bottom: 30px;
 		background:var(--header-bg);
         display: flex;
 		display: grid;
-grid-template-columns: auto auto 1fr;
+grid-template-columns: auto auto auto 1fr;
 	}
 	nav a {
 		color:var(--header-color);

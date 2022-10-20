@@ -45,7 +45,7 @@ async function sendemail(){
       console.log(authData)
       warning = "success"
       showWarning = true;
-      warningcontent = "Account created successfully, verification email sent"
+      warningcontent = "Account created successfully, please verify your email"
     }
 
 }
@@ -69,10 +69,7 @@ async function btnlogin(){
         <div class="success">Wellcome {localToken[localToken.model ? "model" : "user" ].email }</div>  
         <button
           on:click={logout}
-          >logout</button>      
-          <button
-          on:click={()=>{push("/")}}
-          >home</button>
+          >logout</button>
       {:else}
         <h1>Ibhub login</h1>
       <div class="input">email: <input type="text" bind:value={state.email} name=""></div>

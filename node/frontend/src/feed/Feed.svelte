@@ -5,11 +5,18 @@
     import Feedcard from "./feedcard.svelte";
     import Filter from "../filter.svelte";
 
-
     if(!window.localStorage.getItem('pocketbase_auth')){
-		push("/login");
+		push("/");
 	}
+
+    let localToken = window.localStorage.getItem('pocketbase_auth') ? JSON.parse(window.localStorage.getItem('pocketbase_auth')) : false
     
+    let result = ``
+    const notification = (text)=>{
+        result = text;
+        setTimeout(()=>{result = ``},3000)
+    }
+
     const isnew: (news: any[], feedid: string) => boolean = (
         news,
         feedid
@@ -36,10 +43,27 @@
             console.log(deleteAllnews);
             updateCount.update((n) => 0);
             allRead = true;
+            notification("nothing new")
         } catch (error) {
             console.error(error);
         }
     };
+
+    const getRsslink = async () => {
+        try {
+			const rssLink = await(await (await fetch(`IBHUB/api/getrsslink/${localToken.model.id}`)).json())
+            if(!rssLink.error){
+                console.log(rssLink.rss)
+                await navigator.clipboard.writeText(rssLink.rss);
+                notification("rss link copied to clipboard")
+            }else{
+                throw rssLink.error
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
 
     onMount(async () => {
         try {
@@ -62,7 +86,7 @@
             filteredfeeds = [...feeds]
                 .filter(
                     (e) =>
-                        $showall || e["@expand"]?.channel.host === $currentDomain
+                        $showall || e["@expand"]?.channel?.host === $currentDomain
                 );
         }
     }
@@ -73,6 +97,8 @@
         <h1>Feed</h1>
         <div class="feedoptions">
             <button on:click={readAll}>mark as read</button>
+            <button on:click={getRsslink}>get RSS</button>
+            <span class="result">{result}</span>
         </div>
         <div class="container">
             <Filter />
@@ -105,11 +131,14 @@
         margin: auto;
         max-width: var(--container);
         width: 100%;
+        padding-bottom: 40px;
     }
     h1 {
         background: var(--header-bg);
         color: var(--header-color);
         padding: 4px;
+        margin: 0;
+        margin-top:17px;
     }
 
     .feeds {
@@ -133,7 +162,16 @@
     }
 
     .feedoptions {
-        margin-left: 8px;
-        margin-bottom: 20px;
+        margin: 17px 10px;
+        display: flex;
+        gap: 11px;
     }
+
+    .result{
+                font-size:10px;
+                opacity: 0.7;
+                display: flex;
+                margin-left: 20px;
+                align-items: center;
+            }
 </style>

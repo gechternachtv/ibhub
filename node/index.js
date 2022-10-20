@@ -64,11 +64,17 @@ const updatePages = async (user) => {
 };
 //endpoints:
 const app = express();
-
-
-app.use('/', express.static('frontend/dist'));
 app.use(cors());
 app.use(express.json());
+app.get('/api/getrsslink/:user', (req, res) => {
+    try {
+        res.send({rss:`${process.env.IBHUB}/rss/${req.params.user}`});
+    }
+    catch (error) {
+        res.status(400).send({ error: true, message: error });
+    }
+  });
+app.use('/', express.static('frontend/public'));
 
 app.get('/rss/:user', async (req, res) => {
     res.header("Content-Type", "application/xml");

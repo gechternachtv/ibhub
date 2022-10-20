@@ -8,7 +8,7 @@
     import Filter from '../filter.svelte';
 
     if(!window.localStorage.getItem('pocketbase_auth')){
-		push("/login");
+		push("/");
 	}
 
     const isnew:(news:any[],channelid:string)=>boolean = (news,channelid)=>{
@@ -50,6 +50,11 @@
 
         let buttonLoading = false
         let result = ""
+        const notification = (text)=>{
+        result = text;
+            setTimeout(()=>{result = ``},3000)
+        }
+
         const updateCurrent = async () => {
             try {
             buttonLoading = true
@@ -59,7 +64,7 @@
                 console.log("ids",ids)
             const localUser = JSON.parse(window.localStorage.getItem("pocketbase_auth"))?.model?.id
                 console.log("localuser:",localUser)
-            const response =await fetch("https://ibhub.fly.dev/api/getnewupsates",{
+            const response =await fetch(`IBHUB/api/getnewupsates`,{
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -74,14 +79,13 @@
             news  = await client.records.getFullList('news');
             updateCount.update(n => news.length)
             buttonLoading = false
-            result = `updated! ${$updateCount > 0 ? `${$updateCount} new update${$updateCount === 1 ? "" : "s"}` : `nothing new right now`}`
-            
-            setTimeout(()=>{result = ""},2200)
+            notification(`updated! ${$updateCount > 0 ? `${$updateCount} new update${$updateCount === 1 ? "" : "s"}` : `nothing new right now`}`)
+        
 
             } catch (error) {
             console.warn(error)
             buttonLoading = false
-            result = "error while updating"
+            notification("error while updating")
 
             }
         }
@@ -99,7 +103,7 @@ $:{
        
             {#if !loading}
             <main>
-            <div class="container-header"><h1>Active Channels</h1></div>
+            <div class="container-header"><h1>Dashboard</h1></div>
             <div class="container-header-buttons">
                 <button class:loading={buttonLoading} class="updateall" on:click={()=>push("/new")}>New!</button>
                 <button class:loading={buttonLoading} class="updateall" on:click={updateCurrent}>
@@ -129,14 +133,13 @@ $:{
                 margin:auto;
                 max-width: var(--container);
                 width:100%;
+                padding-bottom: 40px;
             }
             .container-header{
                 background:var(--header-bg);
                 color:var(--header-color);
                 padding:4px;
-                margin:15px 0;
-                display: grid;
-                grid-template-columns: 1fr auto;
+                margin-top:17px;
             }
             .container-header h1{
                 margin: 0;
@@ -194,8 +197,7 @@ $:{
                 display: flex;
                 align-content: center;
                 gap: 11px;
-                margin: 17px 0px;
-                padding-left: 8px;
+                margin: 17px 10px;
 
             }
 

@@ -51,7 +51,7 @@ const updatesingle = (id:string)=>{
 	updatingsingle = true;
 	(async ()=>{
 		console.log(data.dead)
-	const response = await fetch('https://ibhub.fly.dev/api/getnewupsates', {
+	const response = await fetch(`IBHUB/api/getnewupsates`, {
 				...responseOptions,
 				body: JSON.stringify({ids:[id],ignoredead:true, dead:data.dead})
 				});
@@ -165,7 +165,7 @@ const validateURL = (str:string)=> {
 			ids.push(data.id)
 			statusActive = true
 			result = "updating...";
-			const getnewupdatesResponse = await fetch('https://ibhub.fly.dev/api/getnewupsates', {
+			const getnewupdatesResponse = await fetch(`IBHUB/api/getnewupsates`, {
 			...responseOptions,
 			body: JSON.stringify({ids:ids})
 			});
@@ -229,7 +229,7 @@ const validateURL = (str:string)=> {
 				}
 
 			result = "trying metadata..."
-			const metares = await fetch('https://ibhub.fly.dev/api/trymeta', {
+			const metares = await fetch(`IBHUB/api/trymeta`, {
 			...responseOptions,
 			body: JSON.stringify({link:data.link})
 			})
