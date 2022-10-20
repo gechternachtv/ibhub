@@ -1,0 +1,15 @@
+**/.DS_Store
+**_modules/
+**/frontend_modules/
+**/.vscode
+**/package-lock.json
+**/frontend/package-lock.json
+**/.cache/
+**/public/static
+**/.env.example
+**/.logs/*.log
+/dist
+**/yarn.lock
+**/frontend/yarn.lock
+dbbackup.json
+.env
