@@ -1,24 +1,22 @@
 import express from "express";
-// import fetch from "node-fetch";
+import cors from "cors";
 import jsdom from "jsdom";
 import RSS from "rss";
 import { nanoid } from 'nanoid'
 import PocketBase from 'pocketbase';
+
 import dotenv from "dotenv";
 dotenv.config();
+
+
 console.log("port:",process.env.PORT);
 console.log("pocketbase at:",process.env.POCKETBASE);
 console.log("host at:",process.env.IBHUB);
 console.log("email:", process.env.EMAIL)
 
-try {
 const client = new PocketBase(process.env.POCKETBASE);
 await client.admins.authViaEmail(process.env.EMAIL, process.env.PASSWORD);
 
-const app = express();
-
-app.use(express.json());
-const PORT = process.env.PORT;
 
 const returnDomList = (sitecontent, observeName, contains) => {
     const dom = new jsdom.JSDOM(sitecontent);
@@ -65,7 +63,13 @@ const updatePages = async (user) => {
     }));
 };
 //endpoints:
-app.use('/', express.static('./frontend/dist'));
+const app = express();
+
+
+app.use('/', express.static('frontend/dist'));
+app.use(cors());
+app.use(express.json());
+
 app.get('/rss/:user', async (req, res) => {
     res.header("Content-Type", "application/xml");
     await updatePages(req.params.user);
@@ -132,10 +136,6 @@ app.post('/api/trymeta', async (req, res) => {
         res.status(404).send({ error: true });
     }
 });
-app.listen(PORT, () => {
-    console.log(`Running on http://localhost:${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Running on http://localhost:${process.env.PORT}`);
 });
-
-} catch (error) {
-   console.log(error) 
-}
