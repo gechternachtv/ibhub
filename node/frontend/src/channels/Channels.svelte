@@ -59,7 +59,7 @@
                 console.log("ids",ids)
             const localUser = JSON.parse(window.localStorage.getItem("pocketbase_auth"))?.model?.id
                 console.log("localuser:",localUser)
-            const response =await fetch("/api/getnewupsates",{
+            const response =await fetch("https://ibhub.fly.dev/api/getnewupsates",{
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
