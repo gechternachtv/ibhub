@@ -158,17 +158,17 @@ $:{
 			:global(.plankton) {
 				--alert: #FF2164;
 				--news: #FF2164;
-				--header-bg: #c1c1c1;
 				--main-font-1: black;
 				--main-font-2: black;
-				--button-bg: #0394fc;
 				--button-color: #ffe;
-				--header-color: black;
 				--card-bg: #eaeaea;
 				--container-bg: #ffffff08;
 				--gradient-col-1: #fff3e6;
 				--gradient-col-2: #fff3e6;
 				--body-background: url('https://zonaplankton.net/backgrounds/page-pattern-default.png');
+				--header-bg: #0394fc;
+				--button-bg: #FF2164;
+				--header-color: white;
 							}
 			:global(.uboa .new-section, .uboa .container-header-buttons) {
 				color: var(--button-color);

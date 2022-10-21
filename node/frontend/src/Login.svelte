@@ -66,7 +66,7 @@ async function btnlogin(){
 
       <article>
         {#if localToken}
-        <div class="success">Wellcome {localToken[localToken.model ? "model" : "user" ].email }</div>  
+        <div class="success">Welcome {localToken[localToken.model ? "model" : "user" ].email }</div>  
         <button
           on:click={logout}
           >logout</button>
