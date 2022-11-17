@@ -5,6 +5,10 @@ kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[mounts]
+  source="appdata"
+  destination="/pb_data"
+
 [env]
 
 [experimental]
