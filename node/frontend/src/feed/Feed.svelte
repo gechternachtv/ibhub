@@ -124,6 +124,12 @@
             gap: 10px;
         }
     }
+    @media only screen and (max-width: 568px){
+                .container {
+                gap:0px;
+                grid-template-columns:114px 1fr;
+                }
+            }
     main {
         background: var(--container-bg);
         color: var(--main-font-1);
@@ -165,6 +171,11 @@
         margin: 17px 10px;
         display: flex;
         gap: 11px;
+    }
+    @media only screen and (max-width: 568px){
+        .feedoptions button {
+            min-height: 43px
+        }
     }
 
     .result{

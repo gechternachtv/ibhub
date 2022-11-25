@@ -1,5 +1,5 @@
 <script lang="ts">
-    	export let channel:channel;
+    	export let channel;
         export let isNew:boolean;
 </script>
 
@@ -60,6 +60,11 @@
                 gap: 20px;
                 box-sizing: border-box;
                 position:relative
+            }
+            @media only screen and (max-width: 568px){
+                .card{
+                    width:100%;
+                }
             }
 
             .dead{

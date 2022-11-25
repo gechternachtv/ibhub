@@ -115,5 +115,11 @@ grid-template-columns: auto auto auto 1fr;
 		align-content: center;
 		justify-content: flex-end;
 	}
+@media(max-width:376px){
+	.settings {
+		grid-column: span 4;
+		margin-top: 9px;
+		}
+}
 
 </style>

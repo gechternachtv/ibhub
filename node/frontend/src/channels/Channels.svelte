@@ -60,7 +60,7 @@
             buttonLoading = true
             result = `updating${$showall ? "" : ` ${$currentDomain}`}...`
 
-            const ids:ids = filteredChannel.map(e => e.id)
+            const ids = filteredChannel.map(e => e.id)
                 console.log("ids",ids)
             const localUser = JSON.parse(window.localStorage.getItem("pocketbase_auth"))?.model?.id
                 console.log("localuser:",localUser)
@@ -164,7 +164,12 @@ $:{
             grid-template-columns: 134px 1fr;
             gap: 20px;
             }
-
+            @media only screen and (max-width: 568px){
+                .main-container {
+                gap:0px;
+                grid-template-columns:114px 1fr;
+                }
+            }
 
             button.updateall {
             background: var(--button-bg);
@@ -200,5 +205,9 @@ $:{
                 margin: 17px 10px;
 
             }
-
+            @media only screen and (max-width: 568px){
+                .container-header-buttons button {
+                    min-height: 43px
+                }
+            }
         </style>

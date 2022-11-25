@@ -28,6 +28,7 @@ const updatePages = async (user) => {
         filter: `user = "${user}"`,
     });
     const channels = pageResult.items;
+    console.log(channels)
     await Promise.all(channels.map(async (singlePage) => {
         const request = await (fetch(singlePage.link));
         if (!request.ok) {
