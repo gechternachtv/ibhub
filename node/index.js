@@ -66,10 +66,26 @@ const updatePages = async (user) => {
                 
                 }else if(request.headers.get('content-type')?.includes('application/json') && singlePage.contains.length > 0){
                 //-----json (with key)
-                    const jsoncontent = await request.json();
+                    const foo = await request.json();
+
+
+                    function strval(str) {
+                        const keys = str.split(/[\.\[\]'"]/).filter(e => e);
+                        let ret = foo;
+                        
+                        try {
+                          keys.forEach(key => {
+                            ret = ret[key];
+                          });
+                          return ret;
+                        } catch(e) {
+                          return undefined;
+                        }
+                      }
+
 
                         const jsonupdates = singlePage.contains.map(item => {
-                            return `${item}:${String(eval(`jsoncontent${item.charAt(0) === "[" ? "" : "."}${item}`))}`
+                            return `${item}:${String(strval(item))}`
                         }).join("\n")
                         console.log(jsonupdates)
 
