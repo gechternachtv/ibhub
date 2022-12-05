@@ -734,10 +734,6 @@ const validateURL = (str:string)=> {
 				color: #0000005c;
 				}
 
-			.updatingsingle{
-				pointer-events:none !important;
-				opacity:0.5 !important;
-			}
 
 .labelholder{
 	max-width:70vw
@@ -753,5 +749,6 @@ const validateURL = (str:string)=> {
 	margin-top: 20px;
 	background: var(--card-bg);
 	padding: 9px;
+	word-break: break-all;
 }
 </style>
