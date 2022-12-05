@@ -9,4 +9,4 @@ export const hosts = writable([]);
 
 export const currentDomain = writable("");
 export const showall = writable(true);
-export const showdead = writable(true)
+export const showdead = writable(false)

@@ -128,6 +128,7 @@
             font-weight: bold;
             background:var(--header-bg);
             color:var(--header-color);
+            margin-bottom: 4px;
             
             }
 

@@ -30,35 +30,100 @@ const updatePages = async (user) => {
     const channels = pageResult.items;
     console.log(channels)
     await Promise.all(channels.map(async (singlePage) => {
-        const request = await (fetch(singlePage.link));
-        if (!request.ok) {
-            //singlePage.dead = true
-        }
-        else {
-            const sitecontent = await request.text();
-            const observedItems = returnDomList(sitecontent, singlePage.observeName, singlePage.contains);
-            const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1];
-            if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
-                const postid = nanoid().substring(0, 15);
-                //updatelastposthere
-                const channelupdate = await client.records.update('channel', singlePage.id, {
-                    laspost: lastPost.textContent,
-                    dead: (observedItems.length === 0),
-                    updates: observedItems.length
-                });
-                //createnews
-                const feedcreate = await client.records.create('feeditem', {
-                    title: `${(observedItems.length === 0) ? `[target selector count is 0]` : `[page update]`} ${singlePage.name}`,
-                    content: (observedItems.length === 0) ? `Check if the target selector is right or if the page is still up` : lastPost.textContent,
-                    channel: singlePage.id,
-                    id: postid,
-                    user: user
-                });
-                const newscreate = await client.records.create('news', {
-                    channel: singlePage.id,
-                    feeds: postid,
-                    user: user
-                });
+        console.log(singlePage)
+        if(!singlePage.dead){
+            const request = await (fetch(singlePage.link));
+            if (request.ok) {
+                //-----html
+                if(request.headers.get('content-type')?.includes('text/html')){
+                    const sitecontent = await request.text();
+                    const observedItems = returnDomList(sitecontent, singlePage.observeName === "" ? "body" : singlePage.observeName, singlePage.contains);
+                    const lastPost = singlePage.newestOnTop ? observedItems[0] : observedItems[observedItems.length - 1];
+                    if (singlePage.updates != observedItems.length || lastPost.textContent != singlePage.laspost) {
+                        const postid = nanoid().substring(0, 15);
+                        //updatelastposthere
+                        const channelupdate = await client.records.update('channel', singlePage.id, {
+                            laspost: lastPost.textContent,
+                            dead: (observedItems.length === 0),
+                            updates: observedItems.length
+                        });
+                        //createnews
+                        const feedcreate = await client.records.create('feeditem', {
+                            title: `${(observedItems.length === 0) ? `[target selector count is 0]` : `[page update]`} ${singlePage.name}`,
+                            content: (observedItems.length === 0) ? `Check if the target selector is right or if the page is still up` : lastPost.textContent,
+                            channel: singlePage.id,
+                            id: postid,
+                            user: user
+                        });
+                        const newscreate = await client.records.create('news', {
+                            channel: singlePage.id,
+                            feeds: postid,
+                            user: user
+                        });
+        
+                        console.log(channelupdate,feedcreate,newscreate)
+                    }
+                
+                }else if(request.headers.get('content-type')?.includes('application/json') && singlePage.contains.length > 0){
+                //-----json (with key)
+                    const jsoncontent = await request.json();
+
+                        const jsonupdates = singlePage.contains.map(item => {
+                            return `${item}:${String(eval(`jsoncontent${item.charAt(0) === "[" ? "" : "."}${item}`))}`
+                        }).join("\n")
+                        console.log(jsonupdates)
+
+                        if(jsonupdates != singlePage.laspost){
+                            const postid = nanoid().substring(0, 15);
+                            //updatelastposthere
+                            const channelupdate = await client.records.update('channel', singlePage.id, {
+                                laspost: jsonupdates,
+                                dead: false,
+                                updates: 1
+                            });
+                            //createnews
+                            const feedcreate = await client.records.create('feeditem', {
+                                title: `${singlePage.name}(application/json) key update`,
+                                content: jsonupdates,
+                                channel: singlePage.id,
+                                id: postid,
+                                user: user
+                            });
+                            const newscreate = await client.records.create('news', {
+                                channel: singlePage.id,
+                                feeds: postid,
+                                user: user
+                            });
+                        }
+
+                    
+                }else if(request.headers.get('content-type')?.includes('text/plain') || request.headers.get('content-type')?.includes('application/json')){
+                //-----plain text and json (without key)
+                    const textcontent = await request.text();
+                    if (textcontent != singlePage.laspost) {
+                        const postid = nanoid().substring(0, 15);
+                        //updatelastposthere
+                        const channelupdate = await client.records.update('channel', singlePage.id, {
+                            laspost: textcontent,
+                            dead: false,
+                            updates: 1
+                        });
+                        //createnews
+                        const feedcreate = await client.records.create('feeditem', {
+                            title: `${singlePage.name}(text/plain) update`,
+                            content: textcontent,
+                            channel: singlePage.id,
+                            id: postid,
+                            user: user
+                        });
+                        const newscreate = await client.records.create('news', {
+                            channel: singlePage.id,
+                            feeds: postid,
+                            user: user
+                        });
+                    } 
+                }
+
             }
         }
     }));
@@ -72,6 +137,7 @@ app.get('/api/getrsslink/:user', (req, res) => {
         res.send({rss:`${process.env.IBHUB}/rss/${req.params.user}`});
     }
     catch (error) {
+        console.log("error",error)
         res.status(400).send({ error: true, message: error });
     }
   });
@@ -118,6 +184,7 @@ app.post('/api/getnewupsates', async (req, res) => {
         res.send({ error: false });
     }
     catch (error) {
+        console.log("error",error)
         res.status(400).send({ error: true, message: error });
     }
 });
@@ -140,6 +207,7 @@ app.post('/api/trymeta', async (req, res) => {
         }
     }
     catch (error) {
+        console.log("error",error)
         res.status(404).send({ error: true });
     }
 });

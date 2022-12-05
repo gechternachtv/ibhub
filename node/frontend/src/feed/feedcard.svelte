@@ -13,11 +13,13 @@ console.log(feed)
         {#if isNew}
             <div class="newposttag">[ NEW !]</div>
         {/if}
-        <div class="thumb"><img loading="lazy" src="{feed["@expand"]?.channel?.thumb}" alt=""></div>
-        <div class="channelcontent">
-            {#each feed.content.split("\n") as content}
-                <div>{content}</div>
-            {/each}
+        <div class="channelcontent-holder">
+            <div class="thumb"><img loading="lazy" src="{feed["@expand"]?.channel?.thumb}" alt=""></div>
+            <div class="channelcontent">
+                {#each feed.content.split("\n") as content}
+                    <div>{content}</div>
+                {/each}
+            </div>
         </div>
     </div>
     <div class="feed-btn-holder">
@@ -115,6 +117,18 @@ console.log(feed)
             .feed-btn a:hover {
                 text-decoration: none;;
             }
+            @media only screen and (min-width: 1200px){
+            .channelcontent-holder{
+                display:grid;
+                grid-template-columns:180px auto;
+                gap:10px;
+                margin-top:30px;
+                }
 
-
+                .channelcontent-holder img{
+                max-width:100%;
+                margin:auto;
+                display: block;
+                }
+            }
 </style>
