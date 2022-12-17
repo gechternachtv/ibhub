@@ -64,13 +64,23 @@
                 console.log("ids",ids)
             const localUser = JSON.parse(window.localStorage.getItem("pocketbase_auth"))?.model?.id
                 console.log("localuser:",localUser)
+
+                console.log("update current", {
+                user:localUser,
+                host: `${$showall ? "" : `${$currentDomain}`}`
+            })
+
+
             const response =await fetch(`IBHUB/api/getnewupsates`,{
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
             },
             method: "POST",
-            body: JSON.stringify({user:localUser})
+            body: JSON.stringify({
+                user:localUser,
+                host: `${$showall ? "" : `${$currentDomain}`}`
+            })
         })
             const data = await response.text()
             console.log(data)
