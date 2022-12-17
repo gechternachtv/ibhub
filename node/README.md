@@ -67,3 +67,14 @@ Very useful for:
 - use pocketbase instead of lowdb (done)
 - make it deployable friendly
 - make a tutorial on how to self host it
+
+
+
+
+added : 
+
+json support, observe apis
+
+todo: 
+- explain items on json
+- explain "lastchild" and "totext" on json
