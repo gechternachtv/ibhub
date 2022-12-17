@@ -74,6 +74,8 @@ Very useful for:
 added : 
 
 json support, observe apis
+rss supports domain
+domain update fix
 
 todo: 
 - explain items on json
