@@ -129,14 +129,14 @@ const updatePages = async (user, host = "") => {
                         const postid = nanoid().substring(0, 15);
                         //updatelastposthere
                         const channelupdate = await client.records.update('channel', singlePage.id, {
-                            laspost: textcontent.replaceAll("\n",";").replaceAll(/[^a-zA-Z0-9+-; ]/g, '').replaceAll(";","\n"),
+                            laspost: textcontent.replaceAll(/[^a-zA-Z0-9+-; ^\n\r]/g, ''),
                             dead: false,
                             updates: 1
                         });
                         //createnews
                         const feedcreate = await client.records.create('feeditem', {
                             title: `${singlePage.name}(text/plain) update`,
-                            content: textcontent.replaceAll("\n",";").replaceAll(/[^a-zA-Z0-9+-; ]/g, '').replaceAll(";","\n"),
+                            content: textcontent.replaceAll(/[^a-zA-Z0-9+-; ^\n\r]/g, ''),
                             channel: singlePage.id,
                             id: postid,
                             user: user
