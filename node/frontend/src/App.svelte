@@ -6,7 +6,7 @@
 	import New from './New/New.svelte';
 	import Error from './Error.svelte';
 	import Login from './Login.svelte';
-	import { updateCount, client } from './stores';
+	import { updateCount, pb } from './stores';
 	import {location} from 'svelte-spa-router'
 	
 
@@ -18,8 +18,8 @@
 	// }
 
 	(async ()=>{
-		
-		const news  = await client.records.getFullList('news');
+		try {
+			const news  = await pb.collection("news").getFullList();
 		updateCount.update(n => news.length)
 
 		// if(Notification.permission === "granted" && news.length > 0 ){
@@ -27,7 +27,11 @@
 		// 		tag: 'notification-count'
 		// 	}
 		// 	)
-		// }
+		// }			
+		} catch (error) {
+			console.warn(error)
+		}
+
 		
 	})()
 

@@ -1,11 +1,11 @@
 <script lang="ts">
-    import { currentDomain, showall,showdead, hosts, client } from './stores';
+    import { currentDomain, showall,showdead, hosts, pb } from './stores';
     import { onMount } from "svelte";
 
     onMount(async () => {
             try {
                 if ($hosts.length === 0){
-                    const channels  = await client.records.getFullList('channel')
+                    const channels  = await pb.collection('channel').getFullList()
                     $hosts =  Array.from(new Set(channels.map(e => e.host)))
                 }
             } catch (error) {

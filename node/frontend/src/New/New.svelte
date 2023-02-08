@@ -2,7 +2,7 @@
 	//@ts-nocheck
 	import { onMount } from "svelte";
 	import {push, querystring} from 'svelte-spa-router'
-	import { updateCount, client  } from '../stores';
+	import { updateCount, pb  } from '../stores';
 	import archiveph from '../assets/archiveph.png'
 	import Tooltip from './tooltip.svelte';
 
@@ -103,7 +103,7 @@ const validateURL = (str:string)=> {
 		if (!validateSelector(data.observeName)) throw "invalid selector";
 		data.host = (new URL(data.link)).hostname
 
-		const response = await client.records.update('channel', data.id, data)
+		const response = await pb.collection("channel").update(data.id, data)
 
 		if(response){
 			console.log(response)
@@ -136,7 +136,7 @@ const validateURL = (str:string)=> {
 
 		delete data.id
 		console.log("sending...",data)
-		const response = await client.records.create('channel', {...data,user:localToken.model.id});
+		const response = await pb.collection("channel").create({...data,user:localToken.model.id});
 
 
 		if(response){
@@ -146,13 +146,13 @@ const validateURL = (str:string)=> {
 			ids.push(data.id)
 			statusActive = true
 			result = "updating...";
-			const getnewupdatesResponse = await fetch(`IBHUB/api/getnewupsates`, {
+			const getnewupdatesResponse = await fetch(`IBHUB/api/getnewsupdates`, {
 			...responseOptions,
 			body: JSON.stringify({ids:ids})
 			});
 			console.log(getnewupdatesResponse)
 			
-			const news  = await client.records.getFullList('news');
+			const news  = await pb.collection("news").getFullList();
 			updateCount.update(n => news.length)
 			statusActive = true
 			result = "New target created!"
@@ -177,7 +177,7 @@ const validateURL = (str:string)=> {
 		statusActive = true
 		result = "deleting..."
 		btnActive = false
-		const response = await client.records.delete('channel', data.id);
+		const response = await pb.collection("channel").delete(data.id);
 		console.log(response);
 		clearData()
 		result = `${data.id} deleted`;
@@ -195,7 +195,7 @@ const validateURL = (str:string)=> {
 			result = "checking url..."
 			let referenceChannelthumb = null
 
-			const tryObserveName = await client.records.getList('channel', 1, 1, {
+			const tryObserveName = await pb.collection('channel').getList(1, 1, {
 				filter: `host = "${(new URL(url)).hostname}"`,
 				sort: "-created"
 			});
@@ -270,7 +270,7 @@ const validateURL = (str:string)=> {
 				try {
 				statusActive = true
 				result = "fetching data..."
-				const channel = await client.records.getOne('channel', params.get("id"))
+				const channel = await pb.collection('channel').getOne(params.get("id"))
 				console.log(params.get("id"))
 
 
@@ -282,7 +282,7 @@ const validateURL = (str:string)=> {
 					}
 					statusActive = false
 					containsstr = data.contains.toString()
-					news = await client.records.getFullList('news');
+					news = await pb.collection("news").getFullList();
 					console.log(channel)
 				}else{
 					result = "Url id not found"

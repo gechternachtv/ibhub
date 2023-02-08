@@ -1,7 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import { push } from "svelte-spa-router";
-    import { updateCount, currentDomain, showall, client } from "../stores";
+    import { updateCount, currentDomain, showall, pb } from "../stores";
     import Feedcard from "./feedcard.svelte";
     import Filter from "../filter.svelte";
 
@@ -37,7 +37,7 @@
         try {
             const deleteAllnews = await Promise.all(
                 news.map(async (item) => {
-                    client.records.delete("news", item.id);
+                    pb.collection("news").delete(item.id);
                 })
             );
             console.log(deleteAllnews);
@@ -67,11 +67,11 @@
 
     onMount(async () => {
         try {
-            feeds = await client.records.getFullList("feeditem", 50, {
+            feeds = await pb.collection("feeditem").getFullList(50, {
                 expand: "channel",
                 sort: '-created'
             });
-            news = await client.records.getFullList("news");
+            news = await pb.collection("news").getFullList();
             console.log(feeds, news);
             loading = false;
         } catch (error) {
@@ -86,7 +86,7 @@
             filteredfeeds = [...feeds]
                 .filter(
                     (e) =>
-                        $showall || e["@expand"]?.channel?.host === $currentDomain
+                        $showall || e["expand"]?.channel?.host === $currentDomain
                 );
         }
     }

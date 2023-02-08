@@ -2,7 +2,7 @@
 
     import { onMount } from "svelte";
     import {push} from 'svelte-spa-router'
-    import { updateCount, currentDomain, showall, showdead, client,hosts } from '../stores';
+    import { updateCount, currentDomain, showall, showdead, pb,hosts } from '../stores';
 
     import Channelcard from './channelcard.svelte';
     import Filter from '../filter.svelte';
@@ -24,8 +24,8 @@
         onMount(async () => {
             try {
                 console.log("%c ====","color:yellow")
-                channels  = await client.records.getFullList('channel')
-                news = await client.records.getFullList('news')
+                channels  = await pb.collection("channel").getFullList()
+                news = await pb.collection("news").getFullList()
                 console.log(news)
                 loading = false
                 $hosts = Array.from(new Set(channels.map(e => e.host)))
@@ -71,7 +71,7 @@
             })
 
 
-            const response =await fetch(`IBHUB/api/getnewupsates`,{
+            const response =await fetch(`IBHUB/api/getnewsupdates`,{
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -85,8 +85,8 @@
             const data = await response.text()
             console.log(data)
 
-            channels  = await client.records.getFullList('channel')
-            news  = await client.records.getFullList('news');
+            channels  = await pb.collection("channel").getFullList()
+            news  = await pb.collection("news").getFullList();
             updateCount.update(n => news.length)
             buttonLoading = false
             notification(`updated! ${$updateCount > 0 ? `${$updateCount} new update${$updateCount === 1 ? "" : "s"}` : `nothing new right now`}`)

@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import PocketBase from 'pocketbase';
 
-export const client = new PocketBase('POCKETBASE');
+export const pb = new PocketBase('POCKETBASE');
 
 export const updateCount = writable(0);
 export const hosts = writable([]);
